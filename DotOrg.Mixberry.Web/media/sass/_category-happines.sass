@@ -1,0 +1,56 @@
+.product-template-black
+	overflow: hidden
+	background: #000
+	+max-screen($midtablet)
+		padding: 40px 0
+	.section
+		+flex
+		align-items: center
+		justify-content: space-between
+		+max-screen($smartphone_landscape)
+			justify-content: center
+	&.left-handed
+		.product-template-black_description
+			padding-right: 50px
+			+max-screen($smartphone_landscape)
+				padding: 0
+	&.right-handed
+		.product-template-black_description
+			padding-left: 50px
+			+max-screen($smartphone_landscape)
+				padding: 0
+.product-template-black_images
+	width: 800px
+	display: block
+	text-align: center
+	+max-screen($bigtablet)
+		width: 50%
+		display: block
+	+max-screen(480px)
+		width: 100%
+	img
+		max-width: 100%
+.product-template-black_description
+	color: #fff
+	+box
+	max-width: 300px
+	+max-screen($bigtablet)
+		width: 50%
+	+max-screen(480px)
+		width: 100%
+	div
+		font-size: 32px
+		text-transform: uppercase
+		line-height: 1.2
+		margin-bottom: 15px
+		+max-screen($midtablet)
+			font-size: 27px
+		+max-screen($smartphone_landscape)
+			font-size: 22px
+.product-template-black_images + .product-template-black_description
+	+max-screen($smartphone_landscape)
+		margin-top: 30px
+#led-glasses-cheiker
+	.product-template-black_description
+		+min-screen($bigtablet)
+			height: 730px

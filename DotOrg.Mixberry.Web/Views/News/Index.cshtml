@@ -1,0 +1,13 @@
+﻿@model ListItemsViewModel<News>
+
+<div class="section">
+    <div class="products-category_head">
+        <h1 class="page-title">@(WebContext.Location.Header ?? WebContext.Location.Name)</h1>
+    </div>
+	<div class="main-page-news news-page news-list">
+		@foreach (var item in Model.Items)
+		{
+			Html.RenderPartial(MVC.News.Views._ListNewsItem, item);
+		}
+	</div>
+</div>

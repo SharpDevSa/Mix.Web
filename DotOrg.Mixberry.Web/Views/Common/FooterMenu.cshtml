@@ -1,0 +1,18 @@
+﻿@using DotOrg.Mixberry.Web.Core
+@model List<MenuItemViewModel>
+
+<ul class="footer-menu fl">
+    @foreach (var item in Model)
+    {
+        if (item.Alias == "contacts")
+        {
+            <li><a href="@L.Url(Url.ForPage("about"))#mixberry-labs">@item.Name</a></li>
+        }
+        else
+        {
+            <li><a href="@L.Url(item.Url)">@item.Name</a></li>
+        }
+
+
+    }
+</ul>

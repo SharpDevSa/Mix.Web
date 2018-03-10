@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mixberry>
+	<date-format>dd/MM/yyyy</date-format>
+	<latestNews>Последние новости</latestNews>
+	<latest-news-date>dd/MM</latest-news-date>
+	<home-page-alias></home-page-alias>
+	<news>Новости</news>
+	<news-archive>Архив новостей</news-archive>
+	<search>Поиск</search>
+	<notfound-metatitle>404 страница</notfound-metatitle>
+	<notfound-title>Страница не найдена</notfound-title>
+	<notfound-description>Такой страницы у нас нет. Проверьте правильность адреса.</notfound-description>
+	<subscription-success>Вы успешно подписаны!</subscription-success>
+	<unsubscription-success>Вы отписались от рассылок.</unsubscription-success>
+	<subscription-email>Ваша эл. почта</subscription-email>
+	<subscription-email-error></subscription-email-error>
+	<subscription-message>Будьте в курсе</subscription-message>
+	<catalog-all-products-name>Все</catalog-all-products-name>
+	<distributors>Дистрибьюторы</distributors>
+	<retailers>Ритейлеры</retailers>
+	<see-more>See more</see-more>
+</mixberry>

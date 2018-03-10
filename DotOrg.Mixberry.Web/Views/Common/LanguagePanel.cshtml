@@ -1,0 +1,12 @@
+﻿@model LanguagesViewModel
+
+<div class="i-select fr">
+    <span class="i-select__value">@Model.Current.Name</span>
+	<select name="" class="i-select__select lang-select">
+		@foreach (var item in Model.All)
+		{
+			<option @If(item.Lang == Model.Current.Lang, "selected") value="@Localization.ChangeUrl(item.Lang)">@item.Name</option>
+		}
+	</select>
+</div>
+

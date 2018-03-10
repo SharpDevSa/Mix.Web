@@ -1,0 +1,18 @@
+﻿@model DotOrg.Mixberry.Web.Areas.Admin.Models.FileImg
+<td colspan="7">
+    <div class="EditImgModul">
+        <form>
+            <div>
+                <label for="DescFile">Описание файла</label>
+                <input type="text" id="DescFile" value="@Model.Description" />
+            </div>
+            <label for="FileName">Название файла</label>
+            <input type="text" id="FileName" value="@Model.TitleFile" />
+            <label for="UploadNewImg">Новое изображение</label>
+            <input type="file" id="UploadNewImg" />
+            <input type="submit" id="SubmitChanges" />
+            <input type="submit" id="CancelChanges" />
+        </form>
+    </div>
+</td>
+

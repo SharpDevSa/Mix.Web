@@ -1,0 +1,44 @@
+﻿@model Category
+@{ 
+    WebContext.Metadata.MetaTitle = Model.Name;
+    WebContext.Metadata.MetaDescription = Model.MetaDescription;
+    WebContext.Metadata.MetaData = Model.MetaData;
+     }
+@Html.Raw(Model.Description)
+@{
+	var first = 0;
+	var bullets = new Dictionary<string, string>();
+}
+@foreach (var item in Model.Blocks)
+{
+	var html = RenderRazor(Model.Id, item.Alias, item.Content, Model);
+	var hasValue = html.Length() > 0;
+	if (hasValue)
+	{
+		bullets.Add(item.Alias, item.Name);
+		<a name="@item.Alias"></a>
+		<div id="@item.Alias">
+			@html
+		</div>
+	}
+}
+
+
+<ul id="point-nav" class="point-nav category-navigation">
+    @foreach (var item in bullets)
+    {
+        if (first > 0)
+        {
+            <li data-classname="white" data-id="@item.Key">
+                <a class="tooltip-link" href="#@item.Key" title="@item.Value"></a>
+            </li>
+        }
+        else
+        {
+            <li data-classname="white" data-id="#main-header">
+                <a class="tooltip-link" href="#main-header" title="@item.Value"></a>
+            </li>
+        }
+        first++;
+    }
+</ul>

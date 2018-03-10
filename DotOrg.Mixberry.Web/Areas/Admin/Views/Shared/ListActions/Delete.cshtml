@@ -1,0 +1,3 @@
+﻿@model IEntity
+
+<a class="list-action" onclick="if(!confirm('Удалить объект?')) return false;" href="@Url.Action(Constants.DeleteAction, new { id = Model.Id })"><span title="Удалить" class="icon-trash"></span></a>

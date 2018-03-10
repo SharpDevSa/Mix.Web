@@ -1,0 +1,85 @@
+.border
+	.h1
+		margin-bottom: 20px
+.news-page
+	.news-item
+		margin-bottom: 50px
+		&:nth-child(4n)
+			margin-left: 0
+		.data-news
+			margin: 15px 0 3px
+.background-news-details
+	background: url("../img/news-detalis.jpg") no-repeat top center
+	height: 484px
+.wrapper-news-details
+	margin-top: 100px
+	.content-news
+		font-size: 18px
+		+min-screen(768px)
+			width: 710px
+			padding-right: 30px
+			border-right: 1px solid #999999
+		.h1
+			margin-top: 0
+		p
+			color: #000
+		#slaider-news-archive
+			margin: 130px 0 70px
+			position: relative
+			.owl-dots
+				position: absolute
+				top: -90px
+				right: 50%
+				.owl-dot
+					display: inline-block
+					&.active
+						span
+							background: #0257F0
+					span
+						background: #000
+						border: none
+			.owl-nav
+				.owl-prev		
+					width: 4px
+					height: 11px
+					position: absolute
+					top: -90px
+					left: 40%
+					background: url("../img/owl-little-left.png") no-repeat top center
+				.owl-next
+					width: 4px
+					height: 11px
+					position: absolute
+					top: -90px
+					right: 46%
+					background: url("../img/owl-little-right.png") no-repeat top center
+		.news-navigation
+			width: 90px
+			overflow: hidden
+			.link-details-news
+				display: block
+				font-size: 14px
+				text-align: center
+				color: #000
+				span
+					display: block
+					height: 33px
+					color: #999999
+					width: 33px
+					font-size: 27px
+					border: 1px solid #bdbdbd
+					line-height: 33px	
+					margin-bottom: 5px			
+	.lates-news
+		+min-screen(768px)
+			padding-left: 20px
+			width: 300px
+		.item
+			margin-bottom: 30px
+			.item-data
+				display: block
+				color: #000
+			a
+				color: #666666
+				&:hover
+					color: #003399

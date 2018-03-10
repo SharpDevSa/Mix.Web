@@ -1,0 +1,44 @@
+﻿@model ItemViewModel<News>
+
+
+<div class="news-details-big-banner" style="background: url(@Url.Image(Model.Item.BigImage)) no-repeat 50% 50% / cover"></div>
+
+<div class="section news-details">
+    <div class="news-details-cover">
+        <div class="news-details-content">
+            <h1 class="page-title">@Model.Item.Name</h1>
+            <div class="icon-news">
+                <a class="fb" href=""></a>
+                <a class="vk" href=""></a>
+            </div>
+            @Html.Raw(Model.Item.Content)
+            <div class="news-navigation">
+                @if (Model.Prev != null)
+                {
+                    <a href="@L.Url(Url.Action(MVC.News.Details(Model.Prev.Id)))" class="link-details-news fl">
+                        <span class="border-arrow">
+                            <i class="icon-angle-left"></i>
+                        </span>
+                        prev
+                    </a>
+                }
+                @if (Model.Next != null)
+                {
+                    <a href="@L.Url(Url.Action(MVC.News.Details(Model.Next.Id)))" class="link-details-news fr">
+                        <span class="border-arrow">
+                            <i class="icon-angle-right"></i>
+                        </span>
+                        next
+                    </a>
+                }
+            </div>
+        </div>
+        @{Html.RenderAction(MVC.News.LatestNews());}
+    </div>
+    <div class="products-category_head">
+        <h2 class="page-title">@L.Get("news-archive")</h2>
+    </div>
+    <div class="main-page-news news-page news-list">
+        @{Html.RenderAction(MVC.News.NewsArchive());}
+    </div>
+</div>

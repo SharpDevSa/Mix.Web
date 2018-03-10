@@ -1,0 +1,108 @@
+[
+  {
+    "outputFileName": "media/js/fotorama.js",
+    "inputFiles": [
+      "media/js/fotorama.js"
+    ]
+  },
+  {
+    "outputFileName": "media/js/owl.carousel.js",
+    "inputFiles": [
+      "media/js/owl.carousel.js"
+    ]
+  },
+  {
+    "outputFileName": "media/js/owl.navigation.js",
+    "inputFiles": [
+      "media/js/owl.navigation.js"
+    ]
+  },
+  {
+    "outputFileName": "media/js/bundle.js",
+    "inputFiles": [
+      "media/js/jquery-1.11.1.min.js",
+      "media/js/PxLoader.min.js",
+      "media/js/PxLoaderImage.min.js",
+      "media/js/tweenmax.min.js",
+      "media/js/jquery.validate.min.js",
+      "media/js/jquery.validate.unobtrusive.min.js",
+      "media/js/fotorama.min.js",
+      "media/js/jquery.nav.min.js",
+      "media/js/owl.carousel.min.js",
+      "media/js/owl.navigation.min.js",
+      "media/js/tooltip.min.js",
+      "media/js/sweet-alert.min.js",
+      "media/js/js.min.js"
+    ]
+  },
+  {
+    "outputFileName": "media/js/bundle.js",
+    "inputFiles": [
+      "media/js/bundle.js"
+    ]
+  },
+  {
+    "outputFileName": "media/js/bundle.js",
+    "inputFiles": [
+      "media/js/bundle.js"
+    ]
+  },
+  {
+    "outputFileName": "media/js/bundle.js",
+    "inputFiles": [
+      "media/js/bundle.js"
+    ]
+  },
+  {
+    "outputFileName": "media/css/owl.carousel.css",
+    "inputFiles": [
+      "media/css/owl.carousel.css"
+    ]
+  },
+  {
+    "outputFileName": "media/js/bundle/bundle.js",
+    "inputFiles": [
+      "media/js/bundle/0_jquery-1.11.1.min.js",
+      "media/js/bundle/1_PxLoader.min.js",
+      "media/js/bundle/2_PxLoaderImage.min.js",
+      "media/js/bundle/3_tweenmax.min.js",
+      "media/js/bundle/fotorama.min.js",
+      "media/js/bundle/jquery.nav.min.js",
+      "media/js/bundle/jquery.validate.min.js",
+      "media/js/bundle/jquery.validate.unobtrusive.min.js",
+      "media/js/bundle/lightbox.min.js",
+      "media/js/bundle/organictabs.jquery.js",
+      "media/js/bundle/owl.carousel.min.js",
+      "media/js/bundle/owl.navigation.min.js",
+      "media/js/bundle/slick.min.js",
+      "media/js/bundle/sweet-alert.min.js",
+      "media/js/bundle/tooltip.min.js"
+    ]
+  },
+  {
+    "outputFileName": "media/css/bundle/bundle.css",
+    "inputFiles": [
+      "media/css/bundle/0_fotorama.css",
+      "media/css/bundle/1_ico-style.css",
+      "media/css/bundle/2_sweet-alert.css",
+      "media/css/bundle/3_owl.carousel.css",
+      "media/css/bundle/4_owl.theme.default.css",
+      "media/css/bundle/5_lightbox.css",
+      "media/css/bundle/6_slick.css",
+      "media/css/bundle/7_slick-theme.css",
+      "media/css/bundle/8_org-tabs.css"
+    ]
+  },
+  {
+    "outputFileName": "media/js/js.js",
+    "inputFiles": [
+      "media/js/js.js"
+    ]
+  },
+  {
+    "outputFileName": "media/css/screen.css",
+    "inputFiles": [
+      "media/css/screen.css"
+    ]
+  }
+]

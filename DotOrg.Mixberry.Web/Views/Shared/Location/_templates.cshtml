@@ -1,0 +1,520 @@
+﻿@*Верхний блок на главной странице*@
+
+<div id="top-page-slider" class="owl-carousel top-page-slider">
+    <div class="top-page-slider_item" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">I CAN SHOW<br />YOU A BRAND<br />NEW WORLD</div>
+                <a href="/catalog/selfiemania#superwide-lens" class="master-btn white">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="top-page-slider_item" style="background: url(/media/img/main-page-banner-2.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">PERFECT SOLUTION<br />FOR THE ULTIMATE<br />OUTDOOR EXPERIENCE</div>
+                <a href="/catalog/soundmania#bluetooth-speaker" class="master-btn white">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Блок с синими шейпами*@
+
+<div class="gray">
+    <div class="section home-products-shapes">
+        <h2>Products</h2>
+        <div class="col">
+            <a class="home-shape" href="/catalog/soundmania#speaker" id="flask"></a>
+            <a class="home-shape" href="/catalog/selfiemania#selfie-monopods" id="lantern"></a>
+            <a class="home-shape" href="/catalog/in-car#car-holder" id="holder"></a>
+            <span class="home-shape" id="lamp"></span>
+        </div>
+        <div class="col">
+            <a class="home-shape" href="/catalog/mobile-power#lightning-cable" id="wire"></a>
+            <a class="home-shape" href="/catalog/selfiemania#smartphone-camera-lenses" id="four-img"></a>
+            <a class="home-shape" href="/catalog/mobile-power#wall-chargers" id="loading"></a>
+            <span class="home-shape" id="mobile-frame"></span>
+        </div>
+    </div>
+</div>
+
+@*промо категорий на главной*@
+
+<div class="home-category-promo section">
+
+    <h2>Choose your mix</h2>
+    <a href="/catalog/selfiemania" class="home-category-promo_item">
+        <img src="/media/img/board.png" alt=" ">
+        <div class="home-category-promo_item-head">
+            Evolution<br />
+            on the go
+        </div>
+    </a>
+    <a href="/catalog/in-car" class="home-category-promo_item">
+        <img src="/media/img/car.png" alt=" ">
+        <div class="home-category-promo_item-head">
+            Take me<br />
+            for a drive
+        </div>
+    </a>
+    <a href="/catalog/mobile-power" class="home-category-promo_item">
+        <img src="/media/img/main-page-powered-by-lighting.jpg" alt=" ">
+        <div class="home-category-promo_item-head">
+            POWERED <br />
+            BY LIGHTNING
+        </div>
+    </a>
+    <a href="/catalog/soundmania" class="home-category-promo_item">
+        <img src="/media/img/main-page-feel-the-bit.jpg" alt=" ">
+        <div class="home-category-promo_item-head">
+            FEEL <br />
+            THE BEAT
+        </div>
+    </a>
+</div>
+
+@*топ блок с продуктами в основном разделе каталога*@
+
+<div id="top-page-slider" class="owl-carousel top-page-slider">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/alps.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">Selfie mania<br />Super LENS</div>
+                <a href="/catalog/selfiemania#superwide-lens" class="master-btn white">LEARN MORE</a>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <img src="/media/img/lens.png" alt="mixberry">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/alps.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">Selfie mania<br />LENS  SET</div>
+                <a href="/catalog/selfiemania#lens-set" class="master-btn white">LEARN MORE</a>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <img src="/media/img/lens-set.png" alt="mixberry">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*меню категорий в каталоге*@
+
+@{
+    var catalog = Model.GetCatalog();
+    var first = true;
+}
+<div class="products-menu">
+    <div class="section">
+        <ul>
+            @foreach (var c in catalog.Where(x => x.Visibility))
+            {
+                <li class="@(first?"active":"")"><a href="#@(c.Alias)-head">@c.Name</a></li>
+                first = false;
+            }
+        </ul>
+    </div>
+</div>
+
+
+@*шаблон вывода товаров в каталоге*@
+
+@{ var groups = Model.Category.Groups; }
+@if (groups.Any())
+{
+    <a name="@(Model.Category.Alias)-head"></a>
+    <div class="products-category section">
+        <div class="products-category_head">
+            <h2>@Model.Category.Name</h2>
+            <div class="i-select products-select fr">
+                <span class="i-select__value">@groups.First().Name</span>
+                <select data-select-block="#@(Model.Category.Alias)-groups .products-list-wrapper" class="i-select__select catalog-select">
+                    <option value="@(Model.Category.Alias)-all">ALL</option>
+                    @foreach (var g in groups)
+                    {
+                        <option value="@g.Alias">@g.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="products-list" id="@(Model.Category.Alias)-groups">
+            <div class="products-list-wrapper" id="@(Model.Category.Alias)-all" style="display: block;">
+                @foreach (var g in groups)
+                {
+                    foreach (var p in g.Products)
+                    {
+                        @Product(p.Alias, "white-single-product", Model.Category, g)
+                    }
+                }
+            </div>
+            @{ var first = true; }
+
+            @foreach (var g in groups)
+            {
+                <div class="products-list-wrapper" id="@g.Alias" style="display: none;">
+                    @foreach (var p in g.Products)
+                    {
+                        @Product(p.Alias, "white-single-product", Model.Category, g)
+                    }
+                </div>
+                    first = false;
+            }
+        </div>
+    </div>
+}
+
+    @*шаблон товара в каталоге*@
+
+    <div class="products-list_item">
+        <a class="products-list_item-image" href="/catalog/@(Model.Category.Alias)#@(Model.Product.Alias)">
+            <img src="@Image(Model.Product.ModelImage)?width=250">
+        </a>
+        <div class="products-list_item-description">
+            <div class="products-list_item-name">@Model.Product.Name</div>
+            @Raw(Model.Product.Description)
+        </div>
+    </div>
+
+    @*верхний блок в категории с товарами*@
+
+
+    <div class="top-page-slider category">
+        <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+            <div class="section">
+                <div class="top-page-slider_item-content">
+                    <div class="slide-head">SELFIEMANIA</div>
+                    <p>
+                        Is your every picture worth a thousand words? <br />
+                        Then get ready to discover a new level of good photo storytelling with
+                        our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                        And maybe your pictures will score millions?
+                    </p>
+                </div>
+                <div class="top-page-slider_item-content">
+                    <div class="top-page-slider_item-content_cover">
+                        <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*секция с синим блоком слева*@
+
+    <div class="category-section left-handed-section">
+        <div class="category-section_text col">
+            <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+        </div>
+        <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+    </div>
+
+    @*секция с блоком слева без синего фона*@
+
+    <div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+        <div class="category-section_text col">
+            <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+        </div>
+        <div class="category-section_image col">&nbsp;</div>
+    </div>
+
+    @*секция с синим блоком справа*@
+
+    <div class="category-section right-handed-section">
+        <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+        <div class="category-section_text col">
+            <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+        </div>
+    </div>
+
+    @*секция с блоком справа без синего фона*@
+
+    <div class="category-section right-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+        <div class="category-section_image col">&nbsp;</div>
+        <div class="category-section_text col">
+            <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+        </div>
+    </div>
+
+    @*блок содержащий товары в категории*@
+
+    <div class="gray">
+        <div class="section">
+            <div class="product-list">
+                @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+            </div>
+        </div>
+    </div>
+
+    @*шаблон товарной позиции*@
+
+    <div class="product">
+        <a name="@Model.Product.Alias"></a>
+        <div class="product-card front-side">
+            <div class="product-card_image">
+                <div class="product-card_image-cover">
+                    <img src="@Image(Model.Product.ModelImage)?width=300&height=380">
+                </div>
+            </div>
+            <div class="product-card_description">
+                <div class="product-name">@Model.Product.Name</div>
+                <div class="product-description">
+                    @Raw(Model.Product.Description)
+                </div>
+            </div>
+            @if (Model.Product.Models.Count() > 1)
+            {
+                <div class="product-card_color">
+                    @{
+                var first = true;
+                var index = 0;
+                    }
+                    @foreach (var item in Model.Product.Models)
+                    {
+                        <div style="background:@item.Color;" class="product-card_color-dot @(first?" active":"")" data-url="@Image(item.Image)?width=340&height=420"><span class="product-card_color-dot_circle"></span></div>
+                        index++;
+                        first = false;
+                    }
+                </div>
+            }
+        </div>
+        <div class="product-card back-side">
+            <div class="product-card_image">
+                <div class="product-card_image-cover">
+                    <img src="@Image(Model.Product.SpecImage)?width=300&height=380" alt="" />
+                </div>
+            </div>
+            <div class="product-card_description">
+                <div class="product-name">specification</div>
+                <div class="product-description">
+                    @Raw(Model.Product.Specification)
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @*старые шаблоны товарной позиции*@
+
+    <div class="wrapper-item right">
+        <a name="@Model.Product.Alias"></a>
+        <div class="item">
+            <div class="wrapper-img top">
+                <div class="img">
+                    <img src="@Image(Model.Product.ModelImage)?width=300&height=380">
+                </div>
+            </div>
+            <div class="wrapper-text-product">
+                <div class="text-product">
+
+                    <p class="name">@Model.Product.Name</p>
+                    <div class="description">
+                        @Raw(Model.Product.Description)
+                    </div>
+
+                </div>
+            </div>
+            @if (Model.Product.Models.Count() > 1)
+            {
+                <div class="products-color">
+                    @{
+                var first = true;
+                var index = 0;
+                    }
+                    @foreach (var item in Model.Product.Models)
+                    {
+                        <div style="background:@item.Color;" class="color-brown @(first?"active":"")" data-url="@Image(item.Image)?width=340&height=420"><span></span></div>
+                        index++;
+                        first = false;
+                    }
+                </div>
+            }
+        </div>
+        <div class="wrapper-item temp" style="display: none;">
+            <div class="item">
+                <div class="wrapper-img">
+                    <div class="img">
+                        <img src="@Image(Model.Product.SpecImage)?width=340&height=420" alt="" />
+                    </div>
+                </div>
+                <div class="wrapper-text-product">
+                    <div class="text-product">
+                        <div class="text-product">
+                            <p class="name">specification</p>
+                            <div class="description">
+                                @Raw(Model.Product.Specification)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper-item left">
+        <a name="@Model.Product.Alias"></a>
+        <div class="item">
+            <div class="wrapper-img top">
+                <div class="img">
+                    <img src="@Image(Model.Product.ModelImage)?width=300&height=380">
+                </div>
+            </div>
+            <div class="wrapper-text-product">
+                <div class="text-product">
+                    <p class="name">@Model.Product.Name</p>
+                    <div class="description">
+                        @Raw(Model.Product.Description)
+                    </div>
+                </div>
+            </div>
+            @if (Model.Product.Models.Count() > 1)
+            {
+                <div class="products-color">
+                    @{
+                var first = true;
+                var index = 0;
+                    }
+                    @foreach (var item in Model.Product.Models)
+                    {
+                        <div style="background:@item.Color;" class="color-brown @(first?"active":"")" data-url="@Image(item.Image)?width=340&height=420"><span></span></div>
+                        index++;
+                        first = false;
+                    }
+                </div>
+            }
+        </div>
+        <div class="wrapper-item temp right" style="display: none;">
+            <div class="item">
+                <div class="wrapper-img">
+                    <div class="img">
+                        <img src="@Image(Model.Product.SpecImage)?width=340&height=420" />
+                    </div>
+                </div>
+                <div class="wrapper-text-product">
+                    <div class="text-product">
+                        @if (Model.Product.Title != null)
+                        {
+                            <p class="name">@Raw(Model.Product.Title)</p>
+                        }
+                        else
+                        {
+                            <p class="name">specificaton</p>
+                        }
+                        <div class="description">
+                            @Raw(Model.Product.Specification)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*колонка в разделе sounmania*@
+    <div id="sound-mania">
+        <div class="section">
+            <div class="speaker-features col">
+                <div class="speaker-features_cover">
+                    <div class="speaker-features_item">
+                        <img src="/media/img/speaker-icons1.png">
+                        <div>
+                            <p>
+                                <span>2.0 CH Dual Chanels<br /></span>
+                                Dual Speacker Drivers, Dual passive<br /> Radiator, Rated Power 5W, 360°<br /> Surround Stereo Sound.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speaker-features_item">
+                        <img src="/media/img/speaker-icons2.png">
+                        <div>
+                            <p>
+                                <span>Battery Life</span>
+                                Class A high capacity lithium<br /> battery, 1800 mAh.Support 3-5<br /> hours continuous music playback.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speaker-features_item">
+                        <img src="/media/img/speaker-icons3.png">
+                        <div>
+                            <p>
+                                <span>Bluetooth 4.0</span>
+                                Perfect compatible with iOS,<br /> Android system Bluetooth transmit<br /> distance over 15 meters.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="speaker-gallery" class="speaker col">
+                <div class="speaker-features_cover">
+                    <img src="/media/img/flask-blue-big.png" alt="" />
+                    <div class="product-card_color speaker-button">
+                        <a href="/media/img/flask-blue-big.png" class="product-card_color-dot sky active"><span class="product-card_color-dot_circle"></span></a>
+                        <a href="/media/img/speaker_gr.png" class="product-card_color-dot dark-gray"><span class="product-card_color-dot_circle"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-features col">
+                <div class="speaker-features_cover">
+                    <div class="speaker-features_item">
+                        <img src="/media/img/speaker-icons4.png">
+                        <div>
+                            <p>
+                                <span>Pro Outdoor Materials</span>
+                                Adopt silicone with high elasticity<br />
+                                match with high strength metal parts
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speaker-features_item">
+                        <img src="/media/img/speaker-icons5.png">
+                        <div>
+                            <p>
+                                <span>Three Proof Design</span>
+                                Water Splash Proof, Dust proof,<br /> Drop Proof.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="speaker-features_item">
+                        <img src="/media/img/speaker-icons6.png">
+                        <div>
+                            <p>
+                                <span>Portable Design</span>
+                                Speaker can stand or be flat<br /> placed. Mountable on bicycle rack<br /> Enjoy music anytime, anywhere.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+@*видео блок*@
+
+<div id="lightmania-video">
+    <div class="category-section right-handed-section video-cover">
+
+        <div class="category-section_image col">
+            <div class="video-wrap">
+                <video>
+                    <source src="/content/data/smartlamp-mixberry.mp4" />
+                </video>
+                <span class="video-button video-wrap_play">
+                    <i class="iconmoon iconmoon-play2"></i>
+                </span>
+                <span class="video-button video-wrap_pause">
+                    <i class="iconmoon iconmoon-pause"></i>
+                </span>
+            </div>
+        </div>
+        <div class="category-section_text col">
+            <h2 class="slide-head"> Как это работает</h2>
+        </div>
+    </div>
+</div>

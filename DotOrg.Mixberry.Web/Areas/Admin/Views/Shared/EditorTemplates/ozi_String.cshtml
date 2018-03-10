@@ -1,0 +1,4 @@
+﻿@{
+    var value = ViewData.TemplateInfo.FormattedModelValue;
+}
+<input type="text" name="@ViewData.TemplateInfo.HtmlFieldPrefix" value="@value" class="ozi-string" @if (WebContext.FieldSettings.Disabled) { <text>disabled="disabled"</text> } @if (WebContext.FieldSettings.Readonly) { <text>readonly="readonly"</text> }/>

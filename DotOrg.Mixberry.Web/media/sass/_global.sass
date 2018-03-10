@@ -1,0 +1,339 @@
+$lighten_amount: 30%
+$darken_amount: 10%
+$bigtablet: 1120px
+$half_bigtablet: 980px
+$midtablet: 768px
+$smalltablet: 600px
+$smartphone_landscape: 480px
+$iphone6_portrait: 360px
+$iphone5_portrait: 320px
+=b
+	display: block
+	position: absolute
+	content: " "
+	font-size: 1px
+=up
+	text-transform: uppercase
+=clearfix
+	&:after
+		display: table
+		width: 100%
+		content: " "
+		clear: both
+		height: 0
+		width: 0
+=opacity($level)
+	opacity: $level
+	filter: alpha(opacity=$level*100)
+*
+	padding: 0
+	margin: 0
+	border-collapse: collapse
+	outline: none
+html, body
+	width: 100%
+	height: 100%
+body
+	font: 16px/1.37 'ProximaNovaRegular', Arial
+	color: #666666
+p, ul, ol
+	margin-bottom: 20px
+a
+	img
+		border: 0
+a
+	text-decoration: none
+	color: inherit
+	&[name]
+		height: 0
+		font-size: 0
+ul, ol
+	margin-left: 22px
+h1, h2, h3, h4, h5, h6
+	font-weight: 600
+	margin-bottom: 20px
+h1, h1.h1-banner
+	font-size: 75px
+	color: #fff
+	font-family: 'fugue_headline' 
+	text-transform: uppercase
+	margin: 10px 0 10px
+	line-height: 1.1
+	+max-screen(768px)
+		font-size: 48px
+	+max-screen(360px)
+		font-size: 30px
+
+.h1-banner
+	font-size: 54px
+	color: #fff
+	font-family: 'fugue_headline' 
+	text-transform: uppercase
+	margin: 10px 0 10px
+	line-height: 1.1
+	+max-screen(1120px)
+		font-size: 47px
+	+max-screen(980px)
+		font-size: 30px
+	+max-screen(600px)
+		font-size: 25px
+	+max-screen(480px)
+		font-size: 20px
+.h1
+	font-size: 38px
+	color: #000
+	margin: 70px 0 30px
+	text-transform: uppercase
+	font-weight: normal
+	font-family: 'fugue_headline'
+	+max-screen(360px)
+		font-size: 30px
+	+max-screen(800px)
+		font-size: 32px
+h2, .h2
+	font-size: 36px
+	color: #111
+	margin: 70px 0 30px
+	font-family: 'ProximaNovaLight' 
+	text-transform: inherit
+	+max-screen(360px)
+		font-size: 30px
+		margin: 30px 0 20px 15px
+		display: inline-block
+h3, .h3
+	font-size: 26px
+	color: #000
+	font-family: 'ProximaNovaBold'
+	margin-bottom: 15px
+h4, .h4
+	font-size: 22px
+	color: #000
+	font-family: 'ProximaNovaRegular'
+	margin-bottom: 20px
+#breadcrumbs
+	font-size: 13px
+	margin: 30px 0 25px
+	font-weight: 600
+	a
+		padding: 0 5
+		color: #808080
+		display: inline-block
+		padding: 0 5px 0
+		&:first-child
+			padding: 0 5 0 0 
+	span
+		padding-left: 5px
+		margin-bottom: 70px
+		color: #ed1b30
+.fl
+	float: left
+	+max-screen(360px)
+		float: none
+.fr
+	float: right
+	+max-screen(360px)
+		float: none
+.center
+	text-align: center
+.banner
+	position: relative
+	height: 600px
+	overflow: hidden
+	+max-screen(980px)
+		height: 400px
+	.item-banner
+		position: absolute
+		top: 70px
+		width: 100%
+		.description 
+			p
+				margin: 25px 0 70px
+				line-height: 1.5
+		+max-screen(980px)
+			top: 0
+.two-cols	
+	.col
+		width: 50%
+		&.col40
+			width: 41%
+		&.col60
+			width: 59%
+		+max-screen(600px)
+			width: 100%
+.three-cols
+	.col
+		width: 33%
+.cols
+	.col
+		float: left
+		+max-screen(360px)
+			float: none
+.hidden
+	+clr
+.inline
+	vertical-align: top
+	display: inline-block
+.background-blue
+	background: #003399
+.gray
+	background: #f9f9f9
+.dark-gray
+	background: #ebebeb
+.blue
+	color: #003399
+.white
+	color: #fff
+.top-zero
+	margin-top: 0 !important
+.one-banner
+	height: 600px
+	overflow: hidden
+	img
+		min-height: 100%
+		min-width: 100%
+.banner-img
+	width: 100%
+	height: 100%
+.img-slide
+	width: 100%
+	min-height: 600px
+.content-two-col
+	margin: 50px 0 70px
+	overflow: hidden
+	.field-contents
+		width: 600px
+		.h2
+			margin: 30px 0 20px
+	.content-text
+		display: inline-block
+		margin-left: 45px
+		vertical-align: top
+		width: 550px
+#scroll-up
+	display: none
+	width: 40px
+	height: 40px
+	background: url("../img/button_up.svg") no-repeat 
+	position: fixed
+	right: 51px
+	cursor: pointer
+	bottom: 110px
+	fill: #003399
+	z-index: 100
+	+max-screen(800px)
+		opacity: 0
+.no-bg
+	background: none !important
+
+.tooltip
+	position: absolute
+	z-index: 1070
+	display: block
+	visibility: visible
+	color: #fff
+	&.top
+		padding: 5px 0
+		margin-top: -3px
+		.tooltip-arrow
+			bottom: 0
+			left: 50%
+			margin-left: -5px
+			border-width: 5px 5px 0
+			border-top-color: #fff
+	&.right
+		padding: 0 5px
+		margin-left: 3px
+		.tooltip-arrow
+			top: 50%
+			left: 0
+			margin-top: -5px
+			border-width: 5px 5px 5px 0
+			border-right-color: #fff
+	&.bottom
+		padding: 5px 0
+		margin-top: 3px
+		.tooltip-arrow
+			top: 0
+			left: 50%
+			margin-left: -5px
+			border-width: 0 5px 5px
+			border-bottom-color: #fff
+	&.left
+		padding: 0 5px
+		margin-left: -3px
+		.tooltip-arrow
+			top: 50%
+			right: 0
+			margin-top: -5px
+			border-width: 5px 0 5px 5px
+			border-left-color: #fff
+	&.top-left
+		.tooltip-arrow
+			bottom: 0
+			left: 5px
+			border-width: 5px 5px 0
+			border-top-color: #fff
+	&.top-right
+		.tooltip-arrow
+			right: 5px
+			bottom: 0
+			border-width: 5px 5px 0
+			border-top-color: #fff
+	&.bottom-left
+		.tooltip-arrow 
+			top: 0
+			left: 5px
+			border-width: 0 5px 5px
+			border-bottom-color: #fff
+	&.bottom-right
+		.tooltip-arrow
+			top: 0
+			right: 5px
+			border-width: 0 5px 5px
+			border-bottom-color: #fff
+	.tooltip-inner
+		max-width: 200px
+		padding: 4px 10px 3px 10px
+		color: #111
+		text-align: center
+		text-decoration: none
+		background-color: #fff
+		font-size: 12px
+		white-space: normal
+		white-space: pre-wrap
+		white-space: -moz-pre-wrap
+		white-space: -pre-wrap
+		white-space: -o-pre-wrap
+		word-wrap: break-word
+	.tooltip-arrow
+		position: absolute
+		width: 0
+		height: 0
+		border-color: transparent
+		border-style: solid
+.razor-error
+	width: 100%
+	height: 200px
+	overflow-y: auto
+	background: white
+	color: black
+	font-size: 15px
+	h1
+		font-size: 2em
+		color: black
+#mask
+	background: rgba(255,255,255,0.3)
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 100
+	+opacity(0)
+	display: none
+	.spinner
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -25px
+		margin-left: -25px

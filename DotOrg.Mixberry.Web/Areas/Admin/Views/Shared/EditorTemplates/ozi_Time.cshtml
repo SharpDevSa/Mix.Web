@@ -1,0 +1,22 @@
+﻿@{
+    var fieldSettings = WebContext.FieldSettings;
+    var id = fieldSettings.Name;
+    
+    string value = (Model != null) ? Model.ToString(@"hh\:mm") : "";
+}
+
+<input type="text" id="@id" value="@value" name="@ViewData.TemplateInfo.HtmlFieldPrefix" 
+    @if (fieldSettings.Disabled)
+    {
+        <text>disabled="disabled"</text>
+    } 
+    @if (fieldSettings.Readonly)
+    {
+        <text>readonly="readonly"</text>
+    }/>
+<script>
+    $.timepicker.setDefaults($.timepicker.regional['ru']);
+    $("#@id").timepicker({
+        minDate: new Date(2100, 1, 1) // чтобы спрятать кнопку "Сейчас" - для TimeSpan она не имеет смысла
+    });
+</script>

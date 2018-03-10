@@ -1,0 +1,25 @@
+﻿@model string
+
+@{
+    WebContext.IncludeCodeScripts.Add("~/Areas/Admin/content/Scripts/CodeMirror/mode/razor/razor.js");
+    var name = Model.Replace("\\", "_").Replace(".", "_");
+    var content = System.IO.File.ReadAllText(Model);
+    var date = System.IO.File.GetLastWriteTimeUtc(Model);
+}
+
+<textarea id="@name" name="@name">@content</textarea>
+<input type="hidden" name="dotorg_viewname" value="@Model" />
+<input type="hidden" name="dotorg_viewdate" value="@date.ToFileTimeUtc()" />
+<input type="hidden" id="view-changed" name="dotorg_viewchanged" value="false" />
+<script type="text/javascript">
+    var cm = CodeMirror.fromTextArea(document.getElementById("@(name)"), {
+        value: "@(ViewData.TemplateInfo.FormattedModelValue.ToString().Replace("\"", "\\\"").Replace("\n", "").Replace("\r", "\\\r"))",
+        mode: { name: "razor", alignCDATA: true },
+        lineNumbers: true,
+        tabSize: 4,
+        matchBrakets: true
+    });
+    cm.on("change", function () {
+        $("#view-changed").val(true);
+    });
+</script>

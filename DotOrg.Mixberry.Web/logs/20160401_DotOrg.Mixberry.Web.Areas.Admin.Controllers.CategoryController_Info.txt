@@ -1,0 +1,3291 @@
+2016-04-01 00:53:11.4545|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=21; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=73,74,76,77,107,110,111; Description=; Groups={ list: [{"id":29,"name":"Линзы для смартфонов","alias":"lenses","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":true},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":true},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Линзы для смартфонов"},{"id":30,"name":"Селфи моноподы","alias":"sticks","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":true},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":true},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Селфи моноподы"},{"id":60,"name":"Life camera","alias":"life-camera-ru","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":true}],"getName":"Life camera"}]}; BlockId158=158; BlockSort158=0; BlockName158=SELFIEMANIA; BlockAlias158=selfiemania; BlockContent158=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                  Ты тоже считаешь, что одно крутое фото стоит тысячи слов? <br />
+                  Тогда приготовься: твои фотоистории станут максимально выразительны, если ты используешь наши лучшие фотоаксессуары для цифровых фотохудожников и селфиманьяков.
+                   И тогда, кто знает, может быть, твои фото станут стоить миллионы?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId216=216; BlockSort216=1; BlockName216=LIFE IS LIFE; BlockAlias216=life-is-life-ru; BlockContent216=<div class="category-section left-handed-section">
+    <div class="category-section_image col">
+      <iframe width="45%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>     
+    </div>
+</div>
+ <div class="category-section_text col">
+       <h2 class="slide-head">ЖИЗНЬ КАК КИНО.<br />СНИМАЙ!</h2>
+ </div>; BlockId217=217; BlockSort217=2; BlockName217=LIFE CAMERA; BlockAlias217=LIFE-CAMERA; BlockContent217=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera-ru", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId152=152; BlockSort152=3; BlockName152=ВЗГЛЯНИ НА МИР ШИРЕ; BlockAlias152=look-at-the-world-wider; BlockContent152=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">ВЗГЛЯНИ НА<br /> МИР ШИРЕ</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId153=153; BlockSort153=4; BlockName153=ЛИНЗЫ ДЛЯ СМАРТФОНОВ; BlockAlias153=smartphone-camera-lenses; BlockContent153=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId154=154; BlockSort154=5; BlockName154=ЛУЧШЕЕ ФОТО; BlockAlias154=the-best-photo; BlockContent154=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE ЛИНЗА</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId155=155; BlockSort155=6; BlockName155=ОПТИЧЕСКИЕ ЛИНЗЫ; BlockAlias155=optical-lenses; BlockContent155=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Камера обрезает кадр, не позволяя запечатлеть всю картину целиком? Попробуй широкоугольную линзу – с ней камера сможет передать Big Picture именно так, как ты видишь своими глазами!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Одна дождевая капля на травинке способна отразить всю красоту грозового ливня. Вооружив камеру макро-линзой, ты не упустишь ни одного крошечного проявления природной красоты!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Это настоящее чудо! Отныне больше никаких компромиссов между портретом и пейзажем, теперь в кадре будут все: твой друг, его девушка, её собачка, твой байк, парни вокруг него плюс целая улица на заднем плане – если используешь Fisheye линзу, один кадр вместит всё, что ты хочешь! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>УНИВЕРСАЛЬНОЕ КРЕПЛЕНИЕ</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Совместимо со всеми популярными смартфонами и планшетными компьютерами.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId156=156; BlockSort156=7; BlockName156=СМОТРИ ВОКРУГ ШИРОКИМ ВЗГЛЯДОМ; BlockAlias156=see-the-world-wider; BlockContent156=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">СМОТРИ ВОКРУГ<br />ШИРОКИМ ВЗГЛЯДОМ</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId157=157; BlockSort157=8; BlockName157=СЕЛФИ МОНОПОДЫ; BlockAlias157=selfie-monopods; BlockContent157=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId159=159; BlockSort159=9; BlockName159=ТЕПЕРЬ ТЫ ГОТОВ ДЛЯ СЕЛФИ МИРОВОГО МАСШТАБА; BlockAlias159=now-you-have; BlockContent159=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">ТЕПЕРЬ ТЫ ГОТОВ<br />ДЛЯ СЕЛФИ<br />МИРОВОГО МАСШТАБА</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 01:00:21.0095|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=21; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=73,74,76,77,107,110,111; Description=; Groups={ list: [{"id":29,"name":"Линзы для смартфонов","alias":"lenses","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":true},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":true},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Линзы для смартфонов"},{"id":30,"name":"Селфи моноподы","alias":"sticks","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":true},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":true},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Селфи моноподы"},{"id":60,"name":"Life camera","alias":"life-camera-ru","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":true}],"getName":"Life camera"}]}; BlockId158=158; BlockSort158=0; BlockName158=SELFIEMANIA; BlockAlias158=selfiemania; BlockContent158=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                  Ты тоже считаешь, что одно крутое фото стоит тысячи слов? <br />
+                  Тогда приготовься: твои фотоистории станут максимально выразительны, если ты используешь наши лучшие фотоаксессуары для цифровых фотохудожников и селфиманьяков.
+                   И тогда, кто знает, может быть, твои фото станут стоить миллионы?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId216=216; BlockSort216=1; BlockName216=LIFE IS LIFE; BlockAlias216=life-is-life-ru; BlockContent216=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="45%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+            <h2 class="slide-head">ЖИЗНЬ КАК КИНО.<br />СНИМАЙ!</h2>
+        </div>
+    </div>; BlockId217=217; BlockSort217=2; BlockName217=LIFE CAMERA; BlockAlias217=LIFE-CAMERA; BlockContent217=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera-ru", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId152=152; BlockSort152=3; BlockName152=ВЗГЛЯНИ НА МИР ШИРЕ; BlockAlias152=look-at-the-world-wider; BlockContent152=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">ВЗГЛЯНИ НА<br /> МИР ШИРЕ</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId153=153; BlockSort153=4; BlockName153=ЛИНЗЫ ДЛЯ СМАРТФОНОВ; BlockAlias153=smartphone-camera-lenses; BlockContent153=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId154=154; BlockSort154=5; BlockName154=ЛУЧШЕЕ ФОТО; BlockAlias154=the-best-photo; BlockContent154=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE ЛИНЗА</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId155=155; BlockSort155=6; BlockName155=ОПТИЧЕСКИЕ ЛИНЗЫ; BlockAlias155=optical-lenses; BlockContent155=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Камера обрезает кадр, не позволяя запечатлеть всю картину целиком? Попробуй широкоугольную линзу – с ней камера сможет передать Big Picture именно так, как ты видишь своими глазами!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Одна дождевая капля на травинке способна отразить всю красоту грозового ливня. Вооружив камеру макро-линзой, ты не упустишь ни одного крошечного проявления природной красоты!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Это настоящее чудо! Отныне больше никаких компромиссов между портретом и пейзажем, теперь в кадре будут все: твой друг, его девушка, её собачка, твой байк, парни вокруг него плюс целая улица на заднем плане – если используешь Fisheye линзу, один кадр вместит всё, что ты хочешь! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>УНИВЕРСАЛЬНОЕ КРЕПЛЕНИЕ</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Совместимо со всеми популярными смартфонами и планшетными компьютерами.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId156=156; BlockSort156=7; BlockName156=СМОТРИ ВОКРУГ ШИРОКИМ ВЗГЛЯДОМ; BlockAlias156=see-the-world-wider; BlockContent156=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">СМОТРИ ВОКРУГ<br />ШИРОКИМ ВЗГЛЯДОМ</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId157=157; BlockSort157=8; BlockName157=СЕЛФИ МОНОПОДЫ; BlockAlias157=selfie-monopods; BlockContent157=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId159=159; BlockSort159=9; BlockName159=ТЕПЕРЬ ТЫ ГОТОВ ДЛЯ СЕЛФИ МИРОВОГО МАСШТАБА; BlockAlias159=now-you-have; BlockContent159=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">ТЕПЕРЬ ТЫ ГОТОВ<br />ДЛЯ СЕЛФИ<br />МИРОВОГО МАСШТАБА</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _apply=Применить|
+2016-04-01 01:03:48.3183|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=21; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=73,74,76,77,107,110,111; Description=; Groups={ list: [{"id":29,"name":"Линзы для смартфонов","alias":"lenses","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":true},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":true},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Линзы для смартфонов"},{"id":30,"name":"Селфи моноподы","alias":"sticks","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":true},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":true},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Селфи моноподы"},{"id":60,"name":"Life camera","alias":"life-camera-ru","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":true}],"getName":"Life camera"}]}; BlockId158=158; BlockSort158=0; BlockName158=SELFIEMANIA; BlockAlias158=selfiemania; BlockContent158=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                  Ты тоже считаешь, что одно крутое фото стоит тысячи слов? <br />
+                  Тогда приготовься: твои фотоистории станут максимально выразительны, если ты используешь наши лучшие фотоаксессуары для цифровых фотохудожников и селфиманьяков.
+                   И тогда, кто знает, может быть, твои фото станут стоить миллионы?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId216=216; BlockSort216=1; BlockName216=LIFE IS LIFE; BlockAlias216=life-is-life-ru; BlockContent216=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="45%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+            <h2 class="slide-head">ЖИЗНЬ КАК КИНО.<br />СНИМАЙ!</h2>
+        </div>
+    </div>; BlockId217=217; BlockSort217=2; BlockName217=LIFE CAMERA; BlockAlias217=LIFE-CAMERA; BlockContent217=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera-ru", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId152=152; BlockSort152=3; BlockName152=ВЗГЛЯНИ НА МИР ШИРЕ; BlockAlias152=look-at-the-world-wider; BlockContent152=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">ВЗГЛЯНИ НА<br /> МИР ШИРЕ</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId153=153; BlockSort153=4; BlockName153=ЛИНЗЫ ДЛЯ СМАРТФОНОВ; BlockAlias153=smartphone-camera-lenses; BlockContent153=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId154=154; BlockSort154=5; BlockName154=ЛУЧШЕЕ ФОТО; BlockAlias154=the-best-photo; BlockContent154=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE ЛИНЗА</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId155=155; BlockSort155=6; BlockName155=ОПТИЧЕСКИЕ ЛИНЗЫ; BlockAlias155=optical-lenses; BlockContent155=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Камера обрезает кадр, не позволяя запечатлеть всю картину целиком? Попробуй широкоугольную линзу – с ней камера сможет передать Big Picture именно так, как ты видишь своими глазами!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Одна дождевая капля на травинке способна отразить всю красоту грозового ливня. Вооружив камеру макро-линзой, ты не упустишь ни одного крошечного проявления природной красоты!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Это настоящее чудо! Отныне больше никаких компромиссов между портретом и пейзажем, теперь в кадре будут все: твой друг, его девушка, её собачка, твой байк, парни вокруг него плюс целая улица на заднем плане – если используешь Fisheye линзу, один кадр вместит всё, что ты хочешь! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>УНИВЕРСАЛЬНОЕ КРЕПЛЕНИЕ</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Совместимо со всеми популярными смартфонами и планшетными компьютерами.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId156=156; BlockSort156=7; BlockName156=СМОТРИ ВОКРУГ ШИРОКИМ ВЗГЛЯДОМ; BlockAlias156=see-the-world-wider; BlockContent156=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">СМОТРИ ВОКРУГ<br />ШИРОКИМ ВЗГЛЯДОМ</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId157=157; BlockSort157=8; BlockName157=СЕЛФИ МОНОПОДЫ; BlockAlias157=selfie-monopods; BlockContent157=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId159=159; BlockSort159=9; BlockName159=ТЕПЕРЬ ТЫ ГОТОВ ДЛЯ СЕЛФИ МИРОВОГО МАСШТАБА; BlockAlias159=now-you-have; BlockContent159=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">ТЕПЕРЬ ТЫ ГОТОВ<br />ДЛЯ СЕЛФИ<br />МИРОВОГО МАСШТАБА</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 01:04:15.1175|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=21; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=73,74,76,77,107,110,111; Description=; Groups={ list: [{"id":29,"name":"Линзы для смартфонов","alias":"lenses","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":true},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":true},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Линзы для смартфонов"},{"id":30,"name":"Селфи моноподы","alias":"sticks","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":true},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":true},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Селфи моноподы"},{"id":60,"name":"Life camera","alias":"life-camera-ru","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":true}],"getName":"Life camera"}]}; BlockId158=158; BlockSort158=0; BlockName158=SELFIEMANIA; BlockAlias158=selfiemania; BlockContent158=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                  Ты тоже считаешь, что одно крутое фото стоит тысячи слов? <br />
+                  Тогда приготовься: твои фотоистории станут максимально выразительны, если ты используешь наши лучшие фотоаксессуары для цифровых фотохудожников и селфиманьяков.
+                   И тогда, кто знает, может быть, твои фото станут стоить миллионы?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId216=216; BlockSort216=1; BlockName216=LIFE IS LIFE; BlockAlias216=life-is-life-ru; BlockContent216=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="45%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+            <h2 class="slide-head">ЖИЗНЬ КАК КИНО.<br />СНИМАЙ!</h2>
+        </div>
+    </div>; BlockId217=217; BlockSort217=2; BlockName217=LIFE CAMERA; BlockAlias217=LIFE-CAMERA; BlockContent217=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera-ru", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId152=152; BlockSort152=3; BlockName152=ВЗГЛЯНИ НА МИР ШИРЕ; BlockAlias152=look-at-the-world-wider; BlockContent152=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">ВЗГЛЯНИ НА<br /> МИР ШИРЕ</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId153=153; BlockSort153=4; BlockName153=ЛИНЗЫ ДЛЯ СМАРТФОНОВ; BlockAlias153=smartphone-camera-lenses; BlockContent153=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId154=154; BlockSort154=5; BlockName154=ЛУЧШЕЕ ФОТО; BlockAlias154=the-best-photo; BlockContent154=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE ЛИНЗА</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId155=155; BlockSort155=6; BlockName155=ОПТИЧЕСКИЕ ЛИНЗЫ; BlockAlias155=optical-lenses; BlockContent155=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Камера обрезает кадр, не позволяя запечатлеть всю картину целиком? Попробуй широкоугольную линзу – с ней камера сможет передать Big Picture именно так, как ты видишь своими глазами!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Одна дождевая капля на травинке способна отразить всю красоту грозового ливня. Вооружив камеру макро-линзой, ты не упустишь ни одного крошечного проявления природной красоты!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Это настоящее чудо! Отныне больше никаких компромиссов между портретом и пейзажем, теперь в кадре будут все: твой друг, его девушка, её собачка, твой байк, парни вокруг него плюс целая улица на заднем плане – если используешь Fisheye линзу, один кадр вместит всё, что ты хочешь! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>УНИВЕРСАЛЬНОЕ КРЕПЛЕНИЕ</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Совместимо со всеми популярными смартфонами и планшетными компьютерами.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId156=156; BlockSort156=7; BlockName156=СМОТРИ ВОКРУГ ШИРОКИМ ВЗГЛЯДОМ; BlockAlias156=see-the-world-wider; BlockContent156=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">СМОТРИ ВОКРУГ<br />ШИРОКИМ ВЗГЛЯДОМ</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId157=157; BlockSort157=8; BlockName157=СЕЛФИ МОНОПОДЫ; BlockAlias157=selfie-monopods; BlockContent157=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId159=159; BlockSort159=9; BlockName159=ТЕПЕРЬ ТЫ ГОТОВ ДЛЯ СЕЛФИ МИРОВОГО МАСШТАБА; BlockAlias159=now-you-have; BlockContent159=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">ТЕПЕРЬ ТЫ ГОТОВ<br />ДЛЯ СЕЛФИ<br />МИРОВОГО МАСШТАБА</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _apply=Применить|
+2016-04-01 01:08:31.6474|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=21; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=73,74,76,77,107,110,111; Description=; Groups={ list: [{"id":29,"name":"Линзы для смартфонов","alias":"lenses","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":true},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":true},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Линзы для смартфонов"},{"id":30,"name":"Селфи моноподы","alias":"sticks","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":true},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":true},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Селфи моноподы"},{"id":60,"name":"Life camera","alias":"life-camera-ru","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":true}],"getName":"Life camera"}]}; BlockId158=158; BlockSort158=0; BlockName158=SELFIEMANIA; BlockAlias158=selfiemania; BlockContent158=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                  Ты тоже считаешь, что одно крутое фото стоит тысячи слов? <br />
+                  Тогда приготовься: твои фотоистории станут максимально выразительны, если ты используешь наши лучшие фотоаксессуары для цифровых фотохудожников и селфиманьяков.
+                   И тогда, кто знает, может быть, твои фото станут стоить миллионы?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId216=216; BlockSort216=1; BlockName216=LIFE IS LIFE; BlockAlias216=life-is-life-ru; BlockContent216=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="45%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+            <h2 class="slide-head">ЖИЗНЬ КАК КИНО.<br />СНИМАЙ!</h2>
+        </div>
+    </div>; BlockId217=217; BlockSort217=2; BlockName217=LIFE CAMERA; BlockAlias217=LIFE-CAMERA; BlockContent217=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera-ru", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId152=152; BlockSort152=3; BlockName152=ВЗГЛЯНИ НА МИР ШИРЕ; BlockAlias152=look-at-the-world-wider; BlockContent152=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">ВЗГЛЯНИ НА<br /> МИР ШИРЕ</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId153=153; BlockSort153=4; BlockName153=ЛИНЗЫ ДЛЯ СМАРТФОНОВ; BlockAlias153=smartphone-camera-lenses; BlockContent153=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId154=154; BlockSort154=5; BlockName154=ЛУЧШЕЕ ФОТО; BlockAlias154=the-best-photo; BlockContent154=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE ЛИНЗА</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId155=155; BlockSort155=6; BlockName155=ОПТИЧЕСКИЕ ЛИНЗЫ; BlockAlias155=optical-lenses; BlockContent155=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Камера обрезает кадр, не позволяя запечатлеть всю картину целиком? Попробуй широкоугольную линзу – с ней камера сможет передать Big Picture именно так, как ты видишь своими глазами!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Одна дождевая капля на травинке способна отразить всю красоту грозового ливня. Вооружив камеру макро-линзой, ты не упустишь ни одного крошечного проявления природной красоты!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Это настоящее чудо! Отныне больше никаких компромиссов между портретом и пейзажем, теперь в кадре будут все: твой друг, его девушка, её собачка, твой байк, парни вокруг него плюс целая улица на заднем плане – если используешь Fisheye линзу, один кадр вместит всё, что ты хочешь! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>УНИВЕРСАЛЬНОЕ КРЕПЛЕНИЕ</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Совместимо со всеми популярными смартфонами и планшетными компьютерами.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId156=156; BlockSort156=7; BlockName156=СМОТРИ ВОКРУГ ШИРОКИМ ВЗГЛЯДОМ; BlockAlias156=see-the-world-wider; BlockContent156=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">СМОТРИ ВОКРУГ<br />ШИРОКИМ ВЗГЛЯДОМ</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId157=157; BlockSort157=8; BlockName157=СЕЛФИ МОНОПОДЫ; BlockAlias157=selfie-monopods; BlockContent157=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId159=159; BlockSort159=9; BlockName159=ТЕПЕРЬ ТЫ ГОТОВ ДЛЯ СЕЛФИ МИРОВОГО МАСШТАБА; BlockAlias159=now-you-have; BlockContent159=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">ТЕПЕРЬ ТЫ ГОТОВ<br />ДЛЯ СЕЛФИ<br />МИРОВОГО МАСШТАБА</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _apply=Применить|
+2016-04-01 01:27:07.8546|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=21; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=73,74,76,77,107,110,111; Description=; Groups={ list: [{"id":29,"name":"Линзы для смартфонов","alias":"lenses","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":true},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":true},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Линзы для смартфонов"},{"id":30,"name":"Селфи моноподы","alias":"sticks","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":true},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":true},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":false}],"getName":"Селфи моноподы"},{"id":60,"name":"Life camera","alias":"life-camera-ru","deleted":false,"products":[{"name":"ШИРОГОУГОЛЬНАЯ ЛИНЗА","id":73,"isChecked":false},{"name":"НАБОР ЛИНЗ","id":74,"isChecked":false},{"name":"СЕЛФИ МОНОПОД","id":76,"isChecked":false},{"name":"НАБОР ДЛЯ СЕЛФИ","id":77,"isChecked":false},{"name":"FISHEYE LENS 180°","id":107,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":110,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":111,"isChecked":true}],"getName":"Life camera"}]}; BlockId158=158; BlockSort158=0; BlockName158=SELFIEMANIA; BlockAlias158=selfiemania; BlockContent158=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                  Ты тоже считаешь, что одно крутое фото стоит тысячи слов? <br />
+                  Тогда приготовься: твои фотоистории станут максимально выразительны, если ты используешь наши лучшие фотоаксессуары для цифровых фотохудожников и селфиманьяков.
+                   И тогда, кто знает, может быть, твои фото станут стоить миллионы?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId216=216; BlockSort216=1; BlockName216=LIFE IS LIFE; BlockAlias216=life-is-life-ru; BlockContent216=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+            <h2 class="slide-head">ЖИЗНЬ КАК КИНО.<br />СНИМАЙ!</h2>
+        </div>
+    </div>; BlockId217=217; BlockSort217=2; BlockName217=LIFE CAMERA; BlockAlias217=LIFE-CAMERA; BlockContent217=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera-ru", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId152=152; BlockSort152=3; BlockName152=ВЗГЛЯНИ НА МИР ШИРЕ; BlockAlias152=look-at-the-world-wider; BlockContent152=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">ВЗГЛЯНИ НА<br /> МИР ШИРЕ</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId153=153; BlockSort153=4; BlockName153=ЛИНЗЫ ДЛЯ СМАРТФОНОВ; BlockAlias153=smartphone-camera-lenses; BlockContent153=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId154=154; BlockSort154=5; BlockName154=ЛУЧШЕЕ ФОТО; BlockAlias154=the-best-photo; BlockContent154=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE ЛИНЗА</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE ЛИНЗА</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId155=155; BlockSort155=6; BlockName155=ОПТИЧЕСКИЕ ЛИНЗЫ; BlockAlias155=optical-lenses; BlockContent155=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Камера обрезает кадр, не позволяя запечатлеть всю картину целиком? Попробуй широкоугольную линзу – с ней камера сможет передать Big Picture именно так, как ты видишь своими глазами!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Одна дождевая капля на травинке способна отразить всю красоту грозового ливня. Вооружив камеру макро-линзой, ты не упустишь ни одного крошечного проявления природной красоты!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE ЛИНЗА</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Это настоящее чудо! Отныне больше никаких компромиссов между портретом и пейзажем, теперь в кадре будут все: твой друг, его девушка, её собачка, твой байк, парни вокруг него плюс целая улица на заднем плане – если используешь Fisheye линзу, один кадр вместит всё, что ты хочешь! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>УНИВЕРСАЛЬНОЕ КРЕПЛЕНИЕ</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Совместимо со всеми популярными смартфонами и планшетными компьютерами.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId156=156; BlockSort156=7; BlockName156=СМОТРИ ВОКРУГ ШИРОКИМ ВЗГЛЯДОМ; BlockAlias156=see-the-world-wider; BlockContent156=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">СМОТРИ ВОКРУГ<br />ШИРОКИМ ВЗГЛЯДОМ</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId157=157; BlockSort157=8; BlockName157=СЕЛФИ МОНОПОДЫ; BlockAlias157=selfie-monopods; BlockContent157=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId159=159; BlockSort159=9; BlockName159=ТЕПЕРЬ ТЫ ГОТОВ ДЛЯ СЕЛФИ МИРОВОГО МАСШТАБА; BlockAlias159=now-you-have; BlockContent159=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">ТЕПЕРЬ ТЫ ГОТОВ<br />ДЛЯ СЕЛФИ<br />МИРОВОГО МАСШТАБА</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 01:27:52.8147|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Description=; Groups={ list: []}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>test
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+                <h2 class="slide-head">LIFE IS A MOVIE!<br />FEEL FREE TO FILM IT</h2>
+        </div>
+    </div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 01:28:06.5603|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; _apply=Применить; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Description=; Groups={ list: []}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>test
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+                <h2 class="slide-head">LIFE IS A MOVIE!<br />FEEL FREE TO FILM IT</h2>
+        </div>
+    </div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />|
+2016-04-01 01:35:23.9773|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; _save=Сохранить; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Description=; Groups={ list: []}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+                <h2 class="slide-head">LIFE IS A MOVIE!<br />FEEL FREE TO FILM IT</h2>
+        </div>
+    </div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />|
+2016-04-01 03:00:04.4173|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=112,113,114,115; Description=; Groups={ list: [{"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"LENS SET","id":112,"isChecked":true},{"name":"SELFIE MONOPOD","id":113,"isChecked":false},{"name":"SELFIE KIT","id":114,"isChecked":false},{"name":"SUPERWIDE LENS","id":115,"isChecked":true}],"getName":"Smartphone camera lenses"},{"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"LENS SET","id":112,"isChecked":false},{"name":"SELFIE MONOPOD","id":113,"isChecked":true},{"name":"SELFIE KIT","id":114,"isChecked":true},{"name":"SUPERWIDE LENS","id":115,"isChecked":false}],"getName":"Selfie monopods"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+                <h2 class="slide-head">LIFE IS A MOVIE!<br />FEEL FREE TO FILM IT</h2>
+        </div>
+    </div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 03:06:42.7226|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=108,109,112,113,114,115; Description=; Groups={ list: [{"id":61,"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"LENS SET","id":112,"isChecked":true},{"name":"SELFIE MONOPOD","id":113,"isChecked":false},{"name":"SELFIE KIT","id":114,"isChecked":false},{"name":"SUPERWIDE LENS","id":115,"isChecked":true}],"getName":"Smartphone camera lenses"},{"id":62,"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"LENS SET","id":112,"isChecked":false},{"name":"SELFIE MONOPOD","id":113,"isChecked":true},{"name":"SELFIE KIT","id":114,"isChecked":true},{"name":"SUPERWIDE LENS","id":115,"isChecked":false}],"getName":"Selfie monopods"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+                <h2 class="slide-head">LIFE IS A MOVIE!<br />FEEL FREE TO FILM IT</h2>
+        </div>
+    </div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 03:08:53.7525|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=108,109,112,113,114,115; Description=; Groups={ list: [{"id":61,"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false},{"name":"LENS SET","id":112,"isChecked":true},{"name":"SELFIE MONOPOD","id":113,"isChecked":false},{"name":"SELFIE KIT","id":114,"isChecked":false},{"name":"SUPERWIDE LENS","id":115,"isChecked":true}],"getName":"Smartphone camera lenses"},{"id":62,"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false},{"name":"LENS SET","id":112,"isChecked":false},{"name":"SELFIE MONOPOD","id":113,"isChecked":true},{"name":"SELFIE KIT","id":114,"isChecked":true},{"name":"SUPERWIDE LENS","id":115,"isChecked":false}],"getName":"Selfie monopods"},{"name":"Life camera","alias":"life-camera","deleted":false,"products":[{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":true},{"name":"LENS SET","id":112,"isChecked":false},{"name":"SELFIE MONOPOD","id":113,"isChecked":false},{"name":"SELFIE KIT","id":114,"isChecked":false},{"name":"SUPERWIDE LENS","id":115,"isChecked":false}],"getName":"Life camera"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+                <h2 class="slide-head">LIFE IS A MOVIE!<br />FEEL FREE TO FILM IT</h2>
+        </div>
+    </div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 03:11:15.6651|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=34,35,37,38,108,109; Description=; Groups={ list: [{"id":61,"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false},{"name":"LENS SET","id":112,"isChecked":true},{"name":"SELFIE MONOPOD","id":113,"isChecked":false},{"name":"SELFIE KIT","id":114,"isChecked":false},{"name":"SUPERWIDE LENS","id":115,"isChecked":true}],"getName":"Smartphone camera lenses"},{"id":62,"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false},{"name":"LENS SET","id":112,"isChecked":false},{"name":"SELFIE MONOPOD","id":113,"isChecked":true},{"name":"SELFIE KIT","id":114,"isChecked":true},{"name":"SUPERWIDE LENS","id":115,"isChecked":false}],"getName":"Selfie monopods"},{"id":63,"name":"Life camera","alias":"life-camera","deleted":false,"products":[{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":true},{"name":"LENS SET","id":112,"isChecked":false},{"name":"SELFIE MONOPOD","id":113,"isChecked":false},{"name":"SELFIE KIT","id":114,"isChecked":false},{"name":"SUPERWIDE LENS","id":115,"isChecked":false}],"getName":"Life camera"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+                <h2 class="slide-head">LIFE IS A MOVIE!<br />FEEL FREE TO FILM IT</h2>
+        </div>
+    </div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 03:11:50.5060|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=34,35,37,38,108,109; Description=; Groups={ list: [{"id":61,"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":true},{"name":"LENS SET","id":35,"isChecked":true},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Smartphone camera lenses"},{"id":62,"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":true},{"name":"SELFIE KIT","id":38,"isChecked":true},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Selfie monopods"},{"id":63,"name":"Life camera","alias":"life-camera","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":true}],"getName":"Life camera"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+                <h2 class="slide-head">LIFE IS A MOVIE!<br />FEEL FREE TO FILM IT</h2>
+        </div>
+    </div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _apply=Применить|
+2016-04-01 03:11:54.6942|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=34,35,37,38,108,109; Description=; Groups={ list: [{"id":61,"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":true},{"name":"LENS SET","id":35,"isChecked":true},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Smartphone camera lenses"},{"id":62,"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":true},{"name":"SELFIE KIT","id":38,"isChecked":true},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Selfie monopods"},{"id":63,"name":"Life camera","alias":"life-camera","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":true}],"getName":"Life camera"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fWIItTXKjyU" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+                <h2 class="slide-head">LIFE IS A MOVIE!<br />FEEL FREE TO FILM IT</h2>
+        </div>
+    </div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 03:17:42.1895|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=34,35,37,38,108,109; Description=; Groups={ list: [{"id":61,"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":true},{"name":"LENS SET","id":35,"isChecked":true},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Smartphone camera lenses"},{"id":62,"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":true},{"name":"SELFIE KIT","id":38,"isChecked":true},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Selfie monopods"},{"id":63,"name":"Life camera","alias":"life-camera","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":true}],"getName":"Life camera"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _apply=Применить|
+2016-04-01 03:35:52.8692|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=34,35,37,38,108,109; Description=; Groups={ list: [{"id":61,"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":true},{"name":"LENS SET","id":35,"isChecked":true},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Smartphone camera lenses"},{"id":62,"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":true},{"name":"SELFIE KIT","id":38,"isChecked":true},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Selfie monopods"},{"id":63,"name":"Life camera","alias":"life-camera","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":true}],"getName":"Life camera"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LIFE IS A MOVIE!<br>FEEL FREE TO FILM IT</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 03:40:25.0469|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=31; ozi_backlink=,; Name=DRONES; ShowInMenu=true,false; Products=99; Description=; Groups={ list: [{"id":55,"name":"QUADCOPTER","alias":"quadcopter","deleted":false,"products":[{"name":"HORNET HD QUADCOPTER","id":99,"isChecked":true}],"getName":"QUADCOPTER"}]}; BlockId205=205; BlockSort205=0; BlockName205=DRONES; BlockAlias205=drones; BlockContent205=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/Drones.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">FREE AS A BIRD</div>
+                <p>
+                  Look at the world as a bird and share the view with friends as HD video! <br />
+                  The copter is equipped with an HD camera and is controlled with an App.<br />
+                  Welcome to the skies!
+                 </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("drones", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId203=203; BlockSort203=1; BlockName203=Hornet HD; BlockAlias203=hornet-hd; BlockContent203=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("quadcopter", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId206=206; BlockSort206=2; BlockName206=THE SKY IS THE LIMIT; BlockAlias206=the-sky-is-the-limit; BlockContent206=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=DJD5epVZzAk" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+            <h2 class="slide-head">THE SKY <br />IS THE LIMIT</h2>
+        </div>
+    </div>; Alias=drones; MetaTitle=; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 03:41:21.5671|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=33; ozi_backlink=,; Name=DRONES; ShowInMenu=true,false; Products=103; Description=; Groups={ list: [{"id":56,"name":"КВАДРОКОПТЕР","alias":"kvadrokopter","deleted":false,"products":[{"name":"КВАДРОКОПТЕР HORNET HD ","id":103,"isChecked":true}],"getName":"КВАДРОКОПТЕР"}]}; BlockId207=207; BlockSort207=1; BlockName207=КВАДРОКОПТЕР; BlockAlias207=kvadrokopter; BlockContent207=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/Drones.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">КВАДРОКОПТЕР</div>
+                <p>
+                  Окинь взглядом город с высоты птичьего полёта и поделись увиденным с друзьями в HD-качестве! <br />
+                  Квадрокоптер оборудован видеокамерой высокой чёткости и управляется со смартфона.<br />
+                  Добро пожаловать в поднебесье!
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("kvadrokopter", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId208=208; BlockSort208=2; BlockName208=Hornet HD; BlockAlias208=hornet-hd; BlockContent208=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("kvadrokopter", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId209=209; BlockSort209=3; BlockName209=СВОБОДНО КАК ПТИЦА; BlockAlias209=svobodno-kak-ptica; BlockContent209=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=DJD5epVZzAk" frameborder="0" allowfullscreen></iframe>  
+        </div>
+        <div class="category-section_text col">
+           <h2 class="slide-head">СВОБОДНО <br />КАК ПТИЦА</h2>
+        </div>
+    </div>; Alias=drones; MetaTitle=; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 03:56:08.1986|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=31; ozi_backlink=,; Name=DRONES; ShowInMenu=true,false; Products=99; Description=; Groups={ list: [{"id":55,"name":"QUADCOPTER","alias":"quadcopter","deleted":false,"products":[{"name":"HORNET HD QUADCOPTER","id":99,"isChecked":true}],"getName":"QUADCOPTER"}]}; BlockId205=205; BlockSort205=0; BlockName205=DRONES; BlockAlias205=drones; BlockContent205=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/Drones.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">FREE AS A BIRD</div>
+                <p>
+                  Look at the world as a bird and share the view with friends as HD video! <br />
+                  The copter is equipped with an HD camera and is controlled with an App.<br />
+                  Welcome to the skies!
+                 </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("drones", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId203=203; BlockSort203=1; BlockName203=Hornet HD; BlockAlias203=hornet-hd; BlockContent203=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("quadcopter", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId206=206; BlockSort206=2; BlockName206=THE SKY IS THE LIMIT; BlockAlias206=the-sky-is-the-limit; BlockContent206=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DJD5epVZzAk" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="category-section_text col">
+            <h2 class="slide-head">THE SKY <br />IS THE LIMIT</h2>
+        </div>
+    </div>; Alias=drones; MetaTitle=; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 03:56:23.3586|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=33; ozi_backlink=,; Name=DRONES; ShowInMenu=true,false; Products=103; Description=; Groups={ list: [{"id":56,"name":"КВАДРОКОПТЕР","alias":"kvadrokopter","deleted":false,"products":[{"name":"КВАДРОКОПТЕР HORNET HD ","id":103,"isChecked":true}],"getName":"КВАДРОКОПТЕР"}]}; BlockId207=207; BlockSort207=1; BlockName207=КВАДРОКОПТЕР; BlockAlias207=kvadrokopter; BlockContent207=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/Drones.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">КВАДРОКОПТЕР</div>
+                <p>
+                  Окинь взглядом город с высоты птичьего полёта и поделись увиденным с друзьями в HD-качестве! <br />
+                  Квадрокоптер оборудован видеокамерой высокой чёткости и управляется со смартфона.<br />
+                  Добро пожаловать в поднебесье!
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("kvadrokopter", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId208=208; BlockSort208=2; BlockName208=Hornet HD; BlockAlias208=hornet-hd; BlockContent208=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("kvadrokopter", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId209=209; BlockSort209=3; BlockName209=СВОБОДНО КАК ПТИЦА; BlockAlias209=svobodno-kak-ptica; BlockContent209=<div class="category-section right-handed-section video-cover">
+        <div class="category-section_image col">
+             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/DJD5epVZzAk" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="category-section_text col">
+           <h2 class="slide-head">СВОБОДНО <br />КАК ПТИЦА</h2>
+        </div>
+    </div>; Alias=drones; MetaTitle=; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 10:06:39.2256|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=34,35,37,38,108,109; Description=; Groups={ list: [{"id":61,"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":true},{"name":"LENS SET","id":35,"isChecked":true},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Smartphone camera lenses"},{"id":62,"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":true},{"name":"SELFIE KIT","id":38,"isChecked":true},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Selfie monopods"},{"id":63,"name":"Life camera","alias":"life-camera","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":true}],"getName":"Life camera"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LIFE IS A MOVIE!<br>FEEL FREE TO FILM IT</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/action-camera-im.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|
+2016-04-01 10:08:17.7102|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.CategoryController|dotorg (::1) edits item DotOrg.Mixberry.Models.Category
+returnUrl=; Id=9; ozi_backlink=,; Name=SELFIEMANIA; ShowInMenu=true,false; Products=34,35,37,38,108,109; Description=; Groups={ list: [{"id":61,"name":"Smartphone camera lenses","alias":"lenses","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":true},{"name":"LENS SET","id":35,"isChecked":true},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Smartphone camera lenses"},{"id":62,"name":"Selfie monopods","alias":"sticks","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":true},{"name":"SELFIE KIT","id":38,"isChecked":true},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":false},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":false}],"getName":"Selfie monopods"},{"id":63,"name":"Life camera","alias":"life-camera","deleted":false,"products":[{"name":"SUPERWIDE LENS","id":34,"isChecked":false},{"name":"LENS SET","id":35,"isChecked":false},{"name":"SELFIE MONOPOD","id":37,"isChecked":false},{"name":"SELFIE KIT","id":38,"isChecked":false},{"name":"MIXBERRY LifeCamera UltraHD 4K with WiFi","id":108,"isChecked":true},{"name":"MIXBERRY LifeCamera 1080p HD with WiFi","id":109,"isChecked":true}],"getName":"Life camera"}]}; BlockId82=82; BlockSort82=0; BlockName82=SELFIEMANIA; BlockAlias82=selfiemania; BlockContent82=<div class="top-page-slider category">
+    <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/selfiemania.jpg) no-repeat 50% 50% / cover">
+        <div class="section">
+            <div class="top-page-slider_item-content">
+                <div class="slide-head">SELFIEMANIA</div>
+                <p>
+                    Is your every picture worth a thousand words? <br />
+                    Then get ready to discover a new level of good photo storytelling with
+                    our premium photo accessories for digital photo artists and selfiemaniacs! <br />
+                    And maybe your pictures will score millions?
+                </p>
+            </div>
+            <div class="top-page-slider_item-content">
+                <div class="top-page-slider_item-content_cover">
+                    <div class="fotorama" data-height="360" data-arrows="always" data-width="100%" data-minwidth="200" data-shadows="false" data-loop="true">@CategoryProducts("selfiemania", "header-slide-products")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>; BlockId212=212; BlockSort212=1; BlockName212=LIFE IS LIFE; BlockAlias212=life-is-life; BlockContent212=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LIFE IS A MOVIE!<br>FEEL FREE TO FILM IT</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/action-camera-im.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId213=213; BlockSort213=2; BlockName213=LIFE CAMERA; BlockAlias213=LifeCamera; BlockContent213=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("life-camera", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId75=75; BlockSort75=3; BlockName75=LOOK AT THE WORLD WIDER; BlockAlias75=look-at-the-world-wider; BlockContent75=<div class="category-section left-handed-section">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col" style="background: url(/media/img/lens.jpg) no-repeat 50% 50% / cover">&nbsp;</div>
+</div>; BlockId76=76; BlockSort76=4; BlockName76=SMARTPHONE CAMERA LENSES; BlockAlias76=smartphone-camera-lenses; BlockContent76=<div class="gray">
+    <div class="section">
+        <div class="product-list">
+            @GroupProducts("lenses", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>
+</div>; BlockId77=77; BlockSort77=5; BlockName77=THE BEST PHOTO; BlockAlias77=the-best-photo; BlockContent77=<div class="cover">
+<div class="focus">
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-fisheye.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>FISHEYE LENS</p>
+			</div>
+		</div>
+      <div class="back" style="background: url(/media/img/city.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="объектив" src="/media/img/city.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">	
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-macro.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>MACRO LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/focus.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/focus.jpg" />
+			</figure>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="front">
+			<figure>
+				<img alt="объектив" src="/media/img/focus-lens-wide.png" />
+			</figure>
+			<div class="bottom-text">
+				<p>WIDE LENS</p>
+			</div>
+		</div>
+		<div class="back" style="background: url(/media/img/skate.jpg) 50% 50% no-repeat; background-size: cover;">
+			<figure>
+				<img alt="mixberry" src="/media/img/skate.jpg" />
+			</figure>
+		</div>	
+	</div>
+</div>
+</div>; BlockId78=78; BlockSort78=6; BlockName78=OPTICAL LENSES; BlockAlias78=optical-lenses; BlockContent78=<div class="list-lens">
+<div class="section">
+<div class="item">
+<div class="col">
+<p>WIDE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-one.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>You see it Big, but on a photo it gets cropped? Equipped with Wide Angle Lens your camera will finally see the Big Picture – just as you see it! </p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>MACRO LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-two.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>One rain-drop on a leaf reflects the whole beauty of a thunder-storm. With Macro Lens you won't miss these tiny little charms of nature!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>FISHEYE LENS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-three.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>It's a kind of magic! Don't decide between portrait and landscape: now you can get 'em all: your friend, his girl, her pet, your bike, guys around it, and the Duomo at the background –  all in a single shot with our Fisheye Lens!</p>
+</div>
+</div>
+</div>
+
+<div class="item">
+<div class="col">
+<p>UNIVERSAL CLIPS</p>
+</div>
+
+<div class="col"><img alt="объктив" src="/media/img/lens-four.png" /></div>
+
+<div class="col">
+<div class="description">
+<p>Compatible with most tablets and smartphones.</p>
+</div>
+</div>
+</div>
+</div>
+</div>; BlockId79=79; BlockSort79=7; BlockName79=SEE THE WORLD WIDER; BlockAlias79=see-the-world-wider; BlockContent79=<div class="category-section left-handed-section image-over" style="background: url(/media/img/main-page-banner-1.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br />THE WORLD<br />WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>; BlockId81=81; BlockSort81=8; BlockName81=SELFIE MONOPODS; BlockAlias81=selfie-monopods; BlockContent81=<div class="section">
+        <div class="product-list">
+            @GroupProducts("sticks", "open-to-right-white-template", "open-to-left-white-template")
+        </div>
+    </div>; BlockId108=108; BlockSort108=9; BlockName108=NOW YOU HAVE; BlockAlias108=now-you-have; BlockContent108=<div class="category-section right-handed-section image-over" style="background: url(/media/img/how-you-have.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_image col">&nbsp;</div>
+    <div class="category-section_text col">
+        <h2 class="slide-head">NOW&nbsp;YOU&nbsp;HAVE<br />THE RIGHT END <br />OF THE STICK!</h2>
+    </div>
+</div>; Alias=selfiemania; MetaTitle=SELFIEMANIA; MetaKeywords=; MetaDescription=Is your every picture worth a thousand words? Then get ready to discover a new level of good photo storytelling with our premium photo accessories for digital photo artists and selfiemaniacs! ; MetaData=<meta property="og:image" content="http://mixberry.dotorg.ru/media/img/selfi.jpg" />; _save=Сохранить|

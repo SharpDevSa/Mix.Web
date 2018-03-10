@@ -1,0 +1,122 @@
+.wrapper-content-about
+	position: relative
+.opacity
+	background: #003399
+	opacity: 0.5
+	min-height: 100%
+	min-width: 100%
+	position: absolute
+	top: 0
+	left: 0
+.wrapper-video
+	height: 100%
+	min-height: 100%
+	overflow: hidden
+	position: relative
+	.video
+		bottom: 0
+		height: auto
+		min-height: 100%
+		min-width: 100%
+		overflow: hidden
+		right: 0
+#mixberry
+	left: 50%
+	margin-left: -290px
+	position: absolute
+	top: 0
+	width: 460px
+	z-index: 100
+.content-about
+	width: 500px
+	margin-left: 190px
+	padding-top: 140px
+	.h1
+		margin-top: 0
+	p, span
+		font-size: 18px
+		margin-bottom: 35px
+#slide-mixberry
+	height: 880px
+	width: 100%
+	opacity: 0.9
+	#point-nav
+		list-style: none
+		position: fixed
+		top: 360px
+		z-index: 1
+		&:after
+			position: absolute
+			content: " "
+			display: block
+			height: 360px
+			width: 1px
+			background: #fff
+			top: -359px
+			left: 50%
+		&:before
+			position: absolute
+			content: " "
+			display: block
+			height: 360px
+			width: 1px
+			background: #fff
+			top: 197px
+			left: 50%
+		li
+			position: relative
+			margin-bottom: 43px
+			&.active
+				a
+					background: #fff
+					color: #003399
+			&:nth-child(2n)
+				&:before
+					position: absolute
+					content: " "
+					display: block
+					height: 43px
+					width: 1px
+					background: #fff
+					top: 37px
+					left: 50%
+				&:after
+					position: absolute
+					content: " "
+					display: block
+					height: 43px
+					width: 1px
+					background: #fff
+					top: -43px
+					left: 50%
+			a
+				display: block
+				height: 35px
+				width: 80px
+				text-align: center
+				line-height: 35px
+				color: #fff
+				font-size: 12px
+				border: 1px solid #fff
+				letter-spacing: 0.7px
+#slide-eco-pack
+	height: 880px
+	background: url("../img/about-slide-two.jpg") no-repeat top center
+#slide-mixberry-labs
+	height: 880px
+	width: 100%
+	background: url("../img/about-slide-three.png") no-repeat top center #0E3C9B
+	#contacts
+		padding-top: 260px
+		width: 650px
+		.about-overview-search
+			width: 250px
+			a
+				display: inline-block
+				height: 54px
+				line-height: 77px
+				margin-right: 20px
+				text-align: center
+				width: 54px
+				border: 1px solid #fff
+				

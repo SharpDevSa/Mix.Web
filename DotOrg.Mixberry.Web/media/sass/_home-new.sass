@@ -1,0 +1,256 @@
+.top-page-slider
+	overflow: hidden
+	.section
+		height: 100%
+		display: table
+		+box
+	.slide-head
+		margin-bottom: 40px
+		font-size: 75px
+		+max-screen(768px)
+			font-size: 47px
+		+max-screen(480px)
+			font-size: 30px
+	p
+		margin: 25px 0 70px
+		letter-spacing: 0.5px
+		font-size: 15px
+		color: #fff
+		+max-screen(480px)
+			margin: 15px 0 30px
+	.owl-dots
+		position: relative
+		top: -30px
+		margin-bottom: -21px
+		right: 0
+		text-align: center
+		.owl-dot
+			display: inline-block
+			margin: 0 5px
+	.fotorama__nav
+		display: none
+	.fotorama__arr
+		width: 39px
+		height: 40px
+		margin-top: -20px
+	.fotorama__arr--prev
+		background: url(/media/img/Nav_left.svg)
+	.fotorama__arr--next
+		background: url(/media/img/Nav_right.svg)
+	&.category
+		.top-page-slider_item
+			height: 600px
+			+max-screen(768px)
+				height: 500px
+			+max-screen(480px)
+				height: auto
+		.owl-dots
+			display: none
+.top-page-slider_item
+	height: 483px
+	+max-screen(480px)
+		height: auto
+	.top-page-slider_item-content
+		height: 100%
+		display: table-cell
+		vertical-align: middle
+		+box
+		+max-screen(480px)
+			display: block
+			padding: 50px 0
+			&:last-child
+				display: none
+	.top-page-slider_item-content_cover
+		width: 392px
+		margin: 0 0 0 102px
+		text-align: center
+		img
+			max-width: 100%
+			+max-screen(768px)
+				max-width: 70%
+		a
+			display: block
+		+max-screen(980px)
+			width: 90%
+			margin: 0 auto
+	&.two-col-layout
+		.top-page-slider_item-content
+			width: 50%
+			+max-screen(480px)
+				width: 100%
+
+.home-products-shapes
+	padding-top: 40px
+	+max-screen(768px)
+		display: none
+	h2
+		margin-top: 0
+	.col
+		position: relative
+		display: inline-block
+		vertical-align: top
+		width: 535px
+		padding-right: 10px
+		+clr
+		&:last-child
+			padding-left: 30px
+			padding-right: 0
+		+max-screen(1120px)
+			margin: 0 auto 30px auto
+			display: block
+		.home-shape
+			&:before
+				+b
+		#flask
+			float: left
+			height: 420px
+			width: 130px					
+			&:hover:before
+				+s(flask-color)
+			&:before
+				+s(flask)
+				top: 19px
+		#lantern
+			float: right
+			height: 180px
+			margin-bottom: 20px
+			width: 400px
+			&:hover:before
+				+s(lantern-color)
+			&:before
+				+s(lantern)
+		#holder
+			height: 250px
+			width: 240px
+			float: left
+			margin-left: 15px
+			&:hover:before
+				+s(holder-color)
+			&:before			
+				+s(holder)
+		#lamp
+			height: 250px
+			width: 130px
+			float: left
+			background: transparent
+			position: relative
+			left: 30px
+			&:hover:before
+				+s(lamp-color)
+			&:before			
+				+s(lamp)
+		#wire
+			height: 108px
+			width: 597px
+			position: relative
+			display: block
+			&:hover:before
+				+s(wire-color-gold)
+			&:before			
+				+s(wire)
+		#four-img
+			height: 130px
+			width: 261px
+			position: relative
+			margin-left: 20px
+			margin-top: 35px
+			display: block
+			&:hover:before
+				+s(four-img-color)
+			&:before			
+				+s(four-img)
+		#loading
+			height: 107px
+			width: 197px
+			margin: 35px 0 0 40px
+			position: relative
+			display: inline-block
+			float: left
+			&:hover:before
+				+s(loading-color)
+			&:before			
+				+s(loading)
+		#mobile-frame
+			height: 321px
+			width: 93px
+			display: inline-block
+			margin-left: 130px
+			margin-top: -160px
+			&:hover:before
+				+s(mobile-frame-color)
+			&:before			
+				+s(mobile-frame)
+				top: 120px
+.home-category-promo
+	+clr
+.home-category-promo_item
+	position: relative
+	display: block
+	height: 300px
+	overflow: hidden
+	float: left
+	width: 556px
+	transition: all 1s ease
+	+max-screen(1120px)
+		width: 50%
+	+max-screen(480px)
+		width: 100%
+		height: 180px
+		margin-bottom: 20px
+	img
+		transition: all 1s ease
+		+max-screen(360px)
+			width: 100%
+	&:hover img
+		transform: scale(1.1)	
+	.home-category-promo_item-head
+		position: absolute
+		top: 30px
+		color: #fff
+		left: 35px
+		font-size: 36px
+		line-height: 1.1
+		+up
+		+max-screen(480px)
+			font-size: 24px
+		
+
+.main-page-news 
+	margin-bottom: 100px
+	+clr
+.news-list
+	.news-item
+		float: left
+		font-size: 16px
+		margin-bottom: 40px
+		display: block
+		+box
+		width: 360px
+		margin-right: 15px
+		&:nth-child(3n + 3)
+			margin-right: 0
+		+max-screen(1120px)
+			width: 30%
+		+max-screen(480px)
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+			img
+				width: 100%
+		img
+			max-width: 100%
+		.data-news
+			color: #000
+			margin: 5px 0
+			font-weight: bold
+			+max-screen(360px)
+				margin-left: 15px !important
+		&:hover div p
+			color: #000
+		.description
+			+max-screen(360px)
+				margin-left: 15px !important
+			p
+				color: #666
+				+max-screen(768px)
+					font-size: 14px

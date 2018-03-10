@@ -1,0 +1,172 @@
+#main-slaider.main-page-slider
+	.item
+		height: 483px
+		img
+			width: 100%
+			min-height: 483px
+	.wrapper-h1
+		width: 300px !important
+		.h1
+			font-size: 64px
+			font-weight: 900
+			margin-bottom: 40px
+		p
+			margin: 25px 0 70px
+			letter-spacing: 0.5px
+			font-size: 15px
+			color: #fff
+	.owl-nav
+		display: none
+.many-product
+	padding-top: 40px
+	+max-screen(768px)
+		display: none
+	.two-cols
+		overflow: visible
+		.col
+			position: relative
+			display: inline-block
+			vertical-align: top
+			width: 535px
+			padding-right: 10px
+			&:last-child
+				padding-left: 30px
+				padding-right: 0
+			a
+
+				&#flask
+					float: left
+					height: 420px
+					width: 130px					
+					&:hover:before
+						+s(flask-color)
+					&:before
+						+s(flask)
+						+b()
+						top: 19px
+				&#lantern
+					float: right
+					height: 180px
+					margin-bottom: 20px
+					width: 400px
+					&:hover:before
+						+s(lantern-color)
+					&:before
+						+s(lantern)
+						+b()
+				&#holder
+					height: 250px
+					width: 240px
+					float: left
+					margin-left: 15px
+					&:hover:before
+						+s(holder-color)
+					&:before			
+						+s(holder)
+						+b()
+				&#lamp
+					height: 250px
+					width: 130px
+					float: left
+					background: transparent
+					position: relative
+					left: 30px
+					&:hover:before
+						+s(lamp-color)
+					&:before			
+						+s(lamp)
+						+b()
+				&#wire
+					height: 108px
+					width: 597px
+					position: relative
+					display: block
+					&:hover:before
+						+s(wire-color)
+					&:before			
+						+s(wire)
+						+b()
+				&#four-img
+					height: 130px
+					width: 261px
+					position: relative
+					margin-left: 20px
+					margin-top: 35px
+					display: block
+					&:hover:before
+						+s(four-img-color)
+					&:before			
+						+s(four-img)
+						+b()
+				&#loading
+					height: 107px
+					width: 197px
+					margin: 35px 0 0 40px
+					position: relative
+					display: inline-block
+					float: left
+					&:hover:before
+						+s(loading-color)
+					&:before			
+						+s(loading)
+						+b()
+				&#mobile-frame
+					height: 321px
+					width: 93px
+					display: inline-block
+					margin-left: 130px
+					margin-top: -160px
+					&:hover:before
+						+s(mobile-frame-color)
+					&:before			
+						+s(mobile-frame)
+						+b()
+						top: 120px
+.four-banner
+	overflow: hidden
+	.banner-item
+		position: relative
+		display: block
+		height: 300px
+		overflow: hidden
+		transition: all 1s ease
+		+min-screen(768px)
+			width: 556px
+			float: left
+		img
+			transition: all 1s ease
+		&:hover img
+			transform: scale(1.1)	
+		&:hover .opacity
+			opacity: 0.2		
+		.opacity
+			position: absolute
+			height: 100%
+			width: 100%
+			background: #000
+			opacity: 0
+		p
+			position: absolute
+			top: 30px
+			color: #fff
+			left: 35px
+			font-size: 36px
+			line-height: 1.1
+.main-page-news 
+	.news-item
+		display: inline-block
+		vertical-align: top
+		font-size: 16px
+		+min-screen(360px)
+			width: 360px
+			margin-left: 15px
+		&:first-of-type
+			margin-left: 0
+		.data-news
+			color: #000
+			margin: 5px 0
+			font-weight: bold
+		&:hover p
+			color: #000
+		p
+			color: #666666

@@ -1,0 +1,45 @@
+﻿@{ Layout = null; }
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>@L.Get("notfound-title")</title>
+	<link rel="stylesheet" media="screen" href="/media/css/screen.css" />
+	<link href="/media/css/sweet-alert.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="wrapper">
+		@{ Html.RenderPartial(MVC.Shared.Views.Partials.Header); }
+		<div class="notfound">
+			<h1 role="heading" class="page-title">@L.Get("notfound-metatitle")</h1>
+			<p>@L.Get("notfound-description")</p>
+		</div>
+		<div class="pusher"></div>
+	</div>
+	@{ Html.RenderPartial(MVC.Shared.Views.Partials.Footer); }
+
+	<script defer="defer" src="/media/js/jquery-1.11.1.min.js"></script>
+	<script defer="defer" src="/media/js/PxLoader.min.js"></script>
+	<script defer="defer" src="/media/js/PxLoaderImage.min.js"></script>
+	<script defer="defer" src="/media/js/tweenmax.min.js"></script>
+	<script defer="defer" src="/Scripts/jquery.validate.min.js"></script>
+	<script defer="defer" src="/Scripts/jquery.validate.unobtrusive.min.js"></script>
+	<script defer="defer" src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+	<script defer="defer" src="/media/js/jquery.nav.js"></script>
+	<script defer="defer" src="/media/js/owl.carousel.js"></script>
+	<script defer="defer" src="/media/js/owl.navigation.js"></script>
+	<script defer="defer" src="/media/js/tooltip.min.js"></script>
+	<script defer="defer" src="/media/js/sweet-alert.min.js"></script>
+	<script defer="defer" src="/media/js/js.min.js"></script>
+	<div id="scroll-up"></div>
+	<div id="mask">
+		<svg class="spinner" width="50px" height="50px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
+	</div>
+	<div id="mask-for-page-loading">
+		<div class="scale"></div>
+		<svg class="spinner" width="50px" height="50px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
+	</div>
+	﻿<div style="display: none;" id="product-spinner"><svg class="spinner" width="24px" height="24px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div>
+</body>
+</html>

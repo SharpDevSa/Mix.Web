@@ -1,0 +1,15 @@
+﻿<div class="form-save-buttons">
+    
+    @if (WebContext.ReturnUrl != null)
+    {
+        <a class="form-back-link" href="@WebContext.ReturnUrl"><span class="icon-reply"></span>Вернуться</a>
+    }
+    else
+    {
+        <a class="form-back-link" href="@Url.Action(Actions.Index)"><span class="icon-reply"></span>Назад к списку</a>
+    }
+    <input type="submit" id="save-button" name="_save" class="save-button" value="Сохранить" />
+    <input type="submit" id="apply-button" class="apply-button" name="_apply" value="Применить" id="_apply" />
+    <input type="hidden" name="ozi_backlink" value="@WebContext.ReturnUrl"/>
+    
+</div>

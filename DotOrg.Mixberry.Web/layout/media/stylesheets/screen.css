@@ -1,0 +1,91 @@
+/*
+Error: No files were found in the load path matching "icons/*.png". Your current load paths are: D:/Web/dk/html/media/images
+        on line 2 of D:/Web/dk/html/media/sass/lib/_sprites.scss
+        from line 8 of D:/Web/dk/html/media/sass/lib/_base.scss
+        from line 7 of D:/Web/dk/html/media/sass/screen.sass
+
+1: $legacy-support-for-ie7: true
+2: $legacy-support-for-ie8: true
+3: $experimental-support-for-microsoft: true
+4: $experimental-support-for-pie: false
+5: $experimental-support-for-svg: true
+6: 
+7: @import lib/base
+
+Backtrace:
+D:/Web/dk/html/media/sass/lib/_sprites.scss:2
+D:/Web/dk/html/media/sass/lib/_base.scss:8
+D:/Web/dk/html/media/sass/screen.sass:7
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/sprite_importer.rb:89:in `files'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/sass_extensions/sprites/sprite_map.rb:19:in `from_uri'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/sass_extensions/functions/sprites.rb:78:in `sprite_map'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/script/tree/funcall.rb:140:in `_perform'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:458:in `visit_variable'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:315:in `map'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:315:in `map'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/engine.rb:268:in `render'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:491:in `update_stylesheet'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/sass-3.4.4/lib/sass/plugin/compiler.rb:293:in `watch'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/sass_compiler.rb:46:in `watch!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/commands/watch_project.rb:41:in `perform'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/bin/compass:44:in `call'
+C:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
+C:/Ruby200/bin/compass:23:in `load'
+C:/Ruby200/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: No files were found in the load path matching \"icons/*.png\". Your current load paths are: D:/Web/dk/html/media/images\A         on line 2 of D:/Web/dk/html/media/sass/lib/_sprites.scss\A         from line 8 of D:/Web/dk/html/media/sass/lib/_base.scss\A         from line 7 of D:/Web/dk/html/media/sass/screen.sass\A \A 1: $legacy-support-for-ie7: true\A 2: $legacy-support-for-ie8: true\A 3: $experimental-support-for-microsoft: true\A 4: $experimental-support-for-pie: false\A 5: $experimental-support-for-svg: true\A 6: \A 7: @import lib/base"; }

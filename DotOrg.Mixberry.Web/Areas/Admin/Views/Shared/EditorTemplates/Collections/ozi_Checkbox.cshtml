@@ -1,0 +1,8 @@
+﻿@model DotOrg.Web.Ozi.PagesSettings.Forms.CheckboxSettings
+@{
+    var bind = string.Format("{{checked: {0}, attr: {{ name: generateName() + '.{0}' }}}}", Model.Name);
+    var bindForHidden = string.Format("{{attr: {{ name: generateName() + '.{0}' }}}}", Model.Name);
+}
+<input type="checkbox" class="ozi-checkbox" value="true" data-bind="@Html.Raw(bind)"/><input type="hidden" value="false" data-bind="@Html.Raw(bindForHidden)"/>
+
+

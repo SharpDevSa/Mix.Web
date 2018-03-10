@@ -1,0 +1,24 @@
+﻿@model DotOrg.Mixberry.Web.ViewModels.LanguagesViewModel
+
+<div class="lang-panel">
+	<ul>
+		@foreach (var item in Model.All)
+		{
+			<li>
+				@if (item.Lang == Model.Current.Lang)
+				{
+					<span>@item.Name</span>
+				}
+				else
+				{
+					<a href="@Localization.ChangeUrl(item.Lang)">@item.Name</a>
+				}
+			</li>
+		}
+	</ul>
+</div>
+<style>
+    .lang-panel li { list-style-type: none; display: inline-block; text-transform: uppercase; margin: 0 20px 0 0; }
+        .lang-panel li span { display: inline-block; padding: 10px 30px; background: #FF3A71; color: #fff; }
+        .lang-panel li a { display: inline-block; padding: 10px 30px; color: #FF3A71; }
+</style>

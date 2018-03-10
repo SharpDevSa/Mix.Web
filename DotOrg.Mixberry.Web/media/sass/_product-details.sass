@@ -1,0 +1,140 @@
+=make-grid($col-width, $col-gutter, $margin-bottom : 0)
+	+display-flex(flex)
+	+flex-flow(row wrap)
+	margin-left: -$col-gutter
+	> li
+		width: $col-width
+		padding-left: $col-gutter
+		float: left
+		@if $margin-bottom > 0
+			margin-bottom: $margin-bottom
+
+=break-grid($col-width, $col-gutter)
+	margin-left: -$col-gutter
+	@if $col-width == 50%
+		+justify-content(center)
+	> li
+		width: $col-width
+		padding-left: $col-gutter
+
+
+
+.product-details
+	color: #000
+
+.product-details_banner
+	+display-flex(flex)
+	+align-items(center)
+	+cover
+	height: 520px
+	// background-image: url("../img/product-details-main-bg.jpg")
+	+max-screen(640px)
+		height: 380px
+	h1
+		font-size: 80px
+		margin-bottom: 60px
+	span
+		display: block
+		max-width: 370px
+		color: #fff
+
+							
+
+.product-details_info
+	+make-grid(50%, 100px, 60px)
+	padding: 120px 0 100px
+	+max-screen(640px)
+		+break-grid(100%, 0)
+		overflow: hidden
+		padding-bottom: 0
+	li
+		list-style: none
+		+box
+	.slider-for
+		padding-bottom: 80px
+		a
+			display: block
+		img
+			margin: 0 auto
+			max-width: 100%
+	#slider-nav
+		.slick-track
+			+display-flex(flex)
+			+justify-content(space-between)
+			.slick-slide
+				cursor: pointer!important
+				max-width: 100px!important
+				height: 100px
+				+display-flex(flex)
+				+justify-content(center)
+				+align-items(center)
+				border: 1px solid #e4e4e4
+				&.slick-current
+					border: 1px solid #039
+		img
+			max-width: 100%
+
+	.product-details_main-data
+		font-size: 20px
+		max-width: 410px
+		margin-bottom: 40px
+	ul li
+		font-family: "ProximaNovaLight"
+		list-style: disc
+		line-height: 26px
+
+.bold
+	font-weight: 700
+
+#tabs
+	.list-wrap
+		ul
+			//margin: 0
+	.tabs-item li
+		+max-screen(480px)
+			float: none
+			max-width: 280px
+			margin: 0 auto
+		a
+			+max-screen(640px)
+				font-size: 14px
+			+max-screen(480px)
+				display: block
+				// width: 100%
+#tabs
+	ul
+		ul
+			list-style: disc
+			margin: 0 0 20px 16px
+.see-more
+	margin-top: 90px
+	padding-bottom: 30px
+	border-bottom: 1px solid #898989
+
+#product-details-owl
+	margin-bottom: 120px
+	overflow: hidden
+	+max-screen(640px)
+		margin-bottom: 40px
+	.product
+		width: 100%
+		float: none
+		opacity: 1
+	.owl-prev
+		background: url("../img/arr-left.png")no-repeat 50% 50%!important
+		left: 0
+		z-index: 10
+		+centre(y)
+	.owl-next
+		background: url("../img/arr-right.png")no-repeat 50% 50%!important
+		right: 0
+		z-index: 10
+		+centre(y)
+	.product-card
+		margin: 0 auto
+		&.back-side
+			left: 50%
+			margin-left: -180px
+			+max-screen(640px)
+				left: 0
+				margin-left: 0

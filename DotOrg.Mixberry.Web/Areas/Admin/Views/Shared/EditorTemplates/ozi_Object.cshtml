@@ -1,0 +1,67 @@
+﻿@model Object
+
+@{
+    var settings = WebContext.GetSettings();
+    var tabsCount = settings.FormSettings.Tabs.Count;
+	var roles = new string[0];// Roles.GetRolesForUser(User.Identity.Name);
+    Func<string, bool> allowed = role => string.IsNullOrEmpty(role) || roles.Contains(role);
+
+    var filename = string.Empty;
+    var viewExists = false;
+
+	//if (Model is IHaveAliasEntity && User.IsInRole("admin") && !WebContext.IsCreate && User.Identity.Name == "developer")
+	//{
+	//	filename = Server.MapPath(string.Format("~/views/{0}/{1}.cshtml", Model.GetType().Name, ((IHaveAliasEntity) Model).Alias));
+	//	viewExists = System.IO.File.Exists(filename);
+	//}
+    
+    
+}
+
+@if (tabsCount > 1 || viewExists)
+{
+    var index = 0;
+    @:<div id="edit-form-tabs">
+        <ul>
+            @foreach (var tab in settings.FormSettings.Tabs.Where(field => allowed(field.Roles)))
+            {
+                index++;
+                var name = tab.Name ?? string.Format("tab-{0}", index);
+                <li><a href="#tab@(index)">@name</a></li>
+            }
+            @if (viewExists)
+            {
+                <li><a href="#view">View</a></li>
+            }
+        </ul>
+}
+@RenderTabs(settings, allowed, viewExists, filename)
+@if (tabsCount > 1)
+{
+@:</div>
+}
+
+<div>
+	@Html.ValidationSummary()
+</div>
+
+@helper RenderTabs(Settings settings, Func<string, bool> allowed, bool viewExists, string filename)
+{
+    var index = 0;
+    foreach (var tab in settings.FormSettings.Tabs.Where(field => allowed(field.Roles)))
+    {
+        index++;
+        WebContext.CurrentTab = tab;
+        <div id="tab@(index)">
+            <table class="form-table">
+                @{ Html.RenderPartial("EditorTemplates/Shared/ObjectFields"); }
+            </table>
+        </div>
+    }
+    if (viewExists)
+    {
+        <div id="view">
+            @Html.Partial(MVC.Admin.Shared.Views.ViewEditor, filename)
+        </div>
+    }
+}

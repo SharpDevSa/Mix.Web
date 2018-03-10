@@ -1,0 +1,65 @@
+﻿@using System.Globalization
+@using DotOrg.Web.Ozi.PagesSettings.Forms
+@{
+    var settings = (AddressSettings)WebContext.FieldSettings;
+    var address = TypeHelpers.GetPropertyValue(WebContext.Model, settings.Name);
+
+    var useMap = !string.IsNullOrEmpty(settings.Latitude) && !string.IsNullOrEmpty(settings.Longitude);
+}
+
+<input type="text" name="@ViewData.TemplateInfo.HtmlFieldPrefix" class="ozi-string adr" value="@ViewData.TemplateInfo.FormattedModelValue" />
+
+@if (useMap)
+{
+    var ltd = (double?) TypeHelpers.GetPropertyValue(WebContext.Model, settings.Latitude);
+    var lng = (double?) TypeHelpers.GetPropertyValue(WebContext.Model, settings.Longitude);
+    WebContext.IncludeGoogleMapScript = true;
+    var baseId = ViewData.TemplateInfo.HtmlFieldPrefix;
+    <button id="@(baseId)search">Найти</button>
+    <div><strong>Широта: </strong><span id="@settings.Latitude" class="latitude digitals">@ltd</span></div>
+    <div><strong>Долгота: </strong><span id="@settings.Longitude" class="longitude digitals">@lng</span></div>
+    <input type="hidden" name="@settings.Latitude" value="@(ltd.HasValue ? ltd.Value.ToString(CultureInfo.InvariantCulture) : string.Empty)"/>
+    <input type="hidden" name="@settings.Longitude" value="@(lng.HasValue ? lng.Value.ToString(CultureInfo.InvariantCulture) : string.Empty)"/>
+    <div id="@(baseId)gmap" style="height: 500px; width: 100%;"></div>
+    <p>Для выбора координат — двойной клик по точке на карте.</p>
+
+    <script type="text/javascript">
+        $(function() {
+            @if (ltd.HasValue && lng.HasValue)
+            {
+                @:var center = new google.maps.LatLng(@(ltd.Value.ToString(CultureInfo.InvariantCulture)), @(lng.Value.ToString(CultureInfo.InvariantCulture)));
+            }
+            else
+            {
+                @:var center = new google.maps.LatLng(55.7517, 37.6178); // координаты москвы
+            }
+            var map = new DotOrgMap(center, "@baseId", "@(settings.Longitude)", "@(settings.Latitude)");
+            $("#@(baseId)search").click(function(e) {
+                e.preventDefault();
+                var address = $("[name='@(baseId)']").val();
+                map.setAddress(address);
+            });
+            $("[name='@(baseId)']").focus(function() {
+                $("#edit-form").on("submit", function(e) {
+                    e.preventDefault();
+                    var address = $("[name='@(baseId)']").val();
+                    map.setAddress(address);
+                });
+            });
+            $("[name='@(baseId)']").blur(function(e) {
+                $("#edit-form").off("submit");
+                e.preventDefault();
+                var address = $("[name='@(baseId)']").val();
+                map.setAddress(address);
+            });
+
+            $("[role='tablist'] a").on('click', function() {
+                google.maps.event.trigger(map.map, 'resize');
+                if (!map.hasChanges) {
+                    map.map.panTo(center);
+                }
+            });
+        });
+        
+    </script>
+}

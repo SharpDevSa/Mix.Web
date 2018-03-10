@@ -1,0 +1,41 @@
+﻿@using DotOrg.Web.Extensions
+@model DotOrg.Mixberry.Models.Entities.IBlockEntity
+
+<div class="group">
+	<h3>(@(Model.Id)) @Model.ToString()</h3>
+	<div style="position: relative;">
+		<input type="hidden" name="BlockId@(Model.Id)" value="@Model.Id" />
+		<input type="hidden" class="block-sort" name="BlockSort@(Model.Id)" value="@Model.Sort" />
+		<table class="wide-table">
+			<tr>
+				<td rowspan="3" style="width: 240px;">
+					@if (Model.Images.Any())
+					{
+						<img src="@Url.Image(Model.Images.FirstOrDefault(), "width=200", "height=200")" id="BlockImages@(Model.Id)" />
+						<input type="hidden" name="BlockImagesId@(Model.Id)" id="BlockImagesUrl@(Model.Id)" value="@Model.Images.Select(x => x.Id).FirstOrDefault()" />
+					}
+					<div id="BlockImagesUploadPanel@(Model.Id)" class="block-image-uploader">
+
+					</div>
+				</td>
+				<td>
+					<label>Название</label>
+					<input type="text" name="BlockName@(Model.Id)" value="@Model.Name" class="ozi-string" />
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<label>Псевдоним</label>
+					<input type="text" name="BlockAlias@(Model.Id)" value="@Model.Alias" class="ozi-string" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea class="ozi-code" rows="10" id="BlockContent@(Model.Id)" name="BlockContent@(Model.Id)">@Model.Content.TrimOrNull()</textarea>
+				</td>
+			</tr>
+		</table>
+		<a href="" class="remove-block">удалить</a>
+	</div>
+</div>

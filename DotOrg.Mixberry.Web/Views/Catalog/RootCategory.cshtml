@@ -1,0 +1,139 @@
+﻿@model List<Category>
+
+<div id="main-slaider" class="owl-carousel catalog-slaider">
+    <div class="item">
+        <div class="img-slide" style="background: url(media/img/alps.jpg) no-repeat 50% 50% / cover"></div>
+        <div class="slide">
+            <div class="section">
+                <div class="two-cols hidden">
+                    <div class="col fl">
+                        <div class="wrapper-h1">
+                            <h1 class="h1-banner">
+                                Selfie
+                                mania
+                                Super
+                                LENS
+                            </h1>
+                            <a class="master-btn white" href="">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="col fr">
+                        <div id="product-slaider">
+                            <div class="field">
+                                <figure>
+                                    <img src="media/img/lens.png" alt="mixberry">
+                                </figure>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="img-slide" style="background: url(/media/img/alps.jpg) no-repeat 50% 50% / cover"></div>
+        <div class="slide">
+            <div class="section">
+                <div class="two-cols hidden">
+                    <div class="col fl">
+                        <div class="wrapper-h1">
+                            <div class="h1-banner">
+                                Selfie mania  LENS  SET
+                            </div>
+                            <a class="master-btn white" href="">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="col fr">
+                        <div id="product-slaider">
+                            <div class="field">
+                                <figure>
+                                    <img src="media/img/lens-set.png" alt="mixberry">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="background-blue">
+    <div class="section">
+        <ul class="catalog-menu">
+            <li class="active"><a href="">Selfiemania</a></li>
+            <li><a href="">mobile power</a></li>
+            <li><a href="">Soundmania</a></li>
+            <li><a href=""> Lightmania</a></li>
+            <li><a href="">IN car</a></li>
+            <li><a href="">COVERS</a></li>
+            <li><a href="">CELEBRATION</a></li>
+        </ul>
+    </div>
+</div>
+<div class="section">
+    <div class="border">
+        <h2 class="h2 fl">Selfiemania</h2>
+        <div class="i-select products-select fr">
+            <span class="i-select__value">SELFIEMANIA</span>
+            <select class="i-select__select catalog-select">
+                <option value="SELFIEMANIA">SELFIEMANIA</option>
+                <option value="SELFIEMANIA">Bluetooth stick</option>
+                <option value="SELFIEMANIA">LENSES</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="item">
+            <a class="wrapper-img" href=" ">
+                <figure class="img">
+                    <img src="media/img/lens-set.png">
+                </figure>
+            </a>
+            <div class="products-description">
+                <p class="name">LENS SET</p>
+                <p>Совместим с большинством планшетов и смартфонов. В комплекте Макро, широкоугольная 120° и Fisheye линзы. Отличное решение для исключительных фотографий.</p>
+            </div>
+            <div class="products-color">
+                <div class="color-green active"><span></span></div>
+                <div class="color-blue"><span></span></div>
+                <div class="color-beige"><span></span></div>
+            </div>
+            <a href="" class="master-btn bg-blue">КУПИТЬ 2000 р.</a>
+        </div>
+
+        <div class="item">
+            <a class="wrapper-img" href=" ">
+                <figure class="img">
+                    <img src="media/img/lens-set.png">
+                </figure>
+            </a>
+            <div class="products-description">
+                <p class="name">LENS SET</p>
+                <p>Совместим с большинством планшетов и смартфонов. В комплекте Макро, широкоугольная 120° и Fisheye линзы. Отличное решение для исключительных фотографий.</p>
+            </div>
+
+            <a href="" class="master-btn bg-blue">КУПИТЬ 2000 р.</a>
+        </div>
+
+
+
+        @foreach (var item in Model)
+        {
+            <div id="@item.Alias">
+                вывод блоков и продуктов категории @item.Name
+                @foreach (var block in item.Blocks)
+                {
+
+                }
+                @foreach (var product in item.Products)
+                {
+
+                }
+            </div>
+        }
+    </div>
+
+</div>
+

@@ -1,0 +1,10 @@
+﻿@model SubscriptionViewModel
+@using (Html.BeginForm(MVC.Subscription.Subscribe(), FormMethod.Post, new { @class = "form ajax-form", id = "subscription-form" }))
+{
+    <label>@L.Get("subscription-message")</label>
+    <div class="fields">
+        @Html.TextBoxFor(x => x.Email, new { placeholder = L.Get("subscription-email"), type = "email" })
+        @Html.ValidationMessageFor(x => x.Email, L.Get("subscription-email-error"))
+        <input type="submit" value=" ">
+    </div>
+}

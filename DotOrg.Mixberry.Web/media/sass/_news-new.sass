@@ -1,0 +1,114 @@
+.news-item
+	margin-bottom: 50px
+	&:nth-child(odd)
+		+max-screen(980px)
+			margin-left: 0
+	&:nth-child(4)
+		+max-screen(980px)
+			margin-left: 15px
+		+max-screen(360px)
+			margin-left: 0
+	.news-item-date
+		margin: 15px 0 3px
+.news-details-big-banner
+	height: 484px
+	+max-screen(360px)
+		height: 200px
+.news-details
+	margin-top: 100px
+	.news-details-cover
+		+clr
+	.news-details-content
+		font-size: 18px
+		padding-right: 30px
+		border-right: 1px solid #999999
+		float: left
+		width: 70%
+		+box
+		+max-screen(480px)
+			float: none
+			width: 100%
+			border: 0
+		.page-title
+			margin-top: 0
+		p
+			color: #000
+		#slaider-news-archive
+			margin: 130px 0 70px
+			position: relative
+			.owl-dots
+				position: absolute
+				top: -90px
+				right: 50%
+				.owl-dot
+					display: inline-block
+					&.active
+						span
+							background: #0257F0
+					span
+						background: #000
+						border: none
+			.owl-nav
+				.owl-prev		
+					width: 4px
+					height: 11px
+					position: absolute
+					top: -90px
+					left: 40%
+					background: url("../img/owl-little-left.png") no-repeat top center
+				.owl-next
+					width: 4px
+					height: 11px
+					position: absolute
+					top: -90px
+					right: 46%
+					background: url("../img/owl-little-right.png") no-repeat top center
+		.news-navigation
+			width: 90px
+			+clr
+			margin: 20px 0
+			.link-details-news
+				font-size: 14px
+				text-align: center
+				color: #000
+				.border-arrow
+					display: block
+					height: 33px
+					color: #999999
+					width: 33px
+					font-size: 27px
+					border: 1px solid #bdbdbd
+					line-height: 33px	
+					margin-bottom: 5px
+					position: relative	
+					&:hover
+						color: #000
+						border: 1px solid #000
+					i
+						left: -4px
+						position: absolute
+						top: 0
+						&.icon-angle-right
+							left: -1px
+			+max-screen(480px)					
+				width: 100%
+				.fl
+					float: left
+				.fr
+					float: right
+	.news-details-aside
+		padding-left: 20px
+		float: right
+		width: 30%
+		+box
+		+max-screen(480px)
+			display: none
+		.item
+			margin-bottom: 30px
+			.item-data
+				display: block
+				color: #000
+			a
+				color: #666666
+				&:hover
+					color: #003399

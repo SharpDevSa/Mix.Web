@@ -1,0 +1,60 @@
+.wrapper-footer-broun
+	background: #333333
+	position: relative
+	z-index: 10
+	.footer-blue
+		background: #003399
+		height: 80px
+		margin-top: 100px
+		.footer-form			
+			margin: 0 auto
+			padding-top: 20px
+			position: relative
+			+min-screen(400px)
+				width: 400px
+			label
+				color: #c8c8c8
+				font-size: 16px
+			input[type="email"]
+				background: #003399
+				width: 225px
+				border: 1px solid #fff
+				color: #c8c8c8
+				margin-left: 20px
+			#img-button
+				position: absolute
+				width: 12px
+				height: 12px
+				background: url("../img/footer-button.png")no-repeat top center
+				top: 33px
+				right: 15px
+				cursor: pointer
+	.footer
+		height: 160px
+		font-size: 14px
+		.footer-up
+			border-bottom: 1px solid #666666
+			padding-top: 40px
+			height: 40px
+			.footer-width-col
+				width: 310px
+				display: block
+			.overview-search
+				width: 115px
+				.item	
+					display: inline-block
+					margin-right: 10px				
+			.footer-menu
+				list-style: none
+				margin: 0
+				li
+					display: inline-block
+					margin-left: 30px
+					&:first-of-type
+						margin-left: 0
+					a
+						color: #fff
+		.footer-down
+			padding-top: 30px
+			.footer-width-col
+				width: 310px

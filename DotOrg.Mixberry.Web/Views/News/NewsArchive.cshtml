@@ -1,0 +1,6 @@
+﻿@model List<News>
+
+	@foreach (var item in Model)
+	{
+		Html.RenderPartial(MVC.News.Views._ListNewsItem, item);
+	}

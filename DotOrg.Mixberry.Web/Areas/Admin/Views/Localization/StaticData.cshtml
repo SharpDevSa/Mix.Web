@@ -1,0 +1,11 @@
+﻿@model DotOrg.Mixberry.Web.Areas.Admin.Models.EditStaticLocalizationModel
+
+@foreach (var item in Model.Items)
+{
+	<tr class="form-table-row">
+		<td class="form-table-label">@item.Label</td>
+		<td class="form-table-data">
+			<input title="@item.DefaultValue" type="text" class="ozi-string" name="localize_@item.Name" value="@item.Value"/>
+		</td>
+	</tr>
+}

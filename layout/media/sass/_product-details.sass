@@ -1,0 +1,104 @@
+.product-details
+	.item-banner
+		top: 110px
+		.wrapper-h1
+			width: 300px
+		#product-slaider
+			.field
+				height: 400px
+				position: relative
+.focus
+	overflow: hidden
+	+min-screen(768px)
+		height: 548px
+	.col	
+		vertical-align: middle
+		height: 550px
+		position: relative
+		text-align: center
+		+min-screen(768px)
+			display: table-cell
+			width: 35%
+		&:nth-child(2n)
+			width: 30%
+		.bottom-text
+			bottom: 40px
+			position: absolute
+			text-align: center
+			width: 100%
+		p
+			color: #999999
+.description-product
+	height: 500px
+	.col
+		&:last-child
+			text-align: center
+		figure
+			margin-top: 59px
+	.description
+		+min-screen(768px)
+			margin-left: 100px
+			margin-top: 180px
+		p
+			color: #000
+.list-lens
+	background: url("../img/background-lens.jpg") repeat
+	padding-top: 120px
+	+min-screen(980px)	
+		height: 980px
+	+max-screen(980px)	
+		text-align: center
+	.item
+		+min-screen(768px)
+			display: table
+		.col
+			color: #fff
+			+max-screen(768px)
+				text-alegn: center
+			+min-screen(768px)
+				display: table-cell				
+				padding-bottom: 75px
+				vertical-align: middle
+			&:nth-child(1)
+				+min-screen(768px)
+					padding-left: 100px
+				width: 26%
+				p
+					font-size: 20px
+					text-transform: uppercase
+			&:nth-child(2)
+				+min-screen(768px)
+					padding-left: 0
+				text-align: center
+				width: 31%
+			&:nth-child(3)
+				+min-screen(768px)
+					padding-left: 75px
+				width: 27%
+				p
+					font-size: 16px
+			+max-screen(980px)	
+				width: 100% !important
+.wrapper-example-foto
+	margin: 0 auto
+	margin-top: 70px
+	+min-screen(930px)
+		width: 930px
+	+max-screen(800px)	
+		width: 768px
+	+max-screen(360px)	
+		width: 360px
+	+max-screen(320px)	
+		width: 360px
+	#example-foto		
+		.owl-nav
+			div
+				height: 55px
+				width: 25px
+				top: 285px
+			.owl-prev
+				background: url("../img/owl-left-blue.png") no-repeat
+				left: -75px
+			.owl-next
+				background: url("../img/owl-right-blue.png") no-repeat
+				right: -75px

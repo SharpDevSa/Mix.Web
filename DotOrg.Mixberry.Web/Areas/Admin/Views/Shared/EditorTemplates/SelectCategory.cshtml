@@ -1,0 +1,17 @@
+﻿@using DotOrg.Mixberry.Models
+
+@{
+	List<Category> list = WebContext.ViewBag.Categories;
+	Product p = (Product)WebContext.Model;
+}
+<select name="CategoryId" class="ozi-select">
+	@foreach (var item in list)
+	{
+		<optgroup label="@item.Name">
+			@foreach (var c in item.Children)
+			{
+				<option value="@c.Id" @If(c.Id == p.CategoryId, "selected")>@c.Name</option>
+			}
+		</optgroup>
+	}
+</select>

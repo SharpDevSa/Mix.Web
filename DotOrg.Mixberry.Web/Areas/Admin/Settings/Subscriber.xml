@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<settings xmlns="urn:settings" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="urn:settings Settings.xsd">
+	<list orderDesc="Date">
+		<global>
+		</global>
+
+		<actions>
+			<edit/>
+			<delete roles="admin" />
+		</actions>
+
+		<cols>
+			<string name="Email" title="E-mail" />
+			<string name="Date" title="Дата подписки" />
+		</cols>
+
+	</list>
+
+	<form>
+		<tab name="General">
+			<string name="Email" title="E-mail" />
+			<date name="Date" title="Дата подписки"/>
+			<checkbox name="IsApprowed" title="Подтвержден"/>
+			<string name="Url" title="Url" />
+		</tab>
+	</form>
+</settings>

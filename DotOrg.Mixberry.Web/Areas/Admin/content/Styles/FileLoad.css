@@ -1,0 +1,39 @@
+﻿body {
+}
+.TableFileList {
+    width: 100%;
+}
+
+.TableFileList tbody tr td:first-child {
+    
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+
+}
+
+.TableFileList tbody tr td img {
+    
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+
+}
+
+.TableFileList tbody tr td {
+    vertical-align: central;
+    text-align:center;
+}
+
+.EditImgModul {
+    height: 300px;
+    width: 100%;
+}

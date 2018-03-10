@@ -1,0 +1,168 @@
+﻿@model Location
+
+<div id="powered-by-lightning">
+    <div class="top-page-slider category">
+        <div class="top-page-slider_item two-col-layout" style="background: url(/media/img/category/happines.jpg) no-repeat 50% 50% / cover">
+            <div class="section">
+                <div class="top-page-slider_item-content">
+                    <h1 class="slide-head">
+                        HAPPINES<br />
+                        METTER
+                    </h1>
+                    <p>
+                        Smartphone is a versatile genius in your pocket. Empowered<br /> by special gizmo (an additional lens or battery) his magic<br /> would exceed all expectations.<br />
+                        Are you ready to see it?
+                    </p>
+
+                </div>
+                <div class="top-page-slider_item-content">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="product-template-black left-handed">
+    <div class="section">
+        <figure class="product-template-black_images">
+            <img src="~/media/img/happiens-Led-tube.png" />
+        </figure>
+        <div class="product-template-black_description juice">
+            <div>LED GlAsses JUICE</div>
+            <ul>
+                <li>Capacity 400ml</li>
+                <li>For cold drinks</li>
+                <li>Variable colors RGB</li>
+                <li>Long working time</li>
+            </ul>          
+        </div>
+    </div>
+</div>
+<div class="product-template-black right-handed">
+    <div class="section">
+        <figure class="product-template-black_images flex">
+            <img src="~/media/img/happiens-Cola.png" />
+        </figure>
+        <div class="product-template-black_description cola">
+            <div>LED GlAsses JUICE</div>
+            <ul>
+                <li>Capacity 400ml</li>
+                <li>For cold drinks</li>
+                <li>Variable colors RGB</li>
+                <li>Long working time</li>
+            </ul>            
+        </div>
+    </div>
+</div>
+<div class="category-section left-handed-section image-over" style="background: url(/media/img/banner-happies2.jpg) no-repeat 50% 50% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LOOK AT<br>THE WORLD<br>WIDER</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>
+<div class="product-template-black left-handed">
+    <div class="section">
+        <figure class="product-template-black_images">
+            <img src="~/media/img/happiens-champagne.png" />
+        </figure>
+        <div class="product-template-black_description champagne">
+            <div>LED GlAsses Champagne</div>
+            <ul>
+                <li>Capacity 400ml</li>
+                <li>For cold drinks</li>
+                <li>Variable colors RGB</li>
+                <li>Long working time</li>
+            </ul>          
+        </div>
+    </div>
+</div>
+<div class="product-template-black right-handed">
+    <div class="section">
+        <figure class="product-template-black_images">
+            <img src="~/media/img/happiens-whiskey.png" />
+        </figure>
+        <div class="product-template-black_description whiskey">
+            <div>LED GlAsses Whiskey</div>
+            <ul>
+                <li>Capacity 400ml</li>
+                <li>For cold drinks</li>
+                <li>Variable colors RGB</li>
+                <li>Long working time</li>
+            </ul>           
+        </div>
+    </div>
+</div>
+<div class="category-section left-handed-section image-over" style="background: url(/media/img/banner-whisky.jpg) no-repeat 50% 10% / cover; ">
+    <div class="category-section_text col">
+        <h2 class="slide-head">LORUM<br />ipsum <br />dolores</h2>
+    </div>
+    <div class="category-section_image col">&nbsp;</div>
+</div>
+
+<div class="product-template-black left-handed">
+    <div class="section">
+        <figure class="product-template-black_images">
+            <img src="~/media/img/happiens-shot.png" />
+        </figure>
+        <div class="product-template-black_description teqila">
+            <div>LED GlAsses Tequila</div>
+            <ul>
+                <li>Capacity 400ml</li>
+                <li>For cold drinks</li>
+                <li>Variable colors RGB</li>
+                <li>Long working time</li>
+            </ul>            
+        </div>
+    </div>
+</div>
+<div class="product-template-black right-handed">
+    <div class="section">
+        <figure class="product-template-black_images flex">
+            <img src="~/media/img/happiens-Sheiker.png" />
+        </figure>
+        <div class="product-template-black_description sheiker">
+            <div>LED GlAsses cola</div>
+            <ul>
+                <li>Capacity 400ml</li>
+                <li>For cold drinks</li>
+                <li>Variable colors RGB</li>
+                <li>Long working time</li>
+            </ul>          
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*@Html.Raw(Model.Content)
+
+    @foreach (var item in Model.Blocks)
+    {
+        <a name="@item.Alias"></a>
+        <div id="@item.Alias">
+            @RenderRazor(Model.Id, item.Alias, item.Content, Model)
+        </div>
+    }
+
+    <div class="section">
+        <div class="main-page-news">
+            <h2 class="h2">@L.Get("news")</h2>
+            <div class="news-list">@{ Html.RenderAction(MVC.News.NewsArchive()); }</div>
+        </div>
+    </div>*@

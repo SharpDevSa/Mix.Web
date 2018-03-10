@@ -1,0 +1,23 @@
+﻿@{
+    WebContext.IncludeColorScript = true;
+    var value = ViewData.TemplateInfo.FormattedModelValue;
+    
+    
+}
+<input name="@ViewData.TemplateInfo.HtmlFieldPrefix" type="text" value="@value"/>
+
+<p id="@(ViewData.TemplateInfo.HtmlFieldPrefix)Holder"></p>
+
+<script>
+    $(function() {
+        $("#@(ViewData.TemplateInfo.HtmlFieldPrefix)Holder").ColorPicker({
+            flat: true,
+            color: "@value",
+            onChange: function(hsb, hex, rgb) {
+                $("[name='@ViewData.TemplateInfo.HtmlFieldPrefix']").val("#" + hex);
+            }
+        });
+    });
+</script>
+
+

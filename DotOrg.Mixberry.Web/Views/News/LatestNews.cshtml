@@ -1,0 +1,12 @@
+﻿@model List<News>
+<div class="news-details-aside">
+    <div class="h4">@L.Get("latestNews")</div>
+    @foreach (var item in Model)
+    {
+        <div class="item">
+            <span class="item-data">@item.Date.ToString(L.Get("latest-news-date"))</span>
+            <a href="@L.Url(Url.Action(MVC.News.Details(item.Id)))">@item.Name</a>
+        </div>
+    }
+</div>
+

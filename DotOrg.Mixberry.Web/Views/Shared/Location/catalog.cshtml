@@ -1,0 +1,6 @@
+﻿@model Location
+
+@foreach (var item in Model.Blocks)
+{
+	@RenderRazor(Model.Id, item.Alias, item.Content, Model)
+}

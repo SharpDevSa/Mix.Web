@@ -1,0 +1,51 @@
+﻿@using DotOrg.Mixberry.Web.Core
+@model List<MenuItemViewModel>
+<div class="mobile-menu-toggler" id="mobile-menu-toggler">
+    <span class="icon-menu"></span>
+</div>
+<div class="header-menu-wrapper" id="menu">
+    <ul id="touch-menu" class="nav header-menu" role="menubar">
+        @foreach (var root in Model)
+        {
+            <li role="menuitem" class="nav-item @Html.Raw(If(root.Children.Any(), "parent")) @Html.Raw(If(root.Alias == WebContext.Location.Alias, "active"))">
+
+                @if (root.Alias == "contacts")
+                {
+                    <a class="nav-item_link" href="@L.Url(Url.ForPage("about"))#mixberry-labs">@root.Name</a>
+                }
+                else
+                {
+                    <a class="nav-item_link @Html.Raw(If(root.Children.Any(), "menu-toggler"))" href="@L.Url(root.Url)">@root.Name</a>
+                }
+                @if (root.Children.Any())
+                {
+                    <div class="sub-nav">
+                        <ul class="inner-menu section toggle-section">
+                            <li class="category-parent" id="@root.Alias"><a href="@L.Url(root.Url)">@(root.Header ?? root.Name)</a></li>
+                            @foreach (var item in root.Children)
+                            {
+                                <li class="sub-nav-item @Html.Raw(If(item.Children.Any(), "parent"))">
+                                    <a class="sub-nav-item_link  @Html.Raw(If(item.Children.Any(), "menu-toggler"))" href="@L.Url(item.Url)">@item.Name</a>
+                                    <ul class="inner-sub-menu toggle-section">
+                                        @foreach (var child in item.Children)
+                                        {
+                                            <li class="inner-sub-menu-item"><a class="sub-nav-item_link_link" href="@child.Url">@child.Name</a></li>
+                                        }
+                                    </ul>
+                                    <span class="plus @Html.Raw(If(item.Children.Any(), "visible"))">
+                                        <b class="line vert"></b>
+                                        <b class="line horiz"></b>
+                                    </span>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                }
+                <span class="plus @Html.Raw(If(root.Children.Any(), "visible"))">
+                    <b class="line vert"></b>
+                    <b class="line horiz"></b>
+                </span>
+            </li>
+        }
+    </ul>
+</div>

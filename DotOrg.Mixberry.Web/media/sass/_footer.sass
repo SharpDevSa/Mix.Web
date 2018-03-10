@@ -1,0 +1,119 @@
+.wrapper-footer-broun
+	background: #333333
+	position: relative
+	z-index: 10
+	height: 240px
+	margin-top: -240px
+	overflow: hidden
+	+max-screen(733px)
+		margin-top: 0
+.footer-blue
+	background: #003399
+	height: 80px
+	+max-screen(480px)
+		height: auto
+		padding: 20px 0
+	.footer-form			
+		margin: 0 auto
+		padding-top: 20px
+		position: relative
+		width: 400px
+		+clr
+		+max-screen(750px)
+			margin: 0 auto 15px auto
+		+max-screen(480px)
+			width: 90%
+		label
+			color: #c8c8c8
+			font-size: 16px
+			float: left
+			height: 35px
+			line-height: 35px
+			+max-screen(480px)
+				display: block
+				text-align: center
+				float: none
+		.fields
+			width: 225px
+			position: relative
+			float: right
+			+max-screen(480px)
+				width: 100%
+				float: none
+		input[type="email"]
+			background: #003399
+			width: 100%
+			display: block
+			+box
+			border: 1px solid #fff
+			color: #c8c8c8
+			margin-left: 20px
+			+max-screen(480px)
+				margin-left: 0
+				margin-top: 10px
+		input[type="submit"]
+			position: absolute
+			width: 35px
+			height: 35px
+			background: url("../img/footer-button.png") 50% 50% no-repeat
+			top: 0
+			right: 0
+			cursor: pointer
+			margin: 0
+			padding: 0
+			+max-screen(480px)
+				width: 47px
+.footer
+	height: 160px
+	font-size: 14px
+	overflow: hidden
+	+max-screen(600px)
+		height: auto
+	.footer-up
+		border-bottom: 1px solid #666666
+		padding-top: 40px
+		height: 40px
+		overflow: hidden
+		+max-screen(600px)
+			padding-top: 10px
+			height: auto
+			text-align: center
+		.footer-width-col
+			width: 310px
+			display: block
+			+max-screen(720px)
+				width: 100%
+				float: none
+				text-align: center
+				margin: 10px 0
+		.overview-search
+			width: 105px
+			+max-screen(600px)
+				margin: 10px auto
+				float: none
+			.item	
+				display: inline-block
+				margin-right: 20px
+				&:last-of-type
+					margin-right: 0			
+		.footer-menu
+			list-style: none
+			margin: 0
+			+max-screen(600px)
+				display: none
+			li
+				display: inline-block
+				margin-left: 30px
+				&:first-of-type
+					margin-left: 0
+				a
+					color: #fff
+	.footer-down
+		padding-top: 30px
+		overflow: hidden
+		.footer-width-col
+			width: 310px
+			+max-screen(600px)
+				float: none
+				width: 100%
+				text-align: center

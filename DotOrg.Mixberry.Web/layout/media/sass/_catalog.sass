@@ -1,0 +1,126 @@
+#main-slaider
+	.item
+		height: 483px
+		position: ralative
+		.img-slide
+			width: 100%
+			min-height: 483px
+		.slide
+			position: absolute
+			width: 100%
+			top: 0
+			.wrapper-h1
+				width: 250px
+				margin-top: 80px
+				.h1-banner
+					font-size: 60px
+					margin-bottom: 30px
+			#product-slaider
+				margin-top: 100px
+				height: 100%
+	.owl-dots
+		top: 93%
+		right: 49%
+		div
+			display: inline-block
+			margin-right: 13px
+	.owl-nav
+		.owl-prev
+			left: 20px
+			top: 215px
+		.owl-next
+			right: 20px
+			top: 215px
+.catalog-menu
+	display: block
+	height: 60px
+	line-height: 60px
+	text-transform: uppercase
+	list-style: none
+	margin: 0
+	li
+		display: inline-block
+		&.active
+			a
+				color: #fff
+		a
+			color: #cccccc
+			font-size: 14px
+			margin-right: 25px
+			display: block
+			&:hover
+				color: #fff
+
+.border
+	border-bottom: 1px solid #898989
+	overflow: hidden
+	margin-bottom: 40px
+	.products-select
+		margin-top: 70px
+		height: 35px
+		width: 200px
+		text-transform: uppercase
+	.h2
+		margin-bottom: 5px
+.products
+	margin-top: 90px
+	.products-col	
+		width: 290px
+		margin-left: 120px
+		margin-bottom: 90px
+		display: inline-block
+		&:first-child
+			margin-left: 0 
+		&:nth-child(4n)
+			margin-left: 0
+		.image
+			display: table-cell
+			height: 370px
+			text-align: center
+			vertical-align: middle
+			width: 300px
+			border-bottom: 1px solid #999999
+			img
+				display: none
+				&.active
+					display: block
+		.products-description
+			color: #000
+			margin-top: 10px
+			height: 180px
+			.name
+				font-size: 18px
+				text-transform: uppercase
+				margin-bottom: 5px
+				font-family: 'ProximaNovaBold' 
+			p
+				font-size: 13px 
+.products-color
+	margin-bottom: 30px
+	div
+		height: 28px
+		width: 28px
+		border-radius: 50%
+		display: inline-block
+		cursor: pointer
+		&.active
+			span
+				height: 12px
+				margin: 5px auto
+				width: 12px
+				display: block
+				border-radius: 50%
+				border: 2px solid #fff
+		&.color-green
+			background: #00cc33
+		&.color-blue
+			background: #33ccff
+		&.color-beige
+			background: #ffcc99
+		&.color-gray
+			background: #cccccc
+		&.color-broun
+			background: #666666
+		&.color-purple
+			background: #0e0839
+						

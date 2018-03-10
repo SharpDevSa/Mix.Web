@@ -1,0 +1,17 @@
+﻿@model Location
+@Html.Raw(Model.Content)
+
+@foreach (var item in Model.Blocks)
+{
+    <a name="@item.Alias"></a>
+    <div id="@item.Alias">
+        @RenderRazor(Model.Id, item.Alias, item.Content, Model)
+    </div>
+}
+
+<div class="section">
+    <div class="main-page-news">
+        <h2 class="h2">@L.Get("news")</h2>
+        <div class="news-list">@{ Html.RenderAction(MVC.News.NewsArchive()); }</div>
+    </div>
+</div>

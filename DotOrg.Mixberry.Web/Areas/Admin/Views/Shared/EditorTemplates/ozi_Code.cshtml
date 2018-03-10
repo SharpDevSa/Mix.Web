@@ -1,0 +1,21 @@
+﻿@using DotOrg.Web.Ozi.PagesSettings.Forms
+@{ 
+    var fieldSettings = (CodeSettings)WebContext.FieldSettings;
+	if (fieldSettings.Type == "htmlmixed")
+	{
+		WebContext.IncludeCodeScripts.Add("~/Areas/Admin/content/Scripts/CodeMirror/mode/xml/xml.js");
+	}
+    WebContext.IncludeCodeScripts.Add(string.Format("{0}/{1}/{1}.js", "~/Areas/Admin/content/Scripts/CodeMirror/mode", fieldSettings.Type));
+}
+
+<textarea id="@ViewData.TemplateInfo.HtmlFieldPrefix" name="@ViewData.TemplateInfo.HtmlFieldPrefix">@ViewData.TemplateInfo.FormattedModelValue</textarea>
+<script type="text/javascript">
+    CodeMirror.fromTextArea(document.getElementById("@(ViewData.TemplateInfo.HtmlFieldPrefix)"), {
+        value: "@(ViewData.TemplateInfo.FormattedModelValue.ToString().Replace("\"", "\\\"").Replace("\n", "").Replace("\r", "\\\r"))",
+        mode: { name: "@(fieldSettings.Type)", alignCDATA: true },
+        lineNumbers: true,
+        tabSize: 4,
+        matchBrakets: true
+    });
+
+</script>

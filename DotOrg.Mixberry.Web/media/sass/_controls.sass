@@ -1,0 +1,52 @@
+.form
+	input
+		height: 35px
+		line-height: 35px
+		padding-left: 15px
+		color: #40404b
+		border: none
+		width: 100%
+		opacity: 1
+		+box
+	textarea
+		border: none
+		height: 180px
+		color: #40404b
+		padding: 10px 10px 0 15px
+		width: 98%
+		font-size: 13px
+		opacity: 1
+.master-btn
+	height: 37px
+	padding: 0 28px
+	line-height: 40px
+	text-transform: uppercase
+	display: inline-block
+	font-size: 14px
+	min-width: 80px
+	text-align: center
+	&.white
+		border: 1px solid #fff
+		color: #fff
+		box-shadow: 0 0 0 0 #fff inset, 0 0 0 0
+		transition: box-shadow 0.3s cubic-bezier(0.66, 0, 0.07, 1) 0s, color 0.3s cubic-bezier(0.66, 0, 0.07, 1) 0s, border-color 0.3s cubic-bezier(0.66, 0, 0.07, 1) 0s
+		&:hover
+			box-shadow: 0 0 0 80px #003399 inset, 0 0 0 0
+			border: 1px solid #003399
+			opacity: 1
+	&.blue
+		border: 1px solid #0038a6
+		color: #0038a6
+		transition: box-shadow 0.3s cubic-bezier(0.66, 0, 0.07, 1) 0s, color 0.3s cubic-bezier(0.66, 0, 0.07, 1) 0s, border-color 0.3s cubic-bezier(0.66, 0, 0.07, 1) 0s
+		&:hover
+			box-shadow: 0 0 0 80px #003399 inset, 0 0 0 0
+			opacity: 1
+			color: #fff
+	&.bg-blue
+		color: #fff
+		background: #003399
+		text-transform: inherit
+.field-validation-error, .field-validation-valid
+	display: none !important
+.input-validation-error
+	border-color: #f00 !important

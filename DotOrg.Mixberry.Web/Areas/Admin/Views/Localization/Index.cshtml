@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Language>
+<script type="text/ecmascript" src="/Areas/Admin/Scripts/List.js"></script>
+
+<div class="global-actions">
+	<a class="global-action create" href="@Url.Action(MVC.Admin.Localization.Create())"><span class="icon-docs"></span>Добавить объект</a>
+</div>
+
+<table class="list-table">
+	<colgroup><col width="24"><col><col><col width="24"><col width="24"></colgroup>
+	<tbody>
+	<tr><th>№</th><th>Название</th><th>Псевдоним</th><th>&nbsp;</th><th>&nbsp;</th></tr>
+		@{
+			var index = 0;
+		}
+		@foreach (var item in Model)
+		{
+			index ++;
+			<tr @Html.Raw(If(item.Primary, "class=\"selected\""))>
+				<td class="number">@index</td>
+				<td target="@Url.Action(MVC.Admin.Localization.Edit(item.Lang))" class="first" style="cursor: pointer;">@item.Name</td>
+				<td target="@Url.Action(MVC.Admin.Localization.Edit(item.Lang))" style="cursor: pointer;">@item.Lang</td>
+				<td class="list-action"><a class="list-action" href="@Url.Action(MVC.Admin.Localization.Edit(item.Lang))"><span title="Редактировать" class="icon-pencil"></span></a></td>
+				<td class="list-action"><a class="list-action" onclick="if(!confirm('Удалить язык?')) return false; " href="@Url.Action(MVC.Admin.Localization.Delete(item.Lang))"><span title="Удалить" class="icon-trash"></span></a></td>
+			</tr>
+		}
+	</tbody>
+</table>
+<style>
+	tr.selected td { font-weight: bold; }
+</style>

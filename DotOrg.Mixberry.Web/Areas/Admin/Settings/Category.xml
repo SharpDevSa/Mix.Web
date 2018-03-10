@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+<settings xmlns="urn:settings" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="urn:settings Settings.xsd">
+	<list orderAsc="Sort">
+		<global>
+			<create />
+		</global>
+
+		<actions>
+			<visibility/>
+			<sort field="Sort"/>
+			<edit/>
+			<delete roles="admin" />
+		</actions>
+
+		<cols>
+			<string name="Name" title="Название"/>
+			<string name="Alias" title="Псевдоним"/>
+		</cols>
+
+	</list>
+
+	<form>
+		<tab name="General">
+			<string name="Name" title="Название" />
+			<checkbox name="ShowInMenu" title="Показывать в меню" />
+			<select name="Products" title="Товары" data="Products" multiple="true"></select>
+			<wysiwyg name="Description" title="Описание категории" />
+		</tab>
+		<tab name="Images">
+			<file name="Images" skipTitle="true" size="100" type="image"/>
+		</tab>
+		<tab name="Товарные группы">
+			<custom name="fake" skipTitle="true" control="ProductGroups"/>
+		</tab>
+		<tab name="Blocks">
+			<custom name="fake" skipTitle="true" control="Blocks"/>
+		</tab>
+		<tab name="Metadata">
+			<string name="Alias" title="Псевдоним" info="Используется для генерации url" />
+			<string name="MetaTitle" title="MetaTitle" />
+			<string name="MetaKeywords" title="MetaKeywords" />
+			<textarea name="MetaDescription" title="MetaDescription" />
+			<code type="xml" name="MetaData" title="Дополнительные метатеги" />
+		</tab>
+	</form>
+</settings>

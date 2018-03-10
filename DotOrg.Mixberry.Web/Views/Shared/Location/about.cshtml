@@ -1,0 +1,109 @@
+﻿@model Location
+
+@*<div class="about">
+    <ul id="point-nav" class="point-nav about-point-nav">
+        <li data-classname="white" data-id="main-header" class="active"><a href="#main-header">MIXBERRY</a></li>
+        <li data-classname="dark" data-id="impres-sions"><a href="#impressions">ECOPACK</a></li>
+        <li data-classname="white" data-id="singapore-nature"><a href="#singapore">SINGAPORE</a></li>
+        <li data-classname="dark" data-id="mixberry-labs"><a href="#mixberry">CONTACTS</a></li>
+    </ul>
+    <div class="about-video-section">
+        <div class="about-video-container">
+            <video id="video_background-one" class="about-video" poster="/media/img/poster-01.jpg" loop="loop" autoplay="autoplay" preload="auto">
+                <source src="/media/video/haos-web-new.mp4" type='video/mp4' />
+            </video>
+            <div class="mask"></div>
+            <div class="section">
+                <div class="about-video-section_content">
+                    <h1 class="header-level-1">THE FRUITY BITS OF EVOLUTION</h1>
+                    <p>
+                        Today the frontier of evolution runs through the wild world of gadgets and hi-tec consumer electronics.
+                        The explosive growth of the amount of gadgets brings to life natural selection between different kinds.
+                        The most promising are quite unexpected combinations of different species: laptop+walkman, camera+watch, phone + navigation device, even sunglasses+DV-recorder.
+                    </p>
+                    <p>
+                        We – the MIXBERRY Lab – are the alchemists of tomorrow. We deeply explore the origins of gadget species.
+                        And then we guide the evolution: we pick, we mix and combine possible variations of X’s & Y’s chromosomes.
+                        We aim to select, raise and provide the market with fresh species of gadgets with the most useful and promising characteristics.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="impressions" class="slide-eco-pack about-video-section blue">
+        <div class="section">
+            <div class="about-video-section_content">
+                <div class="header-level-1 blue">IMPRESSIONS RIGHT OUT OF THE BOX</div>
+                <p>
+                    Our passion for quality & exellence is what consumer feels from the very first glance.
+                    Engineered by Dutch package experts, the packaging of every item by MIXBERRY is eco-friendly and beautifully fine-crafted.
+                    Unique yet consistent packaging design concept for all products instantly delivers a bold brand image.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="singapore" class="about-video-section">
+        <div class="about-video-container">
+            <video id="video_background-one" class="about-video" poster=" " loop="loop" autoplay="autoplay" preload="auto">
+                <source src="/media/video/singapur_VIDEO.mp4" type='video/mp4' />
+            </video>
+            <div class="mask"></div>
+            <div class="section">
+                <div class="about-video-section_content">
+                    <h1 class="header-level-1">SINGAPORE IS IN OUR NATURE</h1>
+                    <p>
+                        Singapore is a fruity heaven garden that’s been scientifically selected.
+                    </p>
+                    <p>
+                        There are a lot of cities that have local parks. Singapore is not alike: it’s a park with a city inside of it.
+                        We here believe: ecosystem that’s optimal for a human is not a wild desert nor a jungle, but a hand-made garden.
+                    </p>
+                    <p>
+                        Local approach to environment was not conservation, but science-based creation and diversity.
+                        The 8000 species of plants have been imported on the island from all over the world and 2000 of them are carefully implanted
+                        in the area during twenty years of selection process.
+                        This illustration shows not only the solution of ecological issues, but the trend of taking the evolution boost in mind in developing Singapore towards a best place on Earth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="mixberry-labs"></a>
+    <div id="mixberry" class="about-video-section slide-eco-pack blue">
+        <div class="section">
+            <div class="about-video-section_content">
+                <div class="header-level-1 blue">MIXBERRY LABS</div>
+                <p>
+                    Contact us for information, questions or clarifications. Send an email <a href="mailto:info@mixberry.com">info@mixberry.com</a> with your details and the reason of your request, we will contact you shortly.
+                    We are committed to provide an high quality Customer Service Experience, so we guarantee that each response is processed with care.<br />
+
+                <p>
+                    Address <br />
+                    MIXBERRY LABS<br />
+                    176 Joo Chiat Road #02-02<br />
+                    Singapore 427447<br />
+                    Singapore<br />
+                </p>
+
+                <p>We are in social:</p>
+                <div class="about-overview-search">
+                    <a href="https://instagram.com/mymixberry" target="_blank">
+                        <img alt="mymixberry" src="/media/img/Instagram.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>*@
+
+@Html.Raw(Model.Content)
+
+@foreach (var item in Model.Blocks)
+{
+    <a name="@item.Alias"></a>
+    <div id="@item.Alias">
+        @RenderRazor(Model.Id, item.Alias, item.Content, Model)
+    </div>
+}

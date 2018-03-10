@@ -1,0 +1,171 @@
+.about
+	overflow: hidden
+.about-point-nav
+	list-style: none
+	position: fixed
+	height: 320px
+	top: 50%
+	margin: -160px 0 0 0
+	left: 374px
+	z-index: 2
+	width: 82px
+	padding: 0
+	+box
+	+transition(all 0.5s ease)
+	+max-screen(1280px)
+		left: 64px
+		top: 250px !important
+	+max-screen(980px)
+		display: none
+	&:after
+		+b
+		height: 200%
+		width: 1px
+		background: #fff
+		bottom: 100%
+		left: 50%
+	&:before
+		+b
+		height: 200%
+		width: 1px
+		background: #fff
+		top: 100%
+		left: 50%
+	&.dark
+		&:after
+			background: #003399	
+		&:before
+			background: #003399	
+		li
+			&:nth-child(2n)
+				&:before
+					+b
+					height: 43px
+					background: #003399
+					top: 37px
+					left: 50%
+				&:after
+					+b
+					height: 43px
+					background: #003399
+					top: -43px
+					left: 50%
+			&.active
+				a
+					color: #fff
+					background: #003399
+					border: 1px solid #003399		
+			a
+				background: #fff
+				color: #003399
+				border: 1px solid #003399							
+	li
+		position: relative
+		margin-bottom: 43px
+		&.active
+			a
+				background: #fff
+				color: #003399
+				border: 1px solid #fff	
+		&:nth-child(2n)
+			&:before
+				position: absolute
+				content: " "
+				display: block
+				height: 43px
+				width: 1px
+				background: #fff
+				top: 37px
+				left: 50%
+			&:after
+				position: absolute
+				content: " "
+				display: block
+				height: 43px
+				width: 1px
+				background: #fff
+				top: -43px
+				left: 50%
+		a
+			display: block
+			height: 35px
+			width: 80px
+			text-align: center
+			border-radius: 0
+			line-height: 35px
+			color: #fff
+			font-size: 12px
+			border: 1px solid #fff
+			letter-spacing: 0.7px
+.mask
+	background: #003399
+	opacity: 0.5
+	min-height: 100%
+	min-width: 100%
+	position: absolute
+	top: 0
+	left: 0
+.about-video-section
+	height: 880px
+	width: 100%
+	position: relative
+	color: #fff
+	&.blue
+		color: #039
+	+max-screen(768px)
+		height: auto
+	.section
+		position: relative
+		z-index: 2
+	.about-video-section_content
+		padding-top: 140px
+		padding-left: 160px
+		width: 440px
+		+max-screen(768px)
+			padding-left: 0
+			padding-top: 50px
+			padding-bottom: 100px
+		+max-screen(480px)
+			width: auto
+		.header-level-1.blue
+			font-size: 47px
+			+max-screen(640px)
+				font-size: 30px
+		p, span
+			font-size: 18px
+			margin-bottom: 35px
+			+max-screen(768px)
+				font-size: 14px
+				margin-bottom: 22px
+.about-video-container
+	height: 100%
+	min-height: 100%
+	overflow: hidden
+	position: relative
+	.about-video
+		bottom: 0
+		height: auto
+		min-height: 100%
+		min-width: 100%
+		overflow: hidden
+		right: 0
+		position: absolute
+.slide-eco-pack
+	background: url("/media/img/about-slide-two.jpg") no-repeat top right
+	+max-screen(640px)
+		background: none
+
+.about-overview-search
+	width: 250px
+	a
+		display: inline-block
+		height: 54px
+		line-height: 77px
+		margin-right: 20px
+		text-align: center
+		width: 54px
+		border: 1px solid #039
+#mixberry-labs
+	background: #fff
+	height: 880px
+		

@@ -1,0 +1,22 @@
+﻿@using DotOrg.Web.Ozi.PagesSettings.Forms
+
+
+@model UploadFileSettings
+
+@{
+    var bind = string.Format("{{visible: show{0}panel, attr: {{ id: generateId() + '_{0}', 'data-parentid': ItemId, 'data-modelid': ModelId }}}}", Model.Name);
+}
+
+<div>
+    <div data-bind="foreach: @(Model.Name)">
+        <div style="position: relative; display: inline-block;">
+            <div><img data-bind="{visible: $parent.show@(Model.Name)img, attr: { src: source, width: '@(Model.Size)' }}" /></div>
+            <div>
+                <input type="text" />
+            </div>
+            <a href="#" class="dispose-img-from-collection" data-url="@Url.Action(AdminViewPage.Actions.RemoveFileCollectionItem)" data-path="@Model.GetFullPropertyName()" data-bind="attr: { 'data-parentid': $parent.ItemId, 'data-modelid': $parent.ModelId, 'data-srcpath': id }" style="position: absolute;display: block;top:2px;right:2px;color:red;background: white;padding: 2px;">X</a>
+        </div>
+    </div>
+    <span data-bind="{visible: show@(Model.Name)text, text: 'Для начала сохраните объект' }"></span>
+    <div data-url="@Url.Action(AdminViewPage.Actions.UploadFileCollectionItem)" data-path="@Model.GetFullPropertyName()" data-bind="@Html.Raw(bind)"></div>
+</div>

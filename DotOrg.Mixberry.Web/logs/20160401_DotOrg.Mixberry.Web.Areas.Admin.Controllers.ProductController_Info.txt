@@ -1,0 +1,151 @@
+2016-04-01 01:53:46.4158|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) creates new item DotOrg.Mixberry.Models.Product
+returnUrl=; ozi_backlink=,; Name=LENS SET; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Compatible with tablets and smartphones. Macro lens, Wide Angle lens, Fisheye lens and universal lens clip &mdash; excellent solution for extraordinary photos!</span>; Title=; Specification=; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=; MetaTitle=; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 01:59:58.8863|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=112; ozi_backlink=,; Name=LENS SET; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Compatible with tablets and smartphones. Macro lens, Wide Angle lens, Fisheye lens and universal lens clip &mdash; excellent solution for extraordinary photos!</span>; collection_Models[0].Id=0; collection_Models[0].Color=; Title=MSM LS310WMF; Specification=<span style="line-height: 20.8px;">Wide angle lens 120 degrees</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Special optical glass</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Macro lens x15 zoom&nbsp;</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Fisheye lens 180 degrees</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Metal body lens</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Travel box with carabin included</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=lens-set; MetaTitle=lens-set; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:13:55.4020|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) creates new item DotOrg.Mixberry.Models.Product
+returnUrl=; _save=Сохранить; ozi_backlink=,; Name=SELFIE MONOPOD; ShowInMenu=true,false; Categories=9; Description=; Title=MSM BTS080; Specification=<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Standby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-stick; MetaTitle=Selfie-stick; MetaKeywords=; MetaDescription=; MetaData=|
+2016-04-01 02:14:28.6887|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=113; ozi_backlink=,; Name=SELFIE MONOPOD; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Bluetooth Remote control for smartphones photo apps. Compact and robust design. Compatible with compact and action cameras.</span>; Title=MSM BTS080; Specification=<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Standby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-stick; MetaTitle=Selfie-stick; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:18:55.8323|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=113; ozi_backlink=,; Name=SELFIE MONOPOD; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Bluetooth Remote control for smartphones photo apps. Compact and robust design. Compatible with compact and action cameras.</span>; collection_Models[0].Id=0; collection_Models[0].Color=; Title=MSM BTS080; Specification=<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Standby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-stick; MetaTitle=Selfie-stick; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:19:24.9732|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=113; ozi_backlink=,; Name=SELFIE MONOPOD; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Bluetooth Remote control for smartphones photo apps. Compact and robust design. Compatible with compact and action cameras.</span>; collection_Models[0].Id=0; collection_Models[0].Color=; Title=MSM BTS080; Specification=<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Standby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-stick; MetaTitle=Selfie-stick; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:21:45.7549|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=113; ozi_backlink=,; Name=SELFIE MONOPOD; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Bluetooth Remote control for smartphones photo apps. Compact and robust design. Compatible with compact and action cameras.</span>; collection_Models[0].Id=167; collection_Models[0].Color=; Title=MSM BTS080; Specification=<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Standby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-stick; MetaTitle=Selfie-stick; MetaKeywords=; MetaDescription=; MetaData=; _apply=Применить|
+2016-04-01 02:21:55.9979|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=113; ozi_backlink=,; Name=SELFIE MONOPOD; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Bluetooth Remote control for smartphones photo apps. Compact and robust design. Compatible with compact and action cameras.</span>; collection_Models[0].Id=167; collection_Models[0].Color=; Title=MSM BTS080; Specification=<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Standby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-stick; MetaTitle=Selfie-stick; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:22:30.2251|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=113; ozi_backlink=,; Name=SELFIE MONOPOD; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Bluetooth Remote control for smartphones photo apps. Compact and robust design. Compatible with compact and action cameras.</span>; collection_Models[0].Id=167; collection_Models[0].Color=#33ccff; Title=MSM BTS080; Specification=<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Standby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-stick; MetaTitle=Selfie-stick; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:25:04.0623|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) creates new item DotOrg.Mixberry.Models.Product
+returnUrl=; _apply=Применить; ozi_backlink=,; Name=SELFIE KIT; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Tripod and Monopod patent pending construction.&nbsp;For using with Smartphone&rsquo;s and action cameras.</span>; Title=; Specification=<span style="line-height: 20.8px;">MIXBERRY MSM BTK080</span><br style="line-height: 20.8px;" />
+<br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">S</span><span style="line-height: 20.8px;">tandby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-set; MetaTitle=Selfie-set; MetaKeywords=; MetaDescription=; MetaData=|
+2016-04-01 02:26:37.9057|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=114; ozi_backlink=,; Name=SELFIE KIT; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Tripod and Monopod patent pending construction.&nbsp;For using with Smartphone&rsquo;s and action cameras.</span>; collection_Models[0].Id=0; collection_Models[0].Color=; Title=; Specification=<span style="line-height: 20.8px;">MIXBERRY MSM BTK080</span><br style="line-height: 20.8px;" />
+<br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">S</span><span style="line-height: 20.8px;">tandby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-set; MetaTitle=Selfie-set; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:27:09.5651|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=114; ozi_backlink=,; Name=SELFIE KIT; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Tripod and Monopod patent pending construction.&nbsp;For using with Smartphone&rsquo;s and action cameras.</span>; collection_Models[0].Id=168; collection_Models[0].Color=; Title=; Specification=<span style="line-height: 20.8px;">MIXBERRY MSM BTK080</span><br style="line-height: 20.8px;" />
+<br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">S</span><span style="line-height: 20.8px;">tandby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-set; MetaTitle=Selfie-set; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:27:10.8594|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=114; ozi_backlink=,; Name=SELFIE KIT; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Tripod and Monopod patent pending construction.&nbsp;For using with Smartphone&rsquo;s and action cameras.</span>; collection_Models[0].Id=168; collection_Models[0].Color=; Title=; Specification=<span style="line-height: 20.8px;">MIXBERRY MSM BTK080</span><br style="line-height: 20.8px;" />
+<br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">S</span><span style="line-height: 20.8px;">tandby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-set; MetaTitle=Selfie-set; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:29:22.4273|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=114; ozi_backlink=,; Name=SELFIE KIT; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Tripod and Monopod patent pending construction.&nbsp;For using with Smartphone&rsquo;s and action cameras.</span>; collection_Models[0].Id=168; collection_Models[0].Color=; Title=; Specification=<span style="line-height: 20.8px;">MIXBERRY MSM BTK080</span><br style="line-height: 20.8px;" />
+<br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Bluetooth 4.0</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Built in Li-Pol battery</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">S</span><span style="line-height: 20.8px;">tandby time up to 100 hour</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up to 180 shots</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Up 100 cm long</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=selfie-set; MetaTitle=Selfie-set; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:33:43.4624|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=112; ozi_backlink=,; Name=LENS SET; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Compatible with tablets and smartphones. Macro lens, Wide Angle lens, Fisheye lens and universal lens clip &mdash; excellent solution for extraordinary photos!</span>; collection_Models[0].Id=165; collection_Models[0].Color=; Title=MSM LS310WMF; Specification=<span style="line-height: 20.8px;">Wide angle lens 120 degrees</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Special optical glass</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Macro lens x15 zoom&nbsp;</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Fisheye lens 180 degrees</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Metal body lens</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Travel box with carabin included</span>; ShowDetails=false; DetailsTitle=; DetailsSubTitle=; DetailsDescription=; Alias=lens-set; MetaTitle=lens-set; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:39:35.2886|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) creates new item DotOrg.Mixberry.Models.Product
+returnUrl=; ozi_backlink=,; Name=SUPERWIDE LENS; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Extra Wide Lens 150 degrees, with the high light sensitivity.</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">With 40% extended vision comparing to the conventional lens.</span>; Title=MSM LS150W; Specification=<span style="line-height: 20.8px;">Special optical glass</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Super wide angle - 150 degrees</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">High light sensitivity</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Metal body lens</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Travel box included</span>; ShowDetails=false; DetailsTitle=Mixberry MSM LS310WMF; DetailsSubTitle=3 Les set: Macro, wide-angle, fisheye for spartphones optical glass aluminom blank; DetailsDescription=; Alias=; MetaTitle=; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:40:32.3426|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=115; ozi_backlink=,; Name=SUPERWIDE LENS; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Extra Wide Lens 150 degrees, with the high light sensitivity.</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">With 40% extended vision comparing to the conventional lens.</span>; collection_Models[0].Id=0; collection_Models[0].Color=; Title=MSM LS150W; Specification=<span style="line-height: 20.8px;">Special optical glass</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Super wide angle - 150 degrees</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">High light sensitivity</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Metal body lens</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Travel box included</span>; ShowDetails=false; DetailsTitle=Mixberry MSM LS310WMF; DetailsSubTitle=3 Les set: Macro, wide-angle, fisheye for spartphones optical glass aluminom blank; DetailsDescription=; Alias=superwide-lens; MetaTitle=; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:41:18.1181|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=115; ozi_backlink=,; Name=SUPERWIDE LENS; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Extra Wide Lens 150 degrees, with the high light sensitivity.</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">With 40% extended vision comparing to the conventional lens.</span>; collection_Models[0].Id=169; collection_Models[0].Color=; Title=MSM LS150W; Specification=<span style="line-height: 20.8px;">Special optical glass</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Super wide angle - 150 degrees</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">High light sensitivity</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Metal body lens</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Travel box included</span>; ShowDetails=false; DetailsTitle=Mixberry MSM LS310WMF; DetailsSubTitle=3 Les set: Macro, wide-angle, fisheye for spartphones optical glass aluminom blank; DetailsDescription=; Alias=superwide-lens; MetaTitle=; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:43:34.4506|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=115; ozi_backlink=,; Name=SUPERWIDE LENS; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Extra Wide Lens 150 degrees, with the high light sensitivity.</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">With 40% extended vision comparing to the conventional lens.</span>; collection_Models[0].Id=169; collection_Models[0].Color=; Title=MSM LS150W; Specification=<span style="line-height: 20.8px;">Special optical glass</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Super wide angle - 150 degrees</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">High light sensitivity</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Metal body lens</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Travel box included</span>; ShowDetails=false; DetailsTitle=Mixberry MSM LS310WMF; DetailsSubTitle=3 Les set: Macro, wide-angle, fisheye for spartphones optical glass aluminom blank; DetailsDescription=<p style="line-height: 20.8px;">EATURES AND BENEFITS</p>
+
+<p style="line-height: 20.8px;">Wide angle lens 120 degrees<br />
+Macro lens x15 zoom<br />
+Fisheye lens 180 degrees<br />
+Universal Clip attachment<br />
+High light sensitivity<br />
+Made of Aluminom and Optical glass<br />
+Works on front and rear-facing cameras</p>
+; collection_Blocks[0].Id=0; collection_Blocks[0].Sort=0; collection_Blocks[0].Name=Overview; collection_Blocks[0].Alias=overview; collection_Blocks[0].Visibility=true,false; collection_Blocks[0].Content=<span style="line-height: 20.8px;">Lorem ipsum dolor sit amet</span>; Alias=superwide-lens; MetaTitle=; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|
+2016-04-01 02:44:02.6486|INFO|DotOrg.Mixberry.Web.Areas.Admin.Controllers.ProductController|dotorg (::1) edits item DotOrg.Mixberry.Models.Product
+returnUrl=; Id=115; ozi_backlink=,; Name=SUPERWIDE LENS; ShowInMenu=true,false; Categories=9; Description=<span style="line-height: 20.8px;">Extra Wide Lens 150 degrees, with the high light sensitivity.</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">With 40% extended vision comparing to the conventional lens.</span>; collection_Models[0].Id=169; collection_Models[0].Color=; Title=MSM LS150W; Specification=<span style="line-height: 20.8px;">Special optical glass</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Super wide angle - 150 degrees</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">High light sensitivity</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Metal body lens</span><br style="line-height: 20.8px;" />
+<span style="line-height: 20.8px;">Travel box included</span>; ShowDetails=false; DetailsTitle=Mixberry MSM LS310WMF; DetailsSubTitle=3 Les set: Macro, wide-angle, fisheye for spartphones optical glass aluminom blank; DetailsDescription=<p style="line-height: 20.8px;">EATURES AND BENEFITS</p>
+
+<p style="line-height: 20.8px;">Wide angle lens 120 degrees<br />
+Macro lens x15 zoom<br />
+Fisheye lens 180 degrees<br />
+Universal Clip attachment<br />
+High light sensitivity<br />
+Made of Aluminom and Optical glass<br />
+Works on front and rear-facing cameras</p>
+; collection_Blocks[0].Id=132; collection_Blocks[0].Sort=0; collection_Blocks[0].Name=Overview; collection_Blocks[0].Alias=overview; collection_Blocks[0].Visibility=true,false; collection_Blocks[0].Content=<span style="line-height: 20.8px;">Lorem ipsum dolor sit amet</span>; Alias=superwide-lens; MetaTitle=superwude lens; MetaKeywords=; MetaDescription=; MetaData=; _save=Сохранить|

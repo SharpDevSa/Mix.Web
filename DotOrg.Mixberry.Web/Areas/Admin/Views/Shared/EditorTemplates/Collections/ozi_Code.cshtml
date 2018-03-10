@@ -1,0 +1,10 @@
+﻿@using DotOrg.Web.Ozi.PagesSettings.Forms
+@model CodeSettings
+@{
+    var bind = string.Format("{{text: {0}, attr: {{ name: generateName() + '.{0}' }}}}", Model.Name);
+}
+<textarea 
+    @Html.Raw(string.Format("data-bind=\"{0}\"", bind) ) 
+    class="ozi-textarea" 
+    rows="10">
+</textarea>

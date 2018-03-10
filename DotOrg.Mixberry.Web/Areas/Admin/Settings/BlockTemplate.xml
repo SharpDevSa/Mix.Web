@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<settings xmlns="urn:settings" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="urn:settings Settings.xsd">
+	<list orderAsc="Name">
+		<global>
+			<create />
+		</global>
+
+		<actions>
+			<edit/>
+			<delete roles="admin" />
+		</actions>
+
+		<cols>
+			<string name="Name" title="Название"/>
+		</cols>
+
+	</list>
+
+	<form>
+		<tab name="General">
+			<string name="Name" title="Название" />
+			<code type="htmlmixed" name="Template" title="Шаблон" />
+		</tab>
+	</form>
+</settings>

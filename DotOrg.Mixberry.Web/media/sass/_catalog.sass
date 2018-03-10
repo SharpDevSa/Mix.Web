@@ -1,0 +1,247 @@
+#main-slaider
+	&.catalog-slaider
+		.owl-prev
+			left: 0
+			top: 0
+			height: 483px
+			transition: all 0.5s ease
+			width: 76px
+			background-position: 50% 50%
+			&:hover
+				background: url("../img/Nav_left.svg") no-repeat #348cb3 
+				opacity: 0.5
+				background-position: 50% 50%
+		.owl-next
+			right: 0
+			top: 0
+			height: 483px
+			transition: all 0.5s ease
+			width: 76px
+			background-position: 50% 50%
+			&:hover
+				background: url("../img/Nav_right.svg") no-repeat #348cb3 
+				opacity: 0.5
+				background-position: 50% 50%
+	.item
+		height: 483px
+		position: ralative
+		.img-slide
+			width: 100%
+			min-height: 483px
+		.slide
+			position: absolute
+			width: 100%
+			top: 0
+			.wrapper-h1
+				margin-top: 80px
+				+max-screen(480px)
+					margin-top: 25px
+				.h1-banner
+					font-size: 60px
+					margin-bottom: 20px
+					+max-screen(480px)
+						font-size: 25px
+			#product-slaider
+				margin-top: 100px
+				height: 100%
+	.owl-dots
+		top: 93%
+		right: 49%
+		+max-screen(360px)
+			right: 40%
+		div
+			display: inline-block
+			margin-right: 13px
+	.owl-nav
+		.owl-prev
+			left: 20px
+			top: 215px
+		.owl-next
+			right: 20px
+			top: 215px
+.catalog-menu
+	display: block
+	height: 60px
+	line-height: 60px
+	text-transform: uppercase
+	list-style: none
+	margin: 0
+	+max-screen(450px)
+		display: none
+	li
+		display: inline-block
+		&.active
+			a
+				color: #fff
+		a
+			color: #cccccc
+			font-size: 14px
+			margin-right: 25px
+			display: block
+			&:hover
+				color: #fff
+
+.border
+	border-bottom: 1px solid #898989
+	margin-bottom: 40px
+	+clr
+	.h2
+		text-transform: uppercase
+		margin-bottom: 5px
+		+clr
+		+max-screen(480px)
+			float: none
+			text-align: center
+	.products-select
+		margin-top: 70px
+		height: 45px
+		border: 1px solid #6b6b6b
+		min-width: 295px
+		position: relative
+		text-transform: uppercase
+		z-index: 2
+		+max-screen(480px)
+			margin: 30px auto
+			float: none
+			width: 290px
+		.i-select__value
+			min-width: 220px
+			padding: 5px 10px 5px 15px
+			margin-right: 40px
+			border-right: 1px solid #898989
+			color: #000
+			display: block
+			margin-top: 7px
+			+box
+			&:after
+				+b
+				+s(select-catalog)
+				right: 14px
+				top: 19px
+			+max-screen(480px)
+				min-width: auto
+				font-size: 14px
+		.i-select__select
+			cursor: pointer
+			height: 100%
+			min-height: 100%
+			width: 100%
+			min-width: 100%
+			left: 0
+			opacity: 0
+			position: absolute
+			top: 0
+		.i-select-list
+			list-style: none
+			width: 100%
+			border: 1px solid #6b6b6b
+			margin: 0
+			position: absolute
+			top: 45px
+			background: #fff
+			left: -1px
+			.i-select-list__item 
+				color: #000
+				padding: 5px 0 5px 15px
+				cursor: pointer
+				&:hover
+					background: #003399
+					color: #fff			
+			+max-screen(480px)
+				font-size: 14px
+.products
+	margin-top: 30px
+	+clr
+	.item
+		width: 290px
+		margin-right: 120px
+		margin-bottom: 20px
+		height: 525px
+		position: relative
+		display: inline-block
+		vertical-align: top
+		&:nth-child(2n+3)
+			margin-right: 0 
+		+max-screen(980px)
+			&:nth-child(2n+3)
+				margin-right: 120px
+		+max-screen(980px)
+			margin-right: 60px
+			&:nth-child(2n+3)
+				margin-right: 60px
+		+max-screen(725px)
+			width: 45%
+			margin-right: 0
+			&:nth-child(odd)
+				float: left
+			&:nth-child(even)
+				float: right
+		+max-screen(480px)
+			width: 280px
+			float: none !important
+			display: block
+			height: auto
+			margin: 0 auto 40px auto !important
+		.wrapper-img 
+			display: table-cell
+			height: 370px
+			text-align: center
+			vertical-align: middle
+			width: 300px
+			border-bottom: 1px solid #999999
+			.img
+				overflow: hidden
+			+max-screen(725px)
+				width: auto
+				display: block
+				img
+					max-width: 100%
+			+max-screen(480px)
+				height: auto
+		.products-description
+			color: #000
+			margin-top: 10px
+			height: 160px
+			overflow: hidden
+			padding-bottom: 20px
+			.name
+				font-size: 18px
+				text-transform: uppercase
+				margin-bottom: 5px
+				font-family: 'ProximaNovaBold' 
+			p
+				font-size: 13px 
+		.master-btn
+			position: absolute
+			bottom: 0
+.products-color
+	margin-bottom: 30px
+	+max-screen(480px)
+		margin-left: 20px
+	div, a
+		height: 27px
+		width: 28px
+		border-radius: 50%
+		display: inline-block
+		cursor: pointer
+		&.active
+			span
+				height: 12px
+				margin: 5px auto
+				width: 12px
+				display: block
+				border-radius: 50%
+				border: 2px solid #fff
+		&.color-green
+			background: #00cc33
+		&.color-blue
+			background: #33ccff
+		&.color-beige
+			background: #ffcc99
+		&.color-gray
+			background: #cccccc
+		&.color-brown
+			background: #666666
+		&.color-purple
+			background: #0e0839
+						

@@ -1,0 +1,184 @@
+﻿@using System.Collections
+@using DotOrg.Web.Ozi.PagesSettings.Forms
+@{
+	var field = (UploadFileSettings)WebContext.FieldSettings;
+	//var propertyValue = TypeHelpers.GetPropertyValue(Model, fieldSettings.Name);
+	var propertyValue = Model;
+	var isCreate = WebContext.IsCreate;
+}
+
+@if (isCreate || WebContext.Model == null)
+{
+	<div>
+		Необходимо сначала сохранить объект
+	</div>
+}
+else
+{
+	<div data-files-collection-container-for="@field.GetFullPropertyId()" data-delete-url="@Url.Action(Actions.DeleteFile)" data-id="@WebContext.Model.Id">
+		<div id="@(field.GetFullPropertyId())-files-container">
+			<ul id="@(field.GetFullPropertyId())-list" data-bind="sortable: { data: files, afterMove: saveList }">
+				<li class="file-list-item" style="display:block;width: auto;">
+					<table style="width: 100%;">
+						<tr>
+							<td rowspan="5">
+								@if (field.Type == "image")
+								{
+									<img data-bind="attr: { src: Url() + '?width=@field.Size&height=@field.Size&mode=crop' }" />
+								}
+								else if (field.Type == "video")
+								{
+									@* todo: надо бы обрабатывать всякие линки, например: *@
+									@* http://www.youtube.com/watch?v=d5hvgBD68_s *@
+									@* <iframe width="560" height="315" src="//www.youtube.com/embed/d5hvgBD68_s?rel=0" frameborder="0" allowfullscreen></iframe> *@
+									@* сейчас пока надо вставлять только идентификатор видоса *@
+									<a target="_blank" data-bind="visible: Url, attr: { href: 'http://www.youtube.com/watch?v=' + Url() }"><img data-bind="attr: { src: 'http://img.youtube.com/vi/' + Url() + '/3.jpg' }" /></a>
+									<input type="text" data-bind="value: Url" />
+								}
+								else
+								{
+									<a data-bind="{attr: {href: Url}, text: SourceName}"></a>
+								}
+							</td>
+							@if (field.Type == "image")
+							{
+								<td style="white-space: nowrap;">
+									<label>Альтернативный текст</label>
+								</td>
+								<td style="width: 100%;">
+									<input type="text" data-bind="value: Alt" />
+								</td>
+							}
+						</tr>
+						@if (field.ShowTitle)
+						{
+							<tr>
+								<td style="white-space: nowrap;"><label>Подпись</label></td>
+								<td><input type="text" data-bind="value: Title" /></td>
+							</tr>
+						}
+						@if (field.ShowClass)
+						{
+							<tr>
+								<td style="white-space: nowrap;"><label>Имя класса</label></td>
+								<td><input type="text" data-bind="value: Class" /></td>
+							</tr>
+						}
+						@if (field.ShowDescription)
+						{
+							<tr>
+								<td><label>Описание</label></td>
+								<td>
+									<button data-bind="click: $parent.runEditor, visible: isReadable">Изменить</button>
+									<button data-bind="click: $parent.save, visible: isEditable">Сохранить</button>
+									<button data-bind="click: $parent.cancel, visible: isEditable">Отменить</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="border: 1px solid black;height: 100%;" data-bind="attr: {id: 'file_' + Id() + '_description'}">
+									<div style="width: 90%;" data-bind="html: Description, visible: isReadable"></div>
+								</td>
+							</tr>
+						}
+						<tr>
+							<td>
+								@if (field.Visibility)
+								{ <label>Видимый</label><input type="checkbox" data-bind="checked: Visibility" /> }
+							</td>
+							<td>
+								<button class="delete">удалить</button>
+							</td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+			@if (field.Type == "video")
+			{
+				if (propertyValue is IEnumerable)
+				{
+					<input type="button" data-bind="click: addItem" value="добавить"/>
+				}
+			}
+		</div>
+		@if (field.Type != "video")
+		{
+			<div class="upload-panel" data-single="@Html.Raw(propertyValue is IEnumerable ? "false" : "true")" data-url="@Url.Action(Actions.UploadFile)" data-save-url="@Url.Action(Actions.SaveFileData)" data-name="@field.GetFullPropertyId()" data-id="@WebContext.Model.Id"></div>
+		}
+	</div>
+
+	<script>
+
+	files["@(field.GetFullPropertyId())_array"] = { files: ko.observableArray([]), saveList: function() {
+		saveOrder("@(field.GetFullPropertyId())_array", "@(Url.Action(Actions.SaveOrder))", @(WebContext.Model.Id), "@(field.GetFullPropertyId())", "@(field.Name)");
+	},
+		runEditor: function(data, event) {
+			data.editor = CKEDITOR.appendTo('file_' + data.Id() + '_description');
+			data.editor.setData(data.Description());
+			data.isEditable(true);
+		},
+		save: function(data, event) {
+
+			if (!!data.editor){
+				data.Description(data.editor.getData());
+				data.editor.destroy();
+				data.editor = null;
+			}
+			data.isEditable(false);
+			var itemData = ko.toJS(data);
+			itemData.PropName = "@field.GetFullPropertyId()";
+			itemData.ObjId = @WebContext.Model.Id;
+			var url = '@Url.Action(Actions.SaveFileData)';
+			$.post(url, itemData, function(data) {
+				if (data.success) {
+					toastr.success("Данные сохранены");
+				} else {
+					toastr.error(data.error);
+				}
+			});
+		},
+		cancel: function(data, event) {
+			data.editor.destroy();
+			data.editor = null;
+			data.isEditable(false);
+		},
+		addItem: function() {
+			var self = this;
+			$.post('@Url.Action(Actions.UploadFile)', {
+				id: @WebContext.Model.Id,
+				propName: '@field.GetFullPropertyId()',
+				url: '',
+				notUpload: true
+			}, function(responseJSON) {
+				self.files.push(new FileItem(responseJSON));
+			}, "json");
+		}
+	};
+
+	@if (propertyValue is IEnumerable)
+		{
+			foreach (var item in ((IEnumerable<IFileEntity>) propertyValue).OrderBy(entity => entity.Sort))
+			{
+				@RenderScript(field, item)
+			}
+		}
+		else if (propertyValue != null)
+		{
+			@RenderScript(field, (IFileEntity) propertyValue)
+		}
+
+
+	@if (field.Type == "video" && !(propertyValue is IEnumerable) && propertyValue == null)
+		{
+			@:files["@(field.GetFullPropertyId())_array"].addItem();
+		}
+
+	ko.applyBindings(files["@(field.GetFullPropertyId())_array"], $("#@(field.GetFullPropertyId())-files-container").get(0));
+
+	</script>
+}
+@helper RenderScript(UploadFileSettings upload, IFileEntity file)
+{
+	<text>
+		files["@(upload.Name)_array"].files.push(new FileItem({ Id: @file.Id, Url: "@(file.Url.IsNullOrEmpty() ? "" : (file.Url.StartsWith("~/") ? Url.Content(file.Url) : file.Url))", SourceName: "@file.SourceName", Alt: "@file.Alt", Class: "@file.Class", Title: "@file.Title", Description: '@Html.Raw(file.Description == null ? "" : file.Description.Replace("\r", "").Replace("\n", "\\\n"))', Date: "@file.Date", Visibility: @file.Visibility.ToString().ToLower() }));
+	</text>
+}

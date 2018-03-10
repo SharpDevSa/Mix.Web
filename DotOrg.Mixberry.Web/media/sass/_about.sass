@@ -1,0 +1,190 @@
+.about
+	overflow: hidden
+	#point-nav.about-point-nav
+		list-style: none
+		position: fixed
+		height: 320px
+		top: 50%
+		margin: -160px 0 0 0
+		left: 374px
+		z-index: 1
+		width: 82px
+		padding: 0
+		+box
+		+transition(all 0.5s ease)
+		+max-screen(1280px)
+			left: 64px
+			top: 250px !important
+		+max-screen(980px)
+			display: none
+		&:after
+			+b
+			height: 200%
+			width: 1px
+			background: #fff
+			bottom: 100%
+			left: 50%
+		&:before
+			+b
+			height: 200%
+			width: 1px
+			background: #fff
+			top: 100%
+			left: 50%
+		&.dark
+			&:after
+				background: #003399	
+			&:before
+				background: #003399	
+			li
+				&:nth-child(2n)
+					&:before
+						+b
+						height: 43px
+						background: #003399
+						top: 37px
+						left: 50%
+					&:after
+						+b
+						height: 43px
+						background: #003399
+						top: -43px
+						left: 50%
+				&.active
+					a
+						color: #fff
+						background: #003399
+						border: 1px solid #003399		
+				a
+					background: #fff
+					color: #003399
+					border: 1px solid #003399							
+		li
+			position: relative
+			margin-bottom: 43px
+			&.active
+				a
+					background: #fff
+					color: #003399
+					border: 1px solid #fff	
+			&:nth-child(2n)
+				&:before
+					position: absolute
+					content: " "
+					display: block
+					height: 43px
+					width: 1px
+					background: #fff
+					top: 37px
+					left: 50%
+				&:after
+					position: absolute
+					content: " "
+					display: block
+					height: 43px
+					width: 1px
+					background: #fff
+					top: -43px
+					left: 50%
+			a
+				display: block
+				height: 35px
+				width: 80px
+				text-align: center
+				border-radius: 0
+				line-height: 35px
+				color: #fff
+				font-size: 12px
+				border: 1px solid #fff
+				letter-spacing: 0.7px
+	.wrapper-content-about
+		position: relative
+		.section
+			position: static
+	.opacity
+		background: #003399
+		opacity: 0.5
+		min-height: 100%
+		min-width: 100%
+		position: absolute
+		top: 0
+		left: 0
+	.wrapper-video
+		height: 100%
+		min-height: 100%
+		overflow: hidden
+		position: relative
+		.video
+			bottom: 0
+			height: auto
+			min-height: 100%
+			min-width: 100%
+			overflow: hidden
+			right: 0
+	.video-about
+		height: 880px
+		width: 100%
+		opacity: 0.9
+		.content-about
+			left: 50%
+			margin-left: -370px
+			position: absolute
+			top: 0
+			width: 460px
+			z-index: 100
+			padding-top: 140px
+			+max-screen(768px)
+				left: 0
+				margin-left: 15px
+				top: 50
+				width: 730px
+			+max-screen(360px)
+				top: 40
+				width: 320px
+			+max-screen(320px)
+				width: 280px
+			.h1
+				margin-top: 0
+			p, span
+				font-size: 18px
+				margin-bottom: 35px		
+	.slide-eco-pack
+		height: 880px
+		background: url("../img/about-slide-two.jpg") no-repeat top right
+		.content-white
+			left: 50%
+			margin-left: -370px
+			position: absolute
+			top: 0
+			width: 460px
+			z-index: 100
+			padding-top: 120px
+			+max-screen(768px)
+				left: 0
+				margin-left: 15px
+				top: 50
+				width: 730px
+			+max-screen(360px)
+				top: 40
+				width: 320px
+			+max-screen(320px)
+				width: 280px
+			.h1
+				margin-top: 0
+			p, span
+				font-size: 18px
+				margin-bottom: 35px		
+			.about-overview-search
+				width: 250px
+				a
+					display: inline-block
+					height: 54px
+					line-height: 77px
+					margin-right: 20px
+					text-align: center
+					width: 54px
+					border: 1px solid #003399
+	#mixberry-labs
+		background: #fff
+		height: 880px
+		

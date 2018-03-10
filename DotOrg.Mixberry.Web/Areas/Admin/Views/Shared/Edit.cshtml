@@ -1,0 +1,57 @@
+﻿@{
+	WebContext.HtmlPageTitle = "Ozi.cms — редактирование объекта";
+	Layout = MVC.Admin.Shared.Views._Main;
+}
+
+<script type="text/javascript">
+	var _editFormId = "edit-form";
+
+	$(function() {
+		$("#edit-form").on("submit", function() {
+			$("select option", this).show();
+		});
+	});
+
+</script>
+
+@using (Html.BeginForm(Constants.EditView, Request.RequestContext.RouteData.Values["controller"].ToString(), FormMethod.Post, new { enctype = "multipart/form-data", id = "edit-form" }))
+{
+	<input type="hidden" name="returnUrl" value="@WebContext.ReturnUrl"/>
+	@Html.Hidden("Id")
+	<table class="form-table">
+		<tr>
+			<th>
+				@if (WebContext.PrevId.HasValue)
+				{
+					<div class="fl"><span class="icon-left-hand"></span>@Html.ActionLink("Предыдущий элемент", Actions.Edit, new { id = WebContext.PrevId.Value})</div>
+				}
+				 @if (WebContext.NextId.HasValue)
+				{
+					<div class="fr">@Html.ActionLink("Следующий элемент", Actions.Edit, new { id = WebContext.NextId.Value})<span class="icon-right-hand"></span></div>
+				}
+				<div class="title">
+					@{
+						var name = ((IEntity)Model).ToString();
+					}
+					@if (string.IsNullOrEmpty(name))
+					{
+						@Html.Raw(Model.ToString())
+					}
+					else
+					{
+						@Html.Raw(name)
+					}
+				</div>
+			</th>
+		</tr>
+
+	</table>
+
+	@Html.ValidationSummary(true)
+		
+	Html.RenderPartial(Url.Content("~/Areas/Admin/Views/Shared/Form/FormButtons.cshtml"));
+	
+	@Html.EditorFor(model => model, "ozi_Object")
+	
+	Html.RenderPartial(Url.Content("~/Areas/Admin/Views/Shared/Form/FormButtons.cshtml"));
+}

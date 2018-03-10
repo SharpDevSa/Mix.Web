@@ -1,0 +1,13 @@
+﻿@model DotOrg.Web.Ozi.PagesSettings.Forms.StringSettings
+@{
+    var bind = string.Format("{{value: {0}, attr: {{ name: generateName() + '.{0}' }}}}", Model.Name);
+}
+
+@if (Model.Readonly)
+{
+    <label data-bind="text: @(Model.Name)"></label>
+}
+else
+{
+    <input type="text" class="ozi-string" data-bind="@Html.Raw(bind)" @If(Model.Disabled, "disabled=\"disabled\"")/>
+}

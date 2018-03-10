@@ -1,0 +1,16 @@
+﻿<header class="header" id="main-header">
+    <div class="section">
+        <div class="header-logo fl" id="header-logo-container">
+            <a href="/@Localization.Current.Lang"><img src="/media/img/logo.svg" width="126" alt="mixberry" /></a>
+        </div>
+        @{
+            Html.RenderAction(MVC.Common.LanguagePanel());
+            Html.RenderAction(MVC.Common.SearchPanel());
+            Html.RenderAction(MVC.Common.Menu());
+        }
+    </div>
+    <div class="sub-nav" id="submenu">
+        <ul class="inner-menu section"></ul>
+    </div>
+</header>
+

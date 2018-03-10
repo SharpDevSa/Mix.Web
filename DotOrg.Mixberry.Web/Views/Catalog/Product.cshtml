@@ -1,0 +1,158 @@
+﻿@model ProductViewModel
+<div class="product-details">
+    @{
+        var product = Model.Product;
+        var banner = product.Banners.FirstOrDefault();
+    }
+    @if (banner != null)
+    {
+        <div class="product-details_banner" style="background-image: url(@Url.Image(banner.Url))">
+            <div class="section">
+                <h1>@banner.Title</h1>
+                <span>
+                    @Html.Raw(banner.Description)
+                </span>
+            </div>
+        </div>
+    }
+
+    <div class="section">
+        <ul class="product-details_info">
+            <li class="product-details_gallary">
+                <div class="slider slider-for">
+                    @foreach (var item in product.DetailsImages)
+                    {
+                        <div>
+                            <a href="@Url.Image(item.Url)" data-lightbox="gallery">
+                                <img src="@Url.Image(item.Url, "width=400")" alt="">
+                            </a>
+                        </div>
+                    }
+                </div>
+
+                <div id="slider-nav" class="slider slider-nav">
+                    @foreach (var item in product.DetailsImages)
+                    {
+                        <div>
+                            <img src="@Url.Image(item.Url, "width=75")" alt="">
+                        </div>
+                    }
+                </div>
+            </li>
+
+            <li class="product-details_data">
+                <h3 class="product-details_name">@product.DetailsTitle</h3>
+                <div class="product-details_main-data">
+                    @product.DetailsSubTitle
+                </div>
+
+                <ul>
+                    @Html.Raw(product.DetailsDescription)
+                </ul>
+            </li>
+        </ul>
+
+        <div id="tabs">
+
+            <ul class="tabs-item">
+                @{int i = 0;}
+                @foreach (var item in product.Blocks)
+                {
+                    <li class="nav-one"><a href="#@item.Alias" class="@ByCondition(i == 0, "current")">@item.Name</a></li>
+                    i++;
+                }
+
+                @*<li class="nav-two"><a href="#specification">SPECIFICATION</a></li>
+                    <li class="nav-three"><a href="#wbox">What's In The Box</a></li>*@
+
+            </ul>
+
+            <div class="list-wrap">
+                @{ i = 0;}
+                @foreach (var item in product.Blocks)
+                {
+                    <ul id="@item.Alias" class="@ByCondition(i > 0, "hide")">
+                        <li>
+                            @Html.Raw(item.Content)
+                        </li>
+                    </ul>
+                    i++;
+                }
+
+            </div> <!-- END List Wrap -->
+
+        </div> <!-- END Organic Tabs (Example One) -->
+
+        <div class="see-more h3">@T("see-more") </div>
+
+        <div id="product-details-owl" class="products-list owl-carousel">
+
+            @foreach (Product item in product.Related)
+            {
+                var block = item.Models.First();
+                <div class="product">
+                    @if (item.ShowDetails)
+                    {
+                        <a href="@Url.ForProduct(item, item.Categories.First())" class="product-card front-side">
+                            <div class="product-card_image">
+                                <div class="product-card_image-cover">
+                                    <img src="@Url.Image(block.Image, "width=300", "height=380")" />
+                                </div>Настройки сайта
+                            </div>
+                            <div class="product-card_description">
+                                <div class="product-name">@item.Name</div>
+                                <div class="product-description">
+                                    @Html.Raw(item.Description)
+                                </div>
+                            </div>
+                        </a>
+                        <div class="product-card back-side">
+                            <div class="product-card_image">
+                                <div class="product-card_image-cover">
+                                    <img src="@Url.Image(item.PromoImage, "width=300", "height=380")" />
+                                </div>
+                            </div>
+                            <div class="product-card_description">
+                                <div class="product-name">@item.Name</div>
+                                <div class="product-description">
+                                    @Html.Raw(item.Specification)
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <a href="/@Localization.Current.Lang/catalog/@(item.Categories.First().Alias)#@(item.Alias)" class="product-card front-side">
+                            <div class="product-card_image">
+                                <div class="product-card_image-cover">
+                                    <img src="@Url.Image(block.Image, "width=300", "height=380")" />
+                                </div>
+                            </div>
+                            <div class="product-card_description">
+                                <div class="product-name">@item.Name</div>
+                                <div class="product-description">
+                                    @Html.Raw(item.Description)
+                                </div>
+                            </div>
+                        </a>
+                        <div class="product-card back-side">
+                            <div class="product-card_image">
+                                <div class="product-card_image-cover">
+                                    <img src="@Url.Image(item.PromoImage, "width=300", "height=380")" />
+                                </div>
+                            </div>
+                            <div class="product-card_description">
+                                <div class="product-name">@item.Name</div>
+                                <div class="product-description">
+                                    @Html.Raw(item.Specification)
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>}
+        </div>
+
+    </div>
+
+</div>

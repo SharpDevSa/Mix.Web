@@ -1,0 +1,17 @@
+﻿@using DotOrg.Mixberry.Models
+@{
+	var vm = (Product)WebContext.Model;
+	var models = vm.Models;
+}
+@if (WebContext.IsCreate)
+{
+	<div>
+		Необходимо сначала сохранить объект
+	</div>
+}
+else
+{
+	<div>
+		
+	</div>
+}

@@ -1,0 +1,76 @@
+﻿@using System.Xml.Linq
+@model Language
+
+@{
+	var isCreate = Model.Lang.IsNullOrEmpty();
+}
+
+<form action="@Url.Action(MVC.Admin.Localization.Edit())" id="edit-form" method="post">
+	<input type="hidden" name="key" value="@Model.Lang" />
+	<table class="form-table"><tr><th><div class="title">@Model.ToString()</div></th></tr></table>
+	<div class="form-save-buttons">
+		<a class="form-back-link" href="@Url.Action(MVC.Admin.Localization.Index())"><span class="icon-reply"></span>Назад к списку</a>
+		<input type="submit" id="save-button" name="_save" class="save-button" value="Сохранить">
+		<input type="submit" id="apply-button" class="apply-button" name="_apply" value="Применить">
+	</div>
+
+	<div id="edit-form-tabs">
+		<div id="tab1">
+			<table class="form-table">
+				@if (!isCreate)
+				{
+					<tr class="form-table-row">
+						<td class="form-table-label">Ключ для урл</td>
+						<td class="form-table-data">@Model.Lang</td>
+					</tr>
+				}
+				<tr class="form-table-row">
+					<td class="form-table-label">Название</td>
+					<td class="form-table-data">
+						@Html.TextBoxFor(x => x.Name, new {@class = "ozi-string"})
+						@Html.ValidationMessageFor(x => x.Name)
+					</td>
+				</tr>
+				@if (isCreate)
+				{
+					<tr class="form-table-row">
+						<td class="form-table-label">Ключ для урл</td>
+						<td class="form-table-data">
+							@Html.EditorFor(x => x.Lang)
+							<div style="color: #ae0f0f;" class="field-info">2 символа, нельзя будет изменить</div>
+							@Html.ValidationMessageFor(x => x.Lang)
+						</td>
+					</tr>
+					<tr class="form-table-row">
+						<td class="form-table-label">Скопировать данные из</td>
+						<td class="form-table-data">
+							<select name="sourceLang">
+								<option>создать пустым</option>
+								@foreach (var item in Localization.All())
+								{
+									<option value="@item.Lang">@item.Name</option>
+								}
+							</select>
+						</td>
+					</tr>
+				}
+				<tr class="form-table-row">
+					<td class="form-table-label">Использовать по умолчанию</td>
+					<td class="form-table-data">
+						@Html.EditorFor(x => x.Primary)
+					</td>
+				</tr>
+				<tr class="form-table-row"><td class="form-table-label" colspan="2"><hr/></td></tr>
+				@{ Html.RenderAction(MVC.Admin.Localization.StaticData(Model.Lang)); }
+			</table>
+		</div>
+	</div>
+
+	<div>@Html.ValidationSummary()</div>
+
+	<div class="form-save-buttons">
+		<a class="form-back-link" href="@Url.Action(MVC.Admin.Localization.Index())"><span class="icon-reply"></span>Назад к списку</a>
+		<input type="submit" id="save-button" name="_save" class="save-button" value="Сохранить">
+		<input type="submit" id="apply-button" class="apply-button" name="_apply" value="Применить">
+	</div>
+</form>

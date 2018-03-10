@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mixberry>
+	<date-format>MM/dd/yyyy</date-format>
+	<latestNews>Latest news</latestNews>
+	<latest-news-date>dd/MM</latest-news-date>
+	<home-page-alias>Home</home-page-alias>
+	<news>News</news>
+	<news-archive>Archive news</news-archive>
+	<search>Search</search>
+
+	<notfound-metatitle>404 page</notfound-metatitle>
+	<notfound-title>Page not found.</notfound-title>
+	<notfound-description>Maybe page was moved or deleted.</notfound-description>
+	<subscription-message>Get mixberry news</subscription-message>
+	<subscription-success>Email confirmed!</subscription-success>
+	<unsubscription-success>You unsubscribed.</unsubscription-success>
+
+	<subscription-email>Enter your email</subscription-email>
+	<subscription-email-error>Wrong E-mail</subscription-email-error>
+
+	<catalog-all-products-name>All</catalog-all-products-name>
+	<distributors>Distributors</distributors>
+	<retailers>Retailers</retailers>
+	<see-more>See more</see-more>
+
+</mixberry>

@@ -1,0 +1,26 @@
+﻿@model PagerViewModel
+
+@if (Model.PagesCount > 1)
+{
+	<div>
+		@if (Model.CanPrev)
+		{
+			<a href="@L.Url(Model.GenerateUrl(Model.Page - 1))">&lt;</a>
+		}
+		@foreach (var item in Model.GetPages())
+		{
+			if (item == Model.Page)
+			{
+				<span>@item</span>
+			}
+			else
+			{
+				<a href="@L.Url(Model.GenerateUrl(item))">@item</a>
+			}
+		}
+		@if (Model.CanNext)
+		{
+			<a href="@L.Url(Model.GenerateUrl(Model.Page + 1))">&gt;</a>
+		}
+	</div>
+}

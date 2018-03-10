@@ -1,0 +1,6 @@
+﻿@model News
+<a href="@L.Url(Url.Action(MVC.News.Details(Model.Id)))" class="news-item">
+    <img alt=" " src="@Url.Image(Model.Image, "width=360", "height=257")">
+    <div class="news-item-date">@Model.Date.ToString(L.Get("date-format"))</div>
+    <div class="news-item-description"><p>@Model.Name</p></div>
+</a>

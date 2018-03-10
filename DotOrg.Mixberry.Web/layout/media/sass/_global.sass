@@ -1,0 +1,161 @@
+$lighten_amount: 30%
+$darken_amount: 10%
+=b
+	display: block
+	position: absolute
+	content: " "
+	font-size: 1px
+=up
+	text-transform: uppercase
+=clearfix
+	&:after
+		display: table
+		width: 100%
+		content: " "
+		clear: both
+		height: 0
+		width: 0		
+*
+	padding: 0
+	margin: 0
+	border-collapse: collapse
+html, body
+	width: 100%
+	height: 100%
+body
+	font: 16px/1.37 'ProximaNovaRegular', 'Open Sans', Arial
+	color: #666666
+p, ul, ol
+	margin-bottom: 20px
+a
+	img
+		border: 0
+a
+	text-decoration: none
+ul, ol
+	margin-left: 22px
+h1, h2, h3, h4, h5, h6
+	font-weight: 600
+	margin-bottom: 20px
+.wrapper-h1
+	width: 430px
+h1, .h1-banner
+	font-size: 75px
+	color: #fff
+	font-family: 'ProximaNovaRegular' 
+	text-transform: uppercase
+	margin: 10px 0 10px
+	line-height: 1.1
+.h1
+	font-size: 38px
+	color: #000
+	margin: 70px 0 30px
+	text-transform: uppercase
+	font-weight: normal
+	font-family: 'ProximaNovaRegular'
+h2, .h2
+	font-size: 36px
+	color: #111
+	margin: 70px 0 30px
+	font-family: 'ProximaNovaLight' 
+	text-transform: inherit
+h3, .h3
+	font-size: 26px
+	color: #000
+	font-family: 'ProximaNovaBold'
+	margin-bottom: 15px
+h4, .h4
+	font-size: 22px
+	color: #000
+	font-family: 'ProximaNovaRegular'
+	margin-bottom: 20px
+#breadcrumbs
+	font-size: 13px
+	margin: 30px 0 25px
+	font-weight: 600
+	a
+		padding: 0 5
+		color: #808080
+		display: inline-block
+		padding: 0 5px 0
+		&:first-child
+			padding: 0 5 0 0 
+	span
+		padding-left: 5px
+		margin-bottom: 70px
+		color: #ed1b30
+.fl
+	float: left
+	+max-screen(360px)
+		float: none
+.fr
+	float: right
+	+max-screen(360px)
+		float: none
+.center
+	text-align: center
+.banner
+	position: relative
+	height: 600px
+	overflow: hidden
+	.item-banner
+		position: absolute
+		top: 70px
+		width: 100%
+		.description 
+			p
+				margin: 25px 0 70px
+.two-cols	
+	.col
+		+min-screen(768px)
+			width: 50%
+		&.col40
+			+min-screen(768px)
+				width: 41%
+		&.col60
+			+min-screen(768px)
+				width: 59%
+.three-cols
+	.col
+		+min-screen(768px)
+			width: 33%
+.cols
+	.col
+		float: left
+		+max-screen(360px)
+			float: none
+.hidden
+	overflow: hidden
+.inline
+	vertical-align: top
+	+min-screen(768px)
+		display: inline-block
+.background-blue
+	background: #003399
+.gray
+	background: #f9f9f9
+.blue
+	color: #003399
+.white
+	color: #fff
+.top-zero
+	margin-top: 0 !important
+.one-banner
+	height: 600px
+.img-slide
+	width: 100%
+	min-height: 600px
+.content-two-col
+	margin: 50px 0 70px
+	overflow: hidden
+	.field-contents
+		+min-screen(768px)
+			width: 600px
+		.h2
+			margin: 30px 0 20px
+	.content-text
+		+min-screen(768px)
+			display: inline-block
+			margin-left: 45px
+			vertical-align: top
+			width: 550px

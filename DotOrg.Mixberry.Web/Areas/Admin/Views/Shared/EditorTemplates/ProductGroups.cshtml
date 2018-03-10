@@ -1,0 +1,172 @@
+﻿@using DotOrg.Mixberry.Models
+@{
+	var vm = (Category)WebContext.Model;
+	var groups = vm.Groups;
+	var products = vm.Products.ToList();
+}
+
+@if (WebContext.IsCreate)
+{
+	<div>
+		Необходимо сначала сохранить объект
+	</div>
+}
+else
+{
+	<div>
+		<table class="wide-table" id="GroupsTable">
+			<tr>
+				<td colspan="2">
+					<input type="hidden" name="Groups" id="Groups" />
+					<button data-bind="click: appendGroup">Добавить</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><hr /></td>
+			</tr>
+			<tr>
+				<td style="width: 300px;">
+					<ul id="left-menu" data-bind="foreach: groups">
+						<li data-bind="css: { removed: deleted, selected: $root.activeItem()==$data }, click: $root.setActive"><span data-bind="text: getName"></span></li>
+					</ul>
+				</td>
+				<td data-bind="with: activeItem">
+					<div style="position: relative;">
+						<button data-bind="click: deleteItem, visible: !deleted()" class="remove" style="position: absolute; bottom: 10px; right: 10px; background-color: #FF7457">Удалить</button>
+						<table class="wide-table">
+							<tr>
+								<td class="form-table-label">Название</td>
+								<td><input class="ozi-string" type="text" data-bind="value: name"/></td>
+							</tr>
+							<tr>
+								<td class="form-table-label">Псевдоним</td>
+								<td><input class="ozi-string" type="text" data-bind="value: alias"/></td>
+							</tr>
+							<tr>
+								<td class="form-table-label">Товары</td>
+								<td>
+									<div data-bind="visible: !products().length">
+										<p>Добавьте товары в категорию</p>
+									</div>
+									<div data-bind="visible: products().length">
+										<ul data-bind="foreach: products">
+											<li>
+												<label><input data-bind="checked: isChecked" type="checkbox" /><span data-bind="text: name"></span></label>
+											</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<div data-bind="visible: deleted" style="background: rgba(238, 238, 238, .4); position: absolute; top: 0; right: 0; left: 0; bottom: 0;">
+							<button data-bind="click: restore" style="position: absolute; top: 10px; right: 10px;">Восстановить</button>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<script>
+	function ProductModel(item, isChecked) {
+		this.name = item.name;
+		this.id = item.id;
+		this.isChecked = ko.observable(isChecked);
+	}
+
+	function GroupItemModel(item) {
+		var self = this;
+
+		this.id = ko.observable(item.id);
+		this.name = ko.observable(item.name);
+		this.alias = ko.observable(item.alias);
+		this.deleted = ko.observable(false);
+		this.products = ko.observableArray(item.products); // { name, id, isChecked }
+
+		this.deleteItem = function() {
+			self.deleted(true);
+		};
+		this.restore = function() {
+			self.deleted(false);
+		}
+
+		this.getName = ko.computed(function() {
+			return self.name() || '(без названия)';
+		});
+	}
+
+	function GroupsModel() {
+		var self = this;
+
+		this.groups = ko.observableArray();
+		this.activeItem = ko.observable();
+
+		this.appendGroup = function () {
+			var newItem = new GroupItemModel({products: getProducts([])});
+			self.groups.push(newItem);
+			self.setActive(newItem);
+		};
+
+		this.setActive = function(item) {
+			self.activeItem(item);
+		};
+
+	}
+
+	function getProducts(checkedList) {
+		var result = [@Html.Raw(products.Select(x => string.Format("new ProductModel({{id: {0}, name: '{1}'}}, checkedList.indexOf({0}) != -1)", x.Id, x.Name)).ToArray().JoinWith(",\n "))];
+		return result;
+	}
+
+	function createModel() {
+		var vm = new GroupsModel();
+		@foreach (var item in groups)
+		{
+			var gp = "[" + item.Products.Select(x => x.Id.ToString()).ToArray().JoinWith(", ") + "]";
+			<text>
+		vm.groups.push(new GroupItemModel({ id: @item.Id, name: '@item.Name', alias: '@item.Alias', products: getProducts(@gp) }));
+		</text>
+		}
+		if (vm.groups().length) {
+			vm.activeItem(vm.groups()[0]);
+		}
+		return vm;
+	}
+
+	$(function() {
+		var vm = createModel();
+
+		$("form").on("submit", function () {
+			var result = ko.toJSON(vm.groups());
+			$("#Groups").val("{ list: " + result + "}");
+		});
+
+		ko.applyBindings(vm, document.getElementById("GroupsTable"));
+	});
+	</script>
+
+	<style>
+		#left-menu {
+			display: block;
+		}
+
+			#left-menu li {
+				cursor: pointer;
+				padding: 3px 0;
+				display: block;
+			}
+
+				#left-menu li.selected {
+					background-color: #5bcfca;
+					color: white;
+				}
+
+				#left-menu li.removed {
+					text-decoration: line-through;
+				}
+
+				#left-menu li:hover {
+					background-color: #39A9A4;
+				}
+	</style>
+}

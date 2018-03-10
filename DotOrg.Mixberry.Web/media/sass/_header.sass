@@ -1,0 +1,392 @@
+.header
+	padding-top: 25px
+	position: relative
+	z-index: 3
+	+clr
+	+max-screen(1120px)
+		height: 45px
+		padding-top: 0
+		.section
+			margin: 0
+	.header-logo
+		margin-top: 3px
+		+box
+		+max-screen(1120px)
+			margin-top: 13px
+			padding-left: 20px
+			float: left
+	.mobile-menu-toggler
+		float: right
+		span
+			font-size: 35px
+			position: absolute
+			top: 0
+			right: 0
+			color: #003399
+			cursor: pointer
+			display: none
+			+max-screen(1120px)
+				display: block
+				right: 19px
+#menu
+	margin: 0 130px 0 134px
+	+max-screen(1120px)
+		margin: 0
+.nav
+	list-style: none
+	margin: 0
+	text-align: center
+	+max-screen(1120px)
+		background: #023192
+		margin: 0
+		text-align: left
+		list-style: none
+		position: relative
+		width: 100%
+		z-index: 100
+.nav-item
+	position: relative
+	cursor: pointer
+	display: inline-block
+	margin-right: 20px
+	padding-right: 15px
+	padding-top: 5px
+	vertical-align: top
+	&:last-child
+		margin-right: 0
+	&.parent
+		&:after
+			+b						
+			top: 12px
+			+s(icon-menu)
+			right: 0
+			+max-screen(1120px)
+				display: none
+	+max-screen(1120px)
+		display: block
+		margin-right: 0
+		padding-right: 0
+		border-bottom: 1px solid #c2c2c2
+	&:last-child
+		a			
+			border-bottom: none
+	.plus
+		display: none
+		position: absolute
+		width: 20px
+		height: 20px
+		top: 14px
+		right: 15px
+		.line
+			position: absolute
+			display: block
+			background: #fff
+			font-size: 1px
+			&.vert
+				top: 0
+				left: 50%
+				width: 1px
+				height: 20px
+			&.horiz
+				top: 50%
+				left: 0
+				height: 1px
+				width: 21px
+		+max-screen(1120px)
+			right: 33px
+			&.visible
+				display: block
+	.nav-item_link
+		color: #000
+		padding-bottom: 27px
+		font-size: 14px
+		display: block
+		+max-screen(1120px)
+			font-size: 20px
+			display: inline-block
+			position: relative
+			color: #fff
+			padding: 10px 15px 10px 23px
+			+box
+				
+.sub-nav
+	transition: all 0.5s ease
+	display: none
+	background: #023192
+	position: absolute
+	left: 0
+	margin: 0
+	top: 76px
+	+opacity(1)
+	z-index: 10
+	width: 100%
+	padding: 30px 80px 0
+	text-align: left
+	+box
+	+max-screen(1120px)
+		display: block
+		position: static
+		padding: 0
+		.section
+			margin: 0
+		.inner-menu
+			display: none	
+	
+	.category-parent
+		border-bottom: 1px solid #cccccc
+		padding-left: 20px
+		padding-bottom: 10px
+		margin: 25px 0 10px
+		background: none
+		display: block
+		color: #cccccc 
+		font-size: 16px
+		position: relative
+		&:before
+			top: 3px
+			left: 1px
+			+s(all-product)
+			+b
+		+max-screen(1120px)
+			display: none
+	.sub-nav-item
+		list-style: none
+		position: relative	
+		display: inline-block
+		margin-bottom: 25px
+		margin-top: 12px
+		padding: 0
+		width: 273px
+		vertical-align: top
+		.category-parent
+			display: block
+		+max-screen(1120px)
+			display: block
+			background: #dfdfdf
+			width: 100%
+			margin: 0
+			border-bottom: 1px solid #003399
+			ul
+				display: none
+			.plus.visible
+				display: block
+		.plus
+			display: none
+			position: absolute
+			width: 12px
+			height: 12px
+			top: 14px
+			right: 37px
+			.line
+				position: absolute
+				display: block
+				background: #003399
+				font-size: 1px
+				&.vert
+					top: 0
+					left: 50%
+					width: 1px
+					height: 12px
+				&.horiz
+					top: 50%
+					left: 0
+					height: 1px
+					width: 13px
+		.sub-nav-item_link
+			color: #cccccc	
+			text-transform: uppercase
+			font-size: 22px
+			padding: 0 0 2px 0
+			letter-spacing: 1px
+			display: block
+			&:hover
+				color: #fff
+			+max-screen(1120px)
+				color: #023192
+				font-size: 14px
+				text-transform: uppercase
+				padding: 10px 0 10px 29px
+				display: inline-block	
+				border: none
+				&:hover
+					color: #023192	
+		.inner-sub-menu
+			margin: 0 0 10px 0
+			.inner-sub-menu-item
+				display: block
+				margin: 0
+				border-bottom: none
+				&:first-of-type
+					.sub-nav-item_link_link
+						padding-top: 0
+				.sub-nav-item_link_link
+					text-transform: inherit
+					display: block	
+					font-size: 16px
+					letter-spacing: 0
+					padding: 0
+					color: #ccc
+					&:hover
+						color: #fff
+					&:after
+						dispaly: none
+					+max-screen(1120px)
+						padding: 5px 0 5px 30px	
+						border: none
+						color: #023192	
+						&:hover
+							color: #023192						
+.header
+	.i-select 
+		color: #003399
+		cursor: pointer
+		font-size: 12px
+		height: 26px
+		position: relative
+		z-index: 101
+		text-transform: uppercase
+		width: 50px
+		+max-screen(1120px)
+			position: absolute
+			top: 2px
+			right: 80px
+			height: 40px
+		span
+			padding: 4px 14px 5px 5px
+			display: block
+			font-size: 12px
+			border: 1px solid #fff
+			line-height: 1.375
+			width: 52px
+			+box
+			&:after
+				+s(icon-menu)
+				+b
+				right: 3px
+				top: 10px
+			+max-screen(1120px)
+				padding: 0 14px 0 5px
+				height: 40px
+				line-height: 40px
+				&:after
+					top: 19px
+		&.form-select_opened
+			span
+				border-color: #999
+		.i-select-list 
+			border: 1px solid #999
+			position: absolute
+			top: 100%
+			width: 100%	
+			z-index: 2	
+			margin: 0
+			.i-select-list__item 
+				background: #fff
+				border-bottom: 1px solid #999
+				list-style: none
+				a
+					display: block
+					+box
+					color: #003399
+					line-height: 1.375
+					font-size: 12px
+					padding: 4px 14px 5px 5px
+					&:hover
+						background: #003399
+						color: #fff
+				&.i-select-list__item_active
+					a
+						background: #003399
+						color: #fff
+				&:last-child
+					border: 0
+				+max-screen(1120px)
+					padding-top: 10px
+					padding-bottom: 10px
+		.i-select__select
+			cursor: pointer
+			height: 100%
+			min-height: 100%
+			width: 100%
+			min-width: 100%
+			left: 0
+			opacity: 0
+			position: absolute
+			top: 0
+.header-aside
+	width: 20px
+	margin-right: 49px
+	padding-top: 5px
+	display: block
+	+max-screen(1120px)
+		display: none
+.header-aside_search
+	height: 20px
+	position: relative
+	z-index: 2
+	cursor: pointer
+	+max-screen(457px)
+		display: none
+	.search-field
+		display: none
+		overflow: hidden
+		position: absolute
+		width: 400px
+		padding: 0
+		right: -16px
+		top: -9px
+		input[type="text"]
+			width: 240px
+			display: block
+			border: 1px solid #003399
+			padding-left: 15px
+			height: 36px
+			+box
+		.search-field-icon
+			position: absolute
+			z-index: 2
+			top: 3px
+			right: 14px
+			height: 32px
+			width: 24px
+			cursor: pointer
+			input[type="image"]
+				width: 20px
+				height: 20px
+				+centre("both")
+				cursor: pointer
+.header-menu-wrapper
+	+max-screen(1120px)
+		position: absolute
+		top: 45px
+		width: 100%
+	.search-field
+		z-index: 100
+		position: absolute
+		top: 100%
+		height: 90px
+		background: #023192
+		+max-screen(1120px)
+			width: 100% !important
+			opacity: 1 !important
+			display: block !important
+			padding: 0 20px 0 23px
+			+box
+	#search-start-text
+		width: 100%
+		border: 0
+		height: 46px
+		margin-top: 23px
+		text-indent: 20px
+		background: #fff
+		opacity: 1
+	#seacrh-start-button
+		position: absolute
+		top: 38px
+		right: 28px
+		cursor: pointer
+		border: none
+		+s(search-white)
+		+b
+
+			

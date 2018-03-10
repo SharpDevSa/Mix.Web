@@ -1,0 +1,31 @@
+﻿<footer>
+    <div class="footer-top-line">
+        <div class="section">
+            @{Html.RenderAction(MVC.Subscription.SubscriptionForm());}
+        </div>
+    </div>
+    <div class="footer-bottom-line section">
+        <div class="footer-bottom-line-up">
+            <a class="col fl" href="">
+                <img alt="logo" src="/media/img/footer-logo.png">
+            </a>
+            @{Html.RenderAction(MVC.Common.FooterMenu());}
+            <div class="overview-search fr">
+                <a class="item" href="https://www.facebook.com/MIXBERRY.Labs" target="_blank">
+                    <img alt="mymixberry" src="/media/img/facebook-white.svg" width="20" height="20" />
+                </a>
+                <a class="item" href="https://instagram.com/mymixberry" target="_blank">
+                    <img alt="mymixberry" src="/media/img/icons/instagram-icon.png" />
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom-line-down">
+            <div class="col fl">
+                <p>©2015 Mixberry. All right reserved.</p>
+            </div>
+            <div class="col fl">
+                <p>Privacy Policy  Terms of Use Returns & Warranty</p>
+            </div>
+        </div>
+    </div>
+</footer>

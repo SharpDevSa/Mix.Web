@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Areas/Admin/content/Styles/FileLoad.css" rel="stylesheet" />
+<div>
+    <form>
+        <input type="file" name="UploadFile" id="txtUploadFile" class="makethispretty" />
+        <input type="text"  id="DescriptionFile" placeholder="Введите описание"/>
+        <input type="number" id="OrderId" value="1" placeholder="Введите сортировочный индекс" />
+        <select id="FileGroupsIdAdd" class="FileGroupsList">
+
+        </select>
+        <input type="submit" id="SubmitUpload" />
+    </form>
+</div>
+<select id="SearchGroupId" class="FileGroupsList">
+    <option value="0">Все</option>
+</select>
+<div id="LostImg">
+
+</div>
+<script src="~/Areas/Admin/Scripts/FilesLoad.js" type="text/javascript"></script>
+
+

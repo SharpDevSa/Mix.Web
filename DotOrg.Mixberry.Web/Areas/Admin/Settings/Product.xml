@@ -1,0 +1,69 @@
+﻿<?xml version="1.0"?>
+<settings xmlns="urn:settings" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="urn:settings Settings.xsd">
+	<list orderAsc="Sort">
+		<global>
+			<create />
+		</global>
+
+		<actions>
+			<visibility/>
+			<sort field="Sort"/>
+			<edit/>
+			<delete roles="admin" />
+		</actions>
+
+		<cols>
+			<string name="Name" title="Название"/>
+			<string name="Alias" title="Псевдоним"/>
+		</cols>
+
+	</list>
+
+	<form>
+		<tab name="General">
+			<string name="Name" title="Название" />
+			<checkbox name="ShowInMenu" title="Показывать в меню" />
+			<select name="Categories" title="Категория" data="Categories" multiple="true"></select>
+			<!--
+		 Blocks
+		-->
+			<wysiwyg name="Description" title="Описание товара" />
+		</tab>
+		<tab name="Images">
+			<!--<file name="Images" skipTitle="true" size="100" type="image"/>-->
+			<!--<custom name="fake" skipTitle="true" control="ProductModels"/>-->
+			<collection name="Models" skipTitle="true">
+				<file name="Image" title="Изображение" size="50"/>
+				<string name="Color" title="Цвет"/>
+			</collection>
+		</tab>
+		<tab name="Extended info">
+			<string name="Title" title="Заголовок" />
+			<wysiwyg name="Specification" title="Описание товара" />
+			<file name="Image" type="image" title="Изображение" size="100"/>
+			<file name="PromoImage" type="image" title="Промо изображение" size="100"/>
+		</tab>
+		<tab name="Details">
+			<checkbox name="ShowDetails" title="Показывать детальную"/>
+			<string name="DetailsTitle" title="Заголовок для детальной"/>
+			<string name="DetailsSubTitle" title="Подзаголовок для детальной"/>
+			<wysiwyg name="DetailsDescription" title="Описание для детальной"/>
+			<file name="Banners" type="image" title="Баннеры" size="100" showDescription="true" showTitle="true"/>
+			<file name="DetailsImages" type="image" title="Изображения" size="100"/>
+			<select name="Related" title="Дополнительные товары" data="Related" multiple="true"></select>
+			<collection name="Blocks" skipTitle="true" sortable="true">
+				<string name="Name" title="Название"/>
+				<string name="Alias" title="Псевдоним"/>
+				<checkbox name="Visibility" title="Видимость"/>
+				<wysiwyg name="Content" title="Содержимое"/>
+			</collection>
+		</tab>
+		<tab name="Metadata">
+			<string name="Alias" title="Псевдоним" info="Используется для генерации url" />
+			<string name="MetaTitle" title="MetaTitle" />
+			<string name="MetaKeywords" title="MetaKeywords" />
+			<textarea name="MetaDescription" title="MetaDescription" />
+			<code type="xml" name="MetaData" title="Дополнительные метатеги" />
+		</tab>
+	</form>
+</settings>

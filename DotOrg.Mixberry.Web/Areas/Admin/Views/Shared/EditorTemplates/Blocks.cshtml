@@ -1,0 +1,128 @@
+﻿@using System.Collections
+@using DotOrg.Mixberry.Models.Entities
+@{
+	var vm = (dynamic)WebContext.Model;
+	var blocks = Enumerable.Cast<IBlockEntity>((IEnumerable)vm.Blocks);
+	WebContext.IncludeCodeScripts.Add("~/Areas/Admin/content/Scripts/CodeMirror/mode/htmlmixed/htmlmixed.js");
+}
+
+
+@if (WebContext.IsCreate)
+{
+	<div>
+		Необходимо сначала сохранить объект
+	</div>
+}
+else
+{
+	<table class="wide-table" id="BlockTable">
+		<tr>
+			<td>
+				<div>
+					<a href="" class="button create-block">Добавить</a>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="block-accordion">
+					@foreach (var item in blocks.OrderBy(x => x.Sort))
+					{
+						Html.RenderPartial(MVC.Admin.Shared.Views.CreateBlock, item);
+					}
+				</div>
+			</td>
+		</tr>
+	</table>
+	<script>
+		$(function() {
+			$("#block-accordion").accordion({
+				header: "div.group>h3",
+				collapsible: true,
+				active: true,
+				heightStyle: 'content',
+				activate: function(event, ui) {
+					var item = ui.newPanel.find('.ozi-code');
+					var editor = $(item).data('editor');
+					if (!!editor) editor.refresh();
+					else console.log('editor is null');
+				}
+			}).sortable({
+				axis: 'y',
+				handle: "h3",
+				start: function(event, ui) {
+					//var item = $(".ozi-wysiwyg", ui.item);
+					//CKEDITOR.instances[item.attr("id")].destroy();
+				},
+				stop: function(event, ui) {
+					ui.item.children("h3").triggerHandler("focusout");
+					$(this).accordion("refresh");
+					$(".block-sort", this).each(function(index) {
+						$(this).val(index);
+					});
+					var item = $(".ozi-code", ui.item);
+					var editor = $(item).data('editor');
+					if (!!editor) editor.refresh();
+					else console.log('editor is null');
+					//CKEDITOR.replace(item.attr("id"));
+
+				}
+			});
+
+			$("#BlockTable").on("click", ".remove-block", function (e) {
+				e.preventDefault();
+				$(this).closest(".group").remove();
+				$("#block-accordion").accordion("refresh");
+				$("#block-accordion").accordion("option", "active", false);
+			});
+
+			$("#BlockTable").on("click", ".create-block", function(e) {
+				e.preventDefault();
+				$.post("@Url.Action("CreateBlock", WebContext.ControllerName, new { entityId = vm.Id })", function (html) {
+					var $acc = $("#block-accordion");
+					var widget = $acc.accordion('widget');
+					var active = widget.accordion("option", "active");
+					var newItem = $(html);
+					$acc.append(newItem);
+					var item = newItem.find(".ozi-code")[0];
+					createEditor(item);
+					widget.accordion("refresh");
+					widget.accordion("option", "active", active);
+				});
+			});
+
+			$(".block-image-uploader").each(function() {
+				var blockid = $(this).attr("id").replace("BlockImagesUploadPanel", "");
+				$(this).fineUploader({
+					request: {
+						endpoint: "@Url.Action("UploadImage", WebContext.ControllerName)"
+					},
+					multiple: false,
+					autoUpload: true
+				}).on("complete", function (event, id, filename, response) {
+					if (response.success) {
+						$("#BlockImagesUrl" + blockid).val(response.id);
+						$("#BlockImages" + blockid).attr("src", response.url + "?width=200&height=200");
+					} else {
+						toastr.error("Произошла ошибка: " + response.error);
+					}
+				});
+			});
+			$("#BlockTable .ozi-code").each(function() {
+				createEditor(this);
+			});
+		});
+
+		function createEditor(item) {
+			var editor = CodeMirror.fromTextArea(item, {
+				lineNumbers: true,
+				mode: 'htmlmixed'
+			});
+			editor.on("focus", function (instance) {
+				instance.refresh();
+			});
+			$(item).data("editor", editor);
+		}
+	</script>
+
+}

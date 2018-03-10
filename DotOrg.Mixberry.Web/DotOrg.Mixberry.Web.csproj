@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0CE65FD8-85D9-482F-8E28-B24D87E9BCAB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DotOrg.Mixberry.Web</RootNamespace>
+    <AssemblyName>DotOrg.Mixberry.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <ApplicationInsightsResourceId>/subscriptions/62e9b246-0255-4f3e-af4a-3f097779990a/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/DotOrg.Mixberry.Web</ApplicationInsightsResourceId>
+    <IncludeSetAclProviderOnDestination>False</IncludeSetAclProviderOnDestination>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <IncludeSetAclProviderOnDestination>False</IncludeSetAclProviderOnDestination>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <IncludeSetAclProviderOnDestination>False</IncludeSetAclProviderOnDestination>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Mvc5.3.3.4\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.NLog41, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.NLog41.3.3.1\lib\net40\Common.Logging.NLog41.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DataAnnotationsExtensions, Version=1.1.2.0, Culture=neutral, PublicKeyToken=358a5681c50fd84c, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataAnnotationsExtensions.1.1.2\lib\NETFramework40\DataAnnotationsExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DataAnnotationsExtensions.ClientValidation, Version=1.1.2.0, Culture=neutral, PublicKeyToken=358a5681c50fd84c, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataAnnotationsExtensions.MVC3.1.1.2\lib\NETFramework40\DataAnnotationsExtensions.ClientValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.Filters, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Filters.0.3.0.0\lib\net40\EntityFramework.Filters.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageResizer, Version=3.4.3.103, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageResizer.3.4.3\lib\ImageResizer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImageResizer.Plugins.DiskCache, Version=3.4.3.103, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImageResizer.Plugins.DiskCache.3.4.3\lib\ImageResizer.Plugins.DiskCache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.NLogTarget, Version=1.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.NLogTarget.1.2.6\lib\net45\Microsoft.ApplicationInsights.NLogTarget.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.2.3\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NotFoundMvc, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NotFoundMvc.1.4.0\lib\net40\NotFoundMvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RazorEngine, Version=3.7.7.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.7.7\lib\net45\RazorEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="T4MVCExtensions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\T4MVCExtensions.3.17.3\lib\net40\T4MVCExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebActivator, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebActivator.1.2.0.0\lib\NETFramework40\WebActivator.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\tt.xml" />
+    <Content Include="Areas\Admin\content\Styles\FileLoad.css" />
+    <Content Include="Areas\Admin\Scripts\autoNumeric.js" />
+    <Content Include="Areas\Admin\Scripts\Default.js" />
+    <Content Include="Areas\Admin\Scripts\files-logic.js" />
+    <Content Include="Areas\Admin\Scripts\FilesLoad.js" />
+    <Content Include="content\img\no-image.png" />
+    <Content Include="media\css\bundle\0_fotorama.css" />
+    <Content Include="media\css\bundle\1_ico-style.css" />
+    <Content Include="media\css\bundle\2_sweet-alert.css" />
+    <Content Include="media\css\bundle\3_owl.carousel.css" />
+    <Content Include="media\css\bundle\4_owl.theme.default.css" />
+    <Content Include="media\css\bundle\5_lightbox.css" />
+    <Content Include="media\css\bundle\6_slick.css" />
+    <Content Include="media\css\bundle\7_slick-theme.css" />
+    <Content Include="media\css\bundle\8_org-tabs.css" />
+    <Content Include="media\css\bundle\ajax-loader.gif" />
+    <Content Include="media\css\bundle\bundle.css" />
+    <Content Include="media\css\bundle\fotorama%402x.png" />
+    <Content Include="media\css\bundle\fotorama.png" />
+    <Content Include="media\css\ico-style.css" />
+    <Content Include="media\css\ico-style.min.css" />
+    <Content Include="media\css\org-tabs.css" />
+    <Content Include="media\css\screen.min.css">
+      <DependentUpon>screen.css</DependentUpon>
+    </Content>
+    <Content Include="media\css\fotorama%402x.png" />
+    <Content Include="media\css\slick-theme.css" />
+    <Content Include="media\css\slick.css" />
+    <Content Include="media\fonts\fontello.svg" />
+    <Content Include="media\fonts\icomoon.svg" />
+    <Content Include="media\fonts\ProximaNovaBold.svg" />
+    <Content Include="media\fonts\ProximaNovaLight.svg" />
+    <Content Include="media\fonts\ProximaNovaRegular.svg" />
+    <Content Include="media\js\bundle.js" />
+    <Content Include="media\js\bundle.min.js">
+      <DependentUpon>bundle.js</DependentUpon>
+    </Content>
+    <Content Include="media\js\bundle\0_jquery-1.11.1.min.js" />
+    <Content Include="media\js\bundle\1_PxLoader.min.js" />
+    <Content Include="media\js\bundle\2_PxLoaderImage.min.js" />
+    <Content Include="media\js\bundle\3_tweenmax.min.js" />
+    <Content Include="media\js\bundle\bundle.js" />
+    <Content Include="media\js\bundle\bundle.min.js">
+      <DependentUpon>bundle.js</DependentUpon>
+    </Content>
+    <Content Include="media\js\bundle\fotorama.min.js" />
+    <Content Include="media\js\bundle\jquery.nav.min.js" />
+    <Content Include="media\js\bundle\jquery.validate.min.js" />
+    <Content Include="media\js\bundle\jquery.validate.unobtrusive.min.js" />
+    <Content Include="media\js\bundle\lightbox.min.js" />
+    <Content Include="media\js\bundle\organictabs.jquery.js" />
+    <Content Include="media\js\bundle\owl.carousel.min.js" />
+    <Content Include="media\js\bundle\owl.navigation.min.js" />
+    <Content Include="media\js\bundle\slick.min.js" />
+    <Content Include="media\js\bundle\sweet-alert.min.js" />
+    <Content Include="media\js\bundle\tooltip.min.js" />
+    <Content Include="media\js\fotorama.js" />
+    <Content Include="media\css\fotorama.png" />
+    <Content Include="media\js\fotorama.min.js">
+      <DependentUpon>fotorama.js</DependentUpon>
+    </Content>
+    <Content Include="media\js\hammer.min.js" />
+    <Content Include="media\js\jquery-1.11.1.min.js" />
+    <Content Include="media\js\jquery.dcmegamenu.1.2.js" />
+    <Content Include="media\js\jquery.gsap.min.js" />
+    <Content Include="media\js\jquery.hoverIntent.minified.js" />
+    <Content Include="media\js\jquery.nav.js" />
+    <Content Include="media\js\jquery.nav.min.js" />
+    <Content Include="media\js\jquery.validate.min.js" />
+    <Content Include="media\js\js.js" />
+    <Content Include="media\js\js.min.js">
+      <DependentUpon>js.js</DependentUpon>
+    </Content>
+    <Content Include="media\js\lightbox.min.js" />
+    <Content Include="media\js\lightbox\css\lightbox.css" />
+    <Content Include="media\js\lightbox\img\close.png" />
+    <Content Include="media\js\lightbox\img\loading.gif" />
+    <Content Include="media\js\lightbox\img\next.png" />
+    <Content Include="media\js\lightbox\img\prev.png" />
+    <Content Include="media\js\lightbox\lightbox.min.js" />
+    <Content Include="media\js\organictabs.jquery.js" />
+    <Content Include="media\js\owl.carousel.js" />
+    <Content Include="media\js\owl.carousel.min.js">
+      <DependentUpon>owl.carousel.js</DependentUpon>
+    </Content>
+    <Content Include="media\js\owl.navigation.js" />
+    <Content Include="media\js\owl.navigation.min.js">
+      <DependentUpon>owl.navigation.js</DependentUpon>
+    </Content>
+    <Content Include="media\js\PxLoader.min.js" />
+    <Content Include="media\js\PxLoaderImage.min.js" />
+    <Content Include="media\js\scrolltoplugin.min.js" />
+    <Content Include="media\js\skrollr.min.js" />
+    <Content Include="media\js\slick.min.js" />
+    <Content Include="media\js\sweet-alert.min.js" />
+    <Content Include="media\js\TimelineMax.min.js" />
+    <Content Include="media\js\tooltip.js" />
+    <Content Include="media\js\tooltip.min.js" />
+    <Content Include="media\js\tweenmax.min.js" />
+    <Content Include="media\js\video.js" />
+    <Content Include="media\sass\_partners.sass" />
+    <Content Include="media\js\hammer.min.map" />
+    <Content Include="media\js\js.min.js.map" />
+    <Content Include="media\js\tooltip.min.js.map" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Areas\Admin\Views\DbImg\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DbImg\ImgList.cshtml" />
+    <Content Include="Areas\Admin\Views\DbImg\EditImg.cshtml" />
+    <None Include="bundleconfig.json" />
+    <Content Include="media\fonts\fontello.eot" />
+    <Content Include="media\fonts\fontello.ttf" />
+    <Content Include="media\fonts\fontello.woff" />
+    <Content Include="media\fonts\icomoon.eot" />
+    <Content Include="media\fonts\icomoon.ttf" />
+    <Content Include="media\fonts\icomoon.woff" />
+    <Content Include="media\fonts\ProximaNovaBold.eot" />
+    <Content Include="media\fonts\ProximaNovaBold.ttf" />
+    <Content Include="media\fonts\ProximaNovaBold.woff" />
+    <Content Include="media\fonts\ProximaNovaBold.woff2" />
+    <Content Include="media\fonts\ProximaNovaLight.eot" />
+    <Content Include="media\fonts\ProximaNovaLight.ttf" />
+    <Content Include="media\fonts\ProximaNovaLight.woff" />
+    <Content Include="media\fonts\ProximaNovaLight.woff2" />
+    <Content Include="media\fonts\ProximaNovaRegular.eot" />
+    <Content Include="media\fonts\ProximaNovaRegular.ttf" />
+    <Content Include="media\fonts\ProximaNovaRegular.woff" />
+    <Content Include="media\fonts\ProximaNovaRegular.woff2" />
+    <Content Include="Areas\Admin\Settings\Partner.xml" />
+    <Content Include="Areas\Admin\Settings\Country.xml" />
+    <Content Include="Scripts\ai.0.15.0-build58334.js" />
+    <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Scripts\jquery-2.2.1.js" />
+    <Content Include="Scripts\jquery-2.2.1.min.js" />
+    <None Include="Properties\PublishProfiles\тест.pubxml" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <None Include="T4MVC.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>T4MVC.cs</LastGenOutput>
+    </None>
+    <Content Include="yandex_75a94c5536110927.html" />
+    <None Include="Areas\Admin\Scripts\google-maps-3-vs-1-0-vsdoc.js" />
+    <Content Include="Areas\Admin\Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Areas\Admin\Scripts\List.js" />
+    <Content Include="Areas\Admin\Scripts\map.js" />
+    <Content Include="Areas\Admin\Scripts\Mktree.js" />
+    <Content Include="Areas\Admin\Scripts\project-maps.js" />
+    <Content Include="Areas\Admin\Settings\BlockTemplate.xml" />
+    <Content Include="Areas\Admin\Settings\Subscriber.xml" />
+    <Content Include="Areas\Admin\Settings\Product.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Areas\Admin\Settings\Category.xml" />
+    <Content Include="Areas\Admin\Views\Account\ChangePassword.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\Login.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\Permissions.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\DisplayTemplates\ozi_Checkbox.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\DisplayTemplates\ozi_Color.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\DisplayTemplates\ozi_Currency.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\DisplayTemplates\ozi_Date.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\DisplayTemplates\ozi_Filter.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\DisplayTemplates\ozi_Header.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\DisplayTemplates\ozi_String.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Collections\ozi_Checkbox.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Collections\ozi_Code.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Collections\ozi_Currency.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Collections\ozi_File.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Collections\ozi_Select.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Collections\ozi_String.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Collections\ozi_Textarea.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Collections\ozi_Wysiwyg.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\FakeView.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Address.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Checkbox.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Code.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Collection.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Color.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Currency.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Date.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_File.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Hidden.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Object.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Select.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Static.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_String.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Textarea.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Time.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ozi_Wysiwyg.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Shared\ObjectFields.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Error.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Form\FormButtons.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\GlobalActions\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\ListActions\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\ListActions\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\ListActions\Sort.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\ListActions\Visibility.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\NotRealizedYet.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\ViewEditor.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Account.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Main.cshtml" />
+    <Content Include="Areas\Admin\Views\SiteSettings\Emails.cshtml" />
+    <Content Include="Areas\Admin\Views\SiteSettings\General.cshtml" />
+    <Content Include="Areas\Admin\Views\SiteSettings\Logs.cshtml" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Global.asax" />
+    <Content Include="google605ee8e91076d4dd.html" />
+    <Content Include="media\css\fotorama.css" />
+    <Content Include="media\css\owl.carousel.css" />
+    <Content Include="media\css\owl.carousel.min.css">
+      <DependentUpon>owl.carousel.css</DependentUpon>
+    </Content>
+    <Content Include="media\css\owl.theme.default.css" />
+    <Content Include="media\css\owl.theme.default.min.css">
+      <DependentUpon>owl.theme.default.css</DependentUpon>
+    </Content>
+    <Content Include="media\css\screen.css" />
+    <Content Include="media\css\sweet-alert.css" />
+    <Content Include="media\stylesheets\about.css" />
+    <Content Include="media\stylesheets\screen.css" />
+    <Content Include="packages.config" />
+    <Content Include="Areas\Admin\Settings\Modules.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Areas\Admin\Settings\Settings.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Areas\Admin\Settings\Web.config" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\SelectCategory.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\Blocks.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\CreateBlock.cshtml" />
+    <Content Include="media\config.rb" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ProductModels.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\EditorTemplates\ProductGroups.cshtml" />
+    <Content Include="Areas\Admin\Views\Localization\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Localization\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Localization\LangPanel.cshtml" />
+    <Content Include="Areas\Admin\Views\Localization\StaticData.cshtml" />
+    <Content Include="media\sass\lib\ceaser-easing\_ceaser.sass" />
+    <Content Include="media\sass\lib\ceaser-easing\_ease-types.sass" />
+    <Content Include="media\sass\lib\ceaser-easing\_easing-functions.sass" />
+    <Content Include="media\sass\lib\ceaser-easing\_easing-vars.sass" />
+    <Content Include="media\sass\lib\_animations.scss" />
+    <Content Include="media\sass\lib\_base.scss" />
+    <Content Include="media\sass\lib\_demo.scss" />
+    <Content Include="media\sass\lib\_keyframes.sass" />
+    <Content Include="media\sass\lib\_media.scss" />
+    <Content Include="media\sass\lib\_mixins.sass" />
+    <Content Include="media\sass\lib\_sprites.scss" />
+    <Content Include="media\sass\screen.sass" />
+    <Content Include="media\sass\_about-new.sass" />
+    <Content Include="media\sass\_about.sass" />
+    <Content Include="media\sass\_catalog.sass" />
+    <Content Include="media\sass\_category-happines.sass" />
+    <Content Include="media\sass\_category-lightmania.sass" />
+    <Content Include="media\sass\_category-new.sass" />
+    <Content Include="media\sass\_category-soundmania.sass" />
+    <Content Include="media\sass\_category.sass" />
+    <Content Include="media\sass\_controls.sass" />
+    <Content Include="media\sass\_fonts.sass" />
+    <Content Include="media\sass\_footer-new.sass" />
+    <Content Include="media\sass\_footer.sass" />
+    <Content Include="media\sass\_global-new.sass" />
+    <Content Include="media\sass\_global.sass" />
+    <Content Include="media\sass\_header.sass" />
+    <Content Include="media\sass\_home-new.sass" />
+    <Content Include="media\sass\_home.sass" />
+    <Content Include="media\sass\_layout.sass" />
+    <Content Include="media\sass\_news-new.sass" />
+    <Content Include="media\sass\_news.sass" />
+    <Content Include="media\sass\_product-details.sass" />
+    <Content Include="media\sass\_product.sass" />
+    <Content Include="media\sass\_products.sass" />
+    <None Include="Properties\PublishProfiles\mixberry.com.pubxml" />
+    <None Include="Properties\PublishProfiles\mixberry.dotorg.ru.pubxml" />
+    <None Include="Properties\PublishProfiles\mixberry.masterhost.ru.pubxml" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="media\js\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Default\Page.cshtml" />
+    <Content Include="Views\Shared\NotFound.cshtml" />
+    <Content Include="Views\Shared\_Breadcrumbs.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Common\Menu.cshtml" />
+    <Content Include="Views\Shared\Location\home.cshtml" />
+    <Content Include="Views\News\Details.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\PagerViewModel.cshtml" />
+    <Content Include="Views\Common\Feedback.cshtml" />
+    <Content Include="Views\Shared\Partials\Footer.cshtml" />
+    <Content Include="Views\Shared\Partials\Header.cshtml" />
+    <Content Include="Views\Common\LanguagePanel.cshtml" />
+    <Content Include="Views\Common\SearchPanel.cshtml" />
+    <Content Include="Views\News\LatestNews.cshtml" />
+    <Content Include="Views\News\NewsArchive.cshtml" />
+    <Content Include="Views\News\_ListNewsItem.cshtml" />
+    <Content Include="Views\Shared\Location\about.cshtml" />
+    <Content Include="Views\Common\FooterMenu.cshtml" />
+    <Content Include="Views\Subscription\SubscriptionForm.cshtml" />
+    <Content Include="Views\Mails\SubscriptionConfirm.cshtml" />
+    <Content Include="Views\Subscription\Confirm.cshtml" />
+    <Content Include="Views\Subscription\Unsubscribe.cshtml" />
+    <Content Include="Views\Catalog\Category.cshtml" />
+    <Content Include="Views\Shared\Location\catalog.cshtml" />
+    <Content Include="Views\Shared\Location\search.cshtml" />
+    <Content Include="Views\Shared\Location\_templates.cshtml" />
+    <Content Include="Views\Shared\Location\happines-metter-test.cshtml" />
+    <Content Include="Views\Partners\Index.cshtml" />
+    <Content Include="Views\Catalog\Product.cshtml" />
+    <Content Include="Views\Shared\Location\product-details.cshtml" />
+    <Content Include="Scripts\jquery-2.2.1.min.map" />
+    <None Include="T4MVC.tt.hooks.t4" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Settings\Location.xml" />
+    <Content Include="Areas\Admin\Settings\News.xml" />
+    <None Include="T4MVC.tt.settings.xml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BaseAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BlockTemplatesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CountryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DbImgController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LocalizationController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LocationsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\NewsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PartnersController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SiteSettingsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SubscribersController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UtilsController.cs" />
+    <Compile Include="Areas\Admin\Engine\DbConnection.cs" />
+    <Compile Include="Areas\Admin\Engine\FileDb.cs" />
+    <Compile Include="Areas\Admin\Models\EditStaticLocalizationModel.cs" />
+    <Compile Include="Areas\Admin\Models\Files.cs" />
+    <Compile Include="Areas\Admin\Models\FineUpload.cs" />
+    <Compile Include="Areas\Admin\Models\FineUploadResult.cs" />
+    <Compile Include="Areas\Admin\Models\JsonProjectModel.cs" />
+    <Compile Include="Controllers\PartnersController.cs" />
+    <Compile Include="Core\RenderHomePageDb.cs" />
+    <Compile Include="Core\Routes\ProductConstraint.cs" />
+    <Compile Include="T4MVC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\LanguagesViewModel.cs" />
+    <Compile Include="Areas\Admin\Mvc\MixberryAdminWebPage.cs" />
+    <Compile Include="Controllers\CatalogController.cs" />
+    <Compile Include="Controllers\CommonController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\SubscriptionController.cs" />
+    <Compile Include="Core\Constants.cs" />
+    <Compile Include="Core\IWebContext.cs" />
+    <Compile Include="Core\LocalizationContext.cs" />
+    <Compile Include="Core\Mvc\BaseController.cs" />
+    <Compile Include="Core\Mvc\BaseWebPage.cs" />
+    <Compile Include="Core\Routes\LanguageConstraint.cs" />
+    <Compile Include="Core\Routes\LanguageRouteHandler.cs" />
+    <Compile Include="Core\Routes\LocationConstraint.cs" />
+    <Compile Include="Core\Routes\MixberryNavigationService.cs" />
+    <Compile Include="Core\Routes\CategoryConstraint.cs" />
+    <Compile Include="Core\ScriptsContext.cs" />
+    <Compile Include="Core\Templating\MixberryTemplate.cs" />
+    <Compile Include="Core\Templating\MixberryTemplateEngine.cs" />
+    <Compile Include="Core\Templating\RazorEngineReferenceResolver.cs" />
+    <Compile Include="Core\Templating\TemplateModel.cs" />
+    <Compile Include="Core\UrlExtensions.cs" />
+    <Compile Include="Core\WebContext.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup\BundleConfig.cs" />
+    <Compile Include="Startup\DependencyContainerConfig.cs" />
+    <Compile Include="Startup\FilterConfig.cs" />
+    <Compile Include="Startup\RegisterClientValidationExtensions.cs" />
+    <Compile Include="Startup\RouteConfig.cs" />
+    <Compile Include="ViewModels\BreadcrumbsViewModel.cs" />
+    <Compile Include="ViewModels\FeedbackViewModel.cs" />
+    <Compile Include="ViewModels\MenuItemViewModel.cs" />
+    <Compile Include="ViewModels\ProductViewModel.cs" />
+    <Compile Include="ViewModels\SubscriptionViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Start\" />
+    <Folder Include="Areas\Admin\Views\Partners\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotOrg.Mixberry.Db\DotOrg.Mixberry.Db.csproj">
+      <Project>{C56D6DD2-86D8-49FB-B54B-39A3BA05C5BF}</Project>
+      <Name>DotOrg.NtmClinic.Db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotOrg.Mixberry.Models\DotOrg.Mixberry.Models.csproj">
+      <Project>{A9D65A83-F9B6-4A5D-833C-7AD214BEE26F}</Project>
+      <Name>DotOrg.NtmClinic.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotOrg\DotOrg.Core\DotOrg.Core.csproj">
+      <Project>{F657E418-DF3C-484F-96A8-1A51C6BC031B}</Project>
+      <Name>DotOrg.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotOrg\DotOrg.Db\DotOrg.Db.csproj">
+      <Project>{FD83B590-9BA5-4A58-9C26-ABA5BE9A5095}</Project>
+      <Name>DotOrg.Db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotOrg\DotOrg.Web.Ozi\DotOrg.Web.Ozi.csproj">
+      <Project>{1AEBFE6B-2F9C-4DFD-8EC5-27BB6925F824}</Project>
+      <Name>DotOrg.Web.Ozi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DotOrg\DotOrg.Web\DotOrg.Web.csproj">
+      <Project>{03E52766-17ED-43EC-B73B-95B743783FD5}</Project>
+      <Name>DotOrg.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

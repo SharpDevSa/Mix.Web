@@ -1,0 +1,90 @@
+.header
+	height: 43px
+	padding-top: 25px
+	.header-logo
+		width: 430px
+		+max-screen(1120px)
+			width: 300px
+		+max-screen(900px)
+			width: 250px
+		a
+			
+			margin-top: 3px
+	.header-menu
+		list-style: none
+		width: 330px
+		margin-left: 0px
+		li
+			display: inline-block
+			padding-right: 35px
+			margin-right: 0
+			vertical-align: top
+			a
+				color: #000
+				padding-bottom: 35px
+				font-size: 14px
+			&.parent
+				background: url("../img/icon-menu.png") no-repeat 55px 8px
+			&:hover .wrap-inner-menu
+				display: block
+			.sub-container 
+				margin-left: 0 !important 
+			.inner-menu
+				background: #023192
+				position: absolute
+				left: -80px
+				display: none
+				margin: 0
+				top: 68px
+				opacity: 0.95
+				z-index: 10
+				width: 1120px
+				padding: 30px 80px 0
+				min-height: 570px	
+				.row
+					width: 100% !important
+				#all-product
+					border-bottom: 1px solid #cccccc
+					padding-left: 20px
+					padding-bottom: 10px
+					margin: 25px 0 26px
+					color: #cccccc 
+					font-size: 16px
+					position: relative
+					&:before
+						top: 3px
+						left: 1px
+						+s(all-product)
+						+b
+				li	
+					display: inline-block
+					margin-bottom: 25px
+					margin-top: 12px
+					padding: 0
+					width: 273px !important
+					&#all-product
+						display: block
+					a
+						color: #cccccc	
+						text-transform: uppercase
+						font-size: 22px
+						padding: 0 0 10px 0
+						display: block
+						&:hover
+							color: #fff
+					ul
+						margin: 0
+						li
+							display: block
+							margin: 0
+							a
+								text-transform: inherit
+								display: block	
+								font-size: 16px
+								padding: 0
+					
+	#search-icon
+		width: 20px
+		height: 20px
+		margin-left: 250px
+		background: url("../img/search.png") no-repeat

@@ -1,0 +1,150 @@
+﻿@model List<Partner>
+
+@{
+    WebContext.Metadata.MetaTitle = WebContext.Location.MetaTitle;
+    WebContext.Metadata.MetaDescription = WebContext.Location.MetaDescription;
+    WebContext.Metadata.MetaData = WebContext.Location.MetaData;
+}
+
+@if (WebContext.Location.Images.Any())
+{
+    <div class="banner" style="background: url(@Url.Image(WebContext.Location.Images.FirstOrDefault())) no-repeat center top / cover">
+        <div class="section">
+            <h1 class="slide-head h1-partners">@WebContext.Location.Header</h1>
+        </div>
+    </div>
+}
+
+
+
+<div class="products-menu">
+    <div class="section">
+        <ul>
+            <li class=""><a href="#Retailer-head">@T("retailers")</a></li>
+            <li class=""><a href="#Distributors-head">@T("distributors")</a></li>
+        </ul>
+    </div>
+</div>
+
+@*Список розничных продавцов*@
+@{
+    var retailers = Model.Where(x => x.Retailer).OrderBy(x => x.Sort).ToList();
+    var retailerCountries = retailers.SelectMany(x => x.Countries).Distinct((x, y) => x.Id == y.Id);
+}
+
+<a name="Retailer-head"></a>
+<div class="products-category section" id="retailers-list">
+	<div class="products-category_head">
+		<h2>@T("retailers")</h2>
+		<div class="i-select products-select fr">
+			<span class="i-select__value">@retailers.First().Name</span>
+			<select data-select-retailers="all" id="retailersComboBox" class="i-select__select catalog-select">
+				@*<option value="all">@T("catalog-all-products-name")</option>*@
+                @if (Localization.Current.Lang == "en")
+                {<option value="all">All</option>}
+                else
+                {<option value="all">Все</option>}
+
+				@foreach (var c in retailerCountries)
+                {
+					<option value="country-@c.Id">@c.Name</option>
+                    }
+			</select>
+		</div>
+	</div>
+
+	@foreach (var item in retailerCountries.OrderBy(x => x.Sort))
+	{
+		<div class="inner-category" id="country-@item.Id">
+			<span class="inner-category_country">@item.Name</span>
+			<div class="products-list">
+				<div class="products-list-wrapper">
+					@foreach (var retailer in retailers)
+                    {
+                        if (retailer.Countries.Contains(item))
+                        {
+                            @RenderInnerCategory(retailer)
+                        }
+                    }
+				</div>
+			</div>
+		</div>
+	}
+
+</div>
+
+
+@helper RenderItem(Partner item)
+{
+    <div class="partners-item" data-item="@item.Alias" data-countries="[@string.Join(", ", item.Countries.Select(x => x.Id))]">
+        <a class="partners-item_link" href="@item.Url" target="_blank">
+            <img src="@Url.Image(item.Logo)" alt="@item.Name" />
+        </a>
+        <div class="partners-item_desc">
+            <span class="partners-item_desc-name">@item.Name</span>
+            <div class="partners-item_desc-country">
+                @foreach (var c in item.Countries)
+                {
+                    <span class="country-@c.Id">@c.Name</span>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+@helper RenderInnerCategory(Partner item)
+{
+    <div class="partners-item" data-item="@item.Alias" data-countries="[@string.Join(", ", item.Countries.Select(x => x.Id))]">
+        <a class="partners-item_link" href="@item.Url" target="_blank">
+            <img src="@Url.Image(item.Logo)" alt="@item.Name" />
+        </a>
+        <div class="partners-item_desc">
+            <span class="partners-item_desc-name">@item.Name</span>
+        </div>
+    </div>
+}
+
+
+@*Список дистрибьюторов*@
+@{
+    var distributors = Model.Where(x => x.Distributor).OrderBy(x => x.Sort).ToList();
+    var countries = distributors.SelectMany(x => x.Countries).Distinct((x, y) => x.Id == y.Id);
+}
+
+<a name="Distributors-head"></a>
+<div class="products-category section">
+    <div class="products-category_head">
+        <h2>@T("distributors")</h2>
+        <div class="i-select products-select fr">
+            <span class="i-select__value">@countries.First().Name</span>
+            <select data-select-partners="#distributors" id="distributorsCoboBox" class="i-select__select catalog-select">
+                @*<option value="0">@T("catalog-all-products-name")</option>*@
+
+                @if (Localization.Current.Lang == "en")
+                {
+                    <option value="0">All</option>}
+                else
+                {
+                    <option value="0">Все</option>}
+
+                @foreach (var c in countries)
+                {
+                    <option value="@c.Id">@c.Name</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="products-list" id="distributors">
+        <div class="products-list-wrapper">
+            @foreach (var item in distributors)
+            {
+                @RenderItem(item)
+            }
+        </div>
+
+    </div>
+</div>
+
+
+
+

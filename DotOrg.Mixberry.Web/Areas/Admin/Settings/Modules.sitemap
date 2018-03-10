@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<siteMap>
+  <siteMapNode title="Mixberry">
+    <siteMapNode title="Карта сайта" controller="Locations" action="" />
+    <siteMapNode title="Новости" controller="News" action="" />
+    <siteMapNode title="Категории" controller="Category" action="" />
+    <siteMapNode title="Товары" controller="Product" action="" />
+    <siteMapNode title="Шаблоны" controller="BlockTemplates" action="" />
+    <siteMapNode title="Подписчики" controller="Subscribers" action="" />
+    <siteMapNode title="Загрузка изображений" controller="DbImg" action="" />
+  </siteMapNode>
+  <siteMapNode title="Партнёры">
+	<siteMapNode title="Партнёры" controller="Partners" action="index"/>
+	<siteMapNode title="Страны" controller="Country" action="index"/>
+  </siteMapNode>
+  <siteMapNode title="Логи и настройки сайта">
+	  <siteMapNode title="Локализация" controller="Localization" action="" />
+	  <siteMapNode title="Настройки почты" roles="admin" controller="SiteSettings" action="Emails" />
+	  <siteMapNode title="Лог отправки почты" roles="admin" controller="SiteSettings" action="Logs" />
+	  <siteMapNode title="Настройки сайта" roles="admin" controller="SiteSettings" action="General" />
+	  <siteMapNode title="Поменять пароль" controller="Account" action="ChangePassword" />
+  </siteMapNode>
+</siteMap>
+

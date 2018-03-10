@@ -1,0 +1,78 @@
+﻿@model List<SiteSetting>
+
+<form method="POST">
+	<div class="form-save-buttons"><input type="submit" class="save-button" value="Сохранить"></div>
+
+	@{
+		var items = Model.Select(SettingsModel.Create).ToList();
+	}
+
+	<div id="edit-form-tabs">
+		<ul>
+
+			@if (items.Any(x => x.TabName.IsNullOrEmpty()))
+			{
+				<li><a href="#tab0">Без категории</a></li>
+			}
+			@foreach (var item in items.GroupBy(x => x.TabName))
+			{
+				<li><a href="#tab@(item.Key)">@item.Key</a></li>
+			}
+		</ul>
+		@if (items.Any(x => x.TabName.IsNullOrEmpty()))
+		{
+			<div id="tab0">
+				<table>
+					@foreach (var s in items.Where(x => x.TabName == null))
+					{
+						@RenderSettings(s.Settings, s.ValueName)
+					}
+				</table>
+			</div>
+		}
+		@foreach (var item in items.GroupBy(x => x.TabName))
+		{
+			<div id="tab@(item.Key)">
+				<table>
+					@foreach (var s in item.Where(x => x.GroupName == null))
+					{
+						@RenderSettings(s.Settings, s.ValueName)
+					}
+				</table>
+				@foreach (var s in item.Where(x => x.GroupName != null).GroupBy(g => g.GroupName))
+				{
+					<fieldset>
+						<legend>@s.Key</legend>
+						<table>
+							@foreach (var q in s)
+							{
+								@RenderSettings(q.Settings, q.ValueName)
+							}
+						</table>
+					</fieldset>
+				}
+			</div>
+		}
+
+	</div>
+
+	<div class="form-save-buttons"><input type="submit" class="save-button" value="Сохранить"></div>
+</form>
+
+
+@helper RenderSettings(SiteSetting s, string name)
+{
+	<tr>
+		<td>@Html.LabelFor(m => s.Name, s.Title == s.Name ? (name ?? s.Name) : (s.Title ?? name), new { title = s.Name })</td>
+		<td>
+			@if (s.Input == "textarea")
+			{
+				@Html.TextArea(s.Name, s.Value)
+			}
+			else
+			{
+				@Html.EditorFor(m => s.Value, null, s.Name)
+			}
+		</td>
+	</tr>
+}

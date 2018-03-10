@@ -1,0 +1,11 @@
+﻿@model IEntity
+
+@if (((IVisibleEntity)Model).Visibility)
+{
+    <a class="list-action" href="@Url.Action(Constants.SetVisibilityAction, new {id = Model.Id, visibilityToSet = false })"><span class="icon-eye" title="Выключить на сайте"></span></a>
+}
+else
+{
+    <a class="list-action" href="@Url.Action(Constants.SetVisibilityAction, new { id = Model.Id, visibilityToSet = true })"><span class="icon-eye-off" title="Включить на сайте"></span></a>
+}
+

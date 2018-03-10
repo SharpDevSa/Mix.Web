@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<settings xmlns="urn:settings" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="urn:settings Settings.xsd">
+	<list orderAsc="Sort">
+		<global>
+			<create />
+		</global>
+
+		<actions>
+			<visibility/>
+			<sort field="Sort"/>
+			<edit/>
+			<delete roles="admin" />
+		</actions>
+
+		<cols>
+			<string name="Name" title="Название" />
+			<string name="Url" title="Адрес сайта" />
+		</cols>
+
+	</list>
+
+	<form>
+		<tab name="General">
+			<string name="Name" title="Название" />
+			<string name="Alias" title="Псевдоним" />
+			<string name="Url" title="Адрес сайта" />
+			<checkbox name="Distributor" title="Distributor"/>
+			<checkbox name="Retailer" title="Retailer"/>
+			
+			<file name="Logo" type="image" title="Логотип" size="100" />
+
+			<select name="Countries" title="Страны" data="Countries" multiple="true" />
+			
+		</tab>
+	</form>
+</settings>
